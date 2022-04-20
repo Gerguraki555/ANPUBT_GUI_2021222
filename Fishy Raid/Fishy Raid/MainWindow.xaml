@@ -25,7 +25,7 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
         
-            <Button Grid.Row="0" Foreground="Yellow" Content="Arena"  MinHeight="100" HorizontalAlignment="Stretch" FontSize="35"  BorderBrush="{x:Null}" >
+            <Button  Click="Open_New_Arena" Grid.Row="0" Foreground="Yellow" Content="Arena"  MinHeight="100" HorizontalAlignment="Stretch" FontSize="35"  BorderBrush="{x:Null}" >
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>

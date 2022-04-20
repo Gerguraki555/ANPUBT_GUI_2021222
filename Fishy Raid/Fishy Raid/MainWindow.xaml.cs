@@ -13,6 +13,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FishyRaidFightSystem;
 
 namespace Fishy_Raid
 {
@@ -31,6 +32,13 @@ namespace Fishy_Raid
         private void menugrid_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             //stackPanel.Margin = menugrid.ActualHeight / 2;
+        }
+
+        private void Open_New_Arena(object sender, RoutedEventArgs e)
+        {
+            Window win = new FishyRaidFightSystem.MainWindow();
+           
+            
         }
     }
 }
