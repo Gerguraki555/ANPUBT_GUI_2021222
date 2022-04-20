@@ -104,8 +104,6 @@
   <ItemGroup>
     <Resource Include="hal.bmp" />
   </ItemGroup>
-	<ItemGroup>
-    <Folder Include="Logic\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
