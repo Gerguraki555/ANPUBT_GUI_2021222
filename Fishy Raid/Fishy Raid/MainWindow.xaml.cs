@@ -28,6 +28,9 @@ namespace Fishy_Raid
             
         }
 
-        
+        private void menugrid_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            //stackPanel.Margin = menugrid.ActualHeight / 2;
+        }
     }
 }

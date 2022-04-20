@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Fishy Raid Alpha V 1.0.0" Height="450" Width="800">
 
-    <Grid>
+    <Grid >
         
         <Grid.Background>
             <ImageBrush ImageSource="mainmenu.jpg"/>
@@ -17,9 +17,16 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
         
-        <StackPanel Grid.Column="1">
-            <Button Foreground="Yellow" Content="Arena" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35"  BorderBrush="{x:Null}" >
+            <Button Grid.Row="0" Foreground="Yellow" Content="Arena"  MinHeight="100" HorizontalAlignment="Stretch" FontSize="35"  BorderBrush="{x:Null}" >
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
@@ -27,7 +34,38 @@
                     <ImageBrush ImageSource="buttonstyle.png"/>
                 </Button.Background>
             </Button>
-            <Button Foreground="Yellow" Content="Sea Dungeon" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35" BorderBrush="{x:Null}">
+            <Button Grid.Row="1"  Foreground="Yellow" Content="Sea Dungeon"  MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
+                
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Background>
+                    <ImageBrush ImageSource="buttonstyle.png" x:Name="img"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="Chocolate"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background"  Value="Black" TargetName="Border" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+
+            </Button>
+            <Button Grid.Row="2" Foreground="Yellow" Content="Totem Shop" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
@@ -35,23 +73,16 @@
                     <ImageBrush ImageSource="buttonstyle.png"/>
                 </Button.Background>
             </Button>
-            <Button Foreground="Yellow" Content="Totem Shop" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35" BorderBrush="{x:Null}">
+            <Button Grid.Row="3" Foreground="Yellow" Content="Team Editor" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
                 <Button.Background>
-                    <ImageBrush ImageSource="buttonstyle.png"/>
-                </Button.Background>
-            </Button>
-            <Button Foreground="Yellow" Content="Team Editor" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35" BorderBrush="{x:Null}">
-                <Button.Effect>
-                    <DropShadowEffect/>
-                </Button.Effect>
-                <Button.Background>
-                    <ImageBrush ImageSource="buttonstyle.png"/>
+                    <ImageBrush ImageSource="buttonstyle.png" />
                 </Button.Background>
             </Button>
         </StackPanel>
-
+        
+        </Grid>
     </Grid>
 </Window>
