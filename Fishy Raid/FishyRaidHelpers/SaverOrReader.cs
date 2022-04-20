@@ -9,14 +9,20 @@ namespace FishyRaidHelpers
 {
     public static class SaverOrReader
     {
-        public static void Read()
+        public static Player Read()
         {
+            Player p = new Player();
+            string currentD = Directory.GetCurrentDirectory();
+            string read=File.ReadAllText(currentD);
 
+            return p;
         }
 
         public static void Save(Player p)
         {
-            //File.WriteAllLines();
+            string toSave = p.ToString();
+            string currentD = Directory.GetCurrentDirectory();
+            File.WriteAllText(currentD,toSave);
         }
 
     }
