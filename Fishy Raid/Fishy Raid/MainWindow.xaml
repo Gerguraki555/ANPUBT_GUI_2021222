@@ -1,0 +1,57 @@
+﻿<Window x:Class="Fishy_Raid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fishy_Raid"
+        mc:Ignorable="d"
+        Title="Fishy Raid Alpha V 1.0.0" Height="450" Width="800">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="mainmenu.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="1">
+            <Button Foreground="Yellow" Content="Arena" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35"  BorderBrush="{x:Null}" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush ImageSource="buttonstyle.png"/>
+                </Button.Background>
+            </Button>
+            <Button Foreground="Yellow" Content="Sea Dungeon" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35" BorderBrush="{x:Null}">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush ImageSource="buttonstyle.png"/>
+                </Button.Background>
+            </Button>
+            <Button Foreground="Yellow" Content="Totem Shop" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35" BorderBrush="{x:Null}">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush ImageSource="buttonstyle.png"/>
+                </Button.Background>
+            </Button>
+            <Button Foreground="Yellow" Content="Team Editor" Width="Auto" Height="Auto" MinHeight="100" VerticalAlignment="Center" FontSize="35" BorderBrush="{x:Null}">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush ImageSource="buttonstyle.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
