@@ -6,3 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = FishyRaidHelpers
+build_property.ProjectDir = C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\FishyRaidHelpers\
