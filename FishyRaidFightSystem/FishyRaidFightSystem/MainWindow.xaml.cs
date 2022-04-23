@@ -1,6 +1,7 @@
 ﻿using FishyRaidFightSystem.Logic;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,8 +29,9 @@ namespace FishyRaidFightSystem
         public MainWindow()
         {
             InitializeComponent();
-           // System.Media.SoundPlayer player = new System.Media.SoundPlayer("music.wav");
-           // player.PlayLooping();
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("music.wav");
+            player.PlayLooping();
+          
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

@@ -33,9 +33,9 @@ namespace FishyRaidFightSystem.Model
         WaveOut punchout;
         public Fish()
         {
-          //  this.punch = new AudioFileReader("punch.wav");
-          //  punchout = new WaveOut();
-          //  punchout.Init(punch);
+            this.punch = new AudioFileReader("punch.wav");
+            punchout = new WaveOut();
+            punchout.Init(punch);
             this.csikmutat = true;
             this.novelbvagycsokkent = true;
             this.meghalt = false;
@@ -109,8 +109,8 @@ namespace FishyRaidFightSystem.Model
                           if (!sebzett)
                           {
                               mit.Elet -= Kozelsebzes;
-                     //         punch.CurrentTime = new TimeSpan(0L);
-                     //         punchout.Play();
+                              punch.CurrentTime = new TimeSpan(0L);
+                              punchout.Play();
                               
                               if (mit.Elet <= 0)
                               {
@@ -147,7 +147,7 @@ namespace FishyRaidFightSystem.Model
                               else if (y < oldy) { y++; }
                           }
                       }
-                      Thread.Sleep(1); //Javítandó
+                      Thread.Sleep(1);
                   }
               });
             t.Start();
