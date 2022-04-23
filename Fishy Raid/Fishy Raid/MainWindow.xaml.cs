@@ -26,7 +26,7 @@ namespace Fishy_Raid
     {
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();           // 
         }
 
         
