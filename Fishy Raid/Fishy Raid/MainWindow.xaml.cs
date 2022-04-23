@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FishyRaidFightSystem;
+using FishyRaidFightSystem.Model;
 
 namespace Fishy_Raid
 {
@@ -24,21 +26,15 @@ namespace Fishy_Raid
     {
         public MainWindow()
         {
-            InitializeComponent();
-           // Menumover.MoveTo(tesztkep, tesztkep.Width + 1, tesztkep.Height + 1);
-            
+            InitializeComponent();            
         }
 
-        private void menugrid_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            //stackPanel.Margin = menugrid.ActualHeight / 2;
-        }
+        
 
         private void Open_New_Arena(object sender, RoutedEventArgs e)
         {
             Window win = new FishyRaidFightSystem.MainWindow();
-           
-            
+            win.ShowDialog();
         }
     }
 }
