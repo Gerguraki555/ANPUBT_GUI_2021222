@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BeforeFightMenu;
 
 namespace DungeonMap
 {
@@ -27,7 +28,8 @@ namespace DungeonMap
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Window first = new BeforeFightMenu.MainWindow();
+            first.ShowDialog();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

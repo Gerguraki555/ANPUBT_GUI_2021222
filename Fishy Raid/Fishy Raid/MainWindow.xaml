@@ -54,7 +54,7 @@
                 </Button.Style>
 
             </Button>
-            <Button Grid.Row="1"  Foreground="Yellow" Content="Sea Dungeon"  MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
+            <Button Click="Open_Sea_Dungeon_Map" Grid.Row="1"  Foreground="Yellow" Content="Sea Dungeon"  MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
                 
                 <Button.Effect>
                     <DropShadowEffect/>
