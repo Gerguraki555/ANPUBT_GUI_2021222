@@ -8,8 +8,17 @@ using System.Threading.Tasks;
 
 namespace FishyRaidFightSystem.Model
 {
+    public enum EnemyType
+    {
+        Fish,
+        Squid,
+        Shark,
+        Boss
+    }
     public class Fish
     {
+        public EnemyType enemyType { get; set; }
+        public int Level { get; set; }
         public int Elet { get; set; }
         public string Eleresiut { get; set; }
         public int sorszam { get; set; }
@@ -33,9 +42,9 @@ namespace FishyRaidFightSystem.Model
         WaveOut punchout;
         public Fish()
         {
-            this.punch = new AudioFileReader("punch.wav");
-            punchout = new WaveOut();
-            punchout.Init(punch);
+            //this.punch = new AudioFileReader("punch.wav");
+            //punchout = new WaveOut();
+            //punchout.Init(punch);
             this.csikmutat = true;
             this.novelbvagycsokkent = true;
             this.meghalt = false;

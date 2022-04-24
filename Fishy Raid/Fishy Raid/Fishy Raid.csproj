@@ -108,10 +108,6 @@
       <Project>{5fe32d0a-6af3-4615-bbe8-48bc0e6b50a6}</Project>
       <Name>FishyRaidFightSystem</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DungeonMap\DungeonMap.csproj">
-      <Project>{916241a2-3454-4e3b-b5db-70258199ab90}</Project>
-      <Name>DungeonMap</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

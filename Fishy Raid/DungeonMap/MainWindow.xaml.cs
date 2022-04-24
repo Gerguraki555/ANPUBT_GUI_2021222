@@ -28,7 +28,7 @@ namespace DungeonMap
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window first = new BeforeFightMenu.MainWindow();
+            Window first=new BeforeFightMenu.MainWindow();
             first.ShowDialog();
         }
 
