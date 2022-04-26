@@ -15,6 +15,7 @@ namespace BeforeFightMenu
         public ObservableCollection<Fish> FishesToBattle { get; set; }
         public ObservableCollection<Fish> Enemies { get; set; }
         public ObservableCollection<Potion> Potions { get; set; }
+        public int Stage { get; set; }
 
         public DungeonWindowViewModel()
         {

@@ -7,6 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DungeonMap.jpg" />
+    <None Remove="gomb.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DungeonMap.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gomb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BeforeFightMenu\BeforeFightMenu.csproj" />
   </ItemGroup>
 

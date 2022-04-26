@@ -16,7 +16,7 @@ namespace FishyRaidFightSystem.Model
             {
                 JObject obj = null;
                 JsonSerializer jsonSerializer = new JsonSerializer();
-                if (File.Exists(filePath + "player.json"))
+                if (File.Exists(filePath + dataType+".json"))
                 {
                     StreamReader sr = new StreamReader(filePath + "player.json");
                     JsonReader jsonReader = new JsonTextReader(sr);
@@ -29,7 +29,7 @@ namespace FishyRaidFightSystem.Model
             public static void Save(object data, string filePath)
             {
                 JsonSerializer jsonSerializer = new JsonSerializer();
-                if (File.Exists(filePath + "player.json")) File.Delete(filePath + "player.json");
+                if (File.Exists(filePath +data.GetType()+ ".json")) File.Delete(filePath + "player.json");
                 StreamWriter sw = new StreamWriter(filePath + "player.json");
                 JsonWriter jsonWriter = new JsonTextWriter(sw);
 

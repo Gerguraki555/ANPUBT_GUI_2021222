@@ -28,38 +28,44 @@ namespace DungeonMap
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window first=new BeforeFightMenu.MainWindow();
-            first.ShowDialog();
+            Window start=new BeforeFightMenu.MainWindow(1);
+            start.ShowDialog();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Window start = new BeforeFightMenu.MainWindow(2);
+            start.ShowDialog();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            Window start = new BeforeFightMenu.MainWindow(3);
+            start.ShowDialog();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            Window start = new BeforeFightMenu.MainWindow(4);
+            start.ShowDialog();
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-
+            Window start = new BeforeFightMenu.MainWindow(5);
+            start.ShowDialog();
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-
+            Window start = new BeforeFightMenu.MainWindow(6);
+            start.ShowDialog();
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-
+            Window start = new BeforeFightMenu.MainWindow(7);
+            start.ShowDialog();
         }
     }
 }

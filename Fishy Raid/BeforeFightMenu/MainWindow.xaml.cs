@@ -20,9 +20,16 @@ namespace BeforeFightMenu
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public int Stage { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+        }
+        public MainWindow(int stage)
+        {
+            InitializeComponent();
+            this.Stage = stage;
         }
     }
 }
