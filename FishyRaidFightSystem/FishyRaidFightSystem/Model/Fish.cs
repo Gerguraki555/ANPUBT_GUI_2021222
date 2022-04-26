@@ -33,9 +33,9 @@ namespace FishyRaidFightSystem.Model
         WaveOut punchout;
         public Fish()
         {
-            this.punch = new AudioFileReader("punch.wav");
-            punchout = new WaveOut();
-            punchout.Init(punch);
+            //this.punch = new AudioFileReader("punch.wav");
+            //punchout = new WaveOut();
+            //punchout.Init(punch);
             this.csikmutat = true;
             this.novelbvagycsokkent = true;
             this.meghalt = false;

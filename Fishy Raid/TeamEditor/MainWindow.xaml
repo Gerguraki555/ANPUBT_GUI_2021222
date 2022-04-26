@@ -4,9 +4,55 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamEditor"
+        xmlns:models="clr-namespace:FishyRaidFightSystem.Model;assembly=FishyRaidFightSystem"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <models:Player/>
+    </Window.DataContext>
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.jpg"/>
+        </Grid.Background>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+      
+        <ListBox Background="Transparent" ItemsSource="{Binding AllFishes}" Grid.Column="0" FontFamily="Engravers MT" FontSize="16" FontWeight="Bold" Foreground="#FFD6BB41" SelectionChanged="ListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border>
+                        <StackPanel>
+                            <Label Content="Szint: 1"/>
+                            <Label Content="{Binding Eleresiut}"/>
+                            <Label Content="{Binding Elet}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel VerticalAlignment="Center" Grid.Column="1" >
+            <Button Padding="10" Content="Add To Team"/>
+            <Button Padding="10" Content="Remove From Team"/>
+        </StackPanel>
+
+        <ListBox  Background="Transparent" ItemsSource="{Binding FishesInFight}" Grid.Column="2" FontFamily="Engravers MT" FontSize="16" FontWeight="Bold" FontStyle="Normal">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="4" HorizontalAlignment="Stretch" Padding="10">
+                        <StackPanel >
+                            <Label Content="Szint: 1"/>
+                            <Label Content="{Binding Eleresiut}"/>
+                            <Label Content="{Binding Elet}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
