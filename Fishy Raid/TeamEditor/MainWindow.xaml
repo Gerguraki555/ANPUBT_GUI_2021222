@@ -22,7 +22,7 @@
         </Grid.ColumnDefinitions>
 
       
-        <ListBox Background="Transparent" ItemsSource="{Binding AllFishes}" Grid.Column="0" FontFamily="Engravers MT" FontSize="16" FontWeight="Bold" Foreground="#FFD6BB41" SelectionChanged="ListBox_SelectionChanged">
+        <ListBox Background="Transparent" ItemsSource="{Binding AllFishes}" Grid.Column="0" FontFamily="Engravers MT" FontSize="16" FontWeight="Bold" Foreground="#FFD6BB41">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Border>
