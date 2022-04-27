@@ -197,3 +197,4 @@ C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem
 C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.csproj.CopyComplete
 C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.exe
 C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.pdb
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.csproj.AssemblyReference.cache

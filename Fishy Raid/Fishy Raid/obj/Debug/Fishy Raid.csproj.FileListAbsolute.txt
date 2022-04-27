@@ -70,3 +70,38 @@ C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.csproj.CopyComplete
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.exe
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.pdb
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Images\arenakep.png
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Images\fishbone.png
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Images\fishboneEnemy.png
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Images\fishmodel.png
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Images\leftarrow.png
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Images\polip.png
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Images\punch.png
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Fishy Raid.exe.config
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Fishy Raid.exe
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Fishy Raid.pdb
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\FishyRaidFightSystem.exe
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\NAudio.dll
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\NAudio.WinForms.dll
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\NAudio.Core.dll
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\NAudio.WinMM.dll
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\NAudio.Wasapi.dll
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\FishyRaidFightSystem.pdb
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\FishyRaidFightSystem.exe.config
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\NAudio.xml
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.csproj.AssemblyReference.cache
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\MainWindow.g.cs
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\App.g.cs
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid_MarkupCompile.cache
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid_MarkupCompile.lref
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\MainWindow.baml
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.g.resources
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy_Raid.Properties.Resources.resources
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.csproj.GenerateResource.cache
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.csproj.CoreCompileInputs.cache
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.csproj.CopyComplete
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.exe
+C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\Fishy Raid\obj\Debug\Fishy Raid.pdb
