@@ -16,7 +16,6 @@ namespace BeforeFightMenu
         public ObservableCollection<Fish> Enemies { get; set; }
         public ObservableCollection<Potion> Potions { get; set; }
         public int Stage { get; set; }
-
         public DungeonWindowViewModel()
         {
             string curretD = Directory.GetCurrentDirectory();
@@ -28,8 +27,6 @@ namespace BeforeFightMenu
 
             FishesToBattle = p.FishesInFight;
             Potions = p.Potions;
-
-
 
         }
         
