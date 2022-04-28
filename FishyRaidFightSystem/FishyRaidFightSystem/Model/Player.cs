@@ -25,6 +25,7 @@ namespace FishyRaidFightSystem.Model
             FishesInFight.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = "fishmodel.png", regieleres = "fishmodel.png", pozicio = 20, Kozelsebzes = 10, Helye = 3 });
             AllFishes.Add(new Fish() { Elet = 100, sorszam = 1, Eleresiut = "fishmodel.png", regieleres = "fishmodel.png", pozicio = 0, Kozelsebzes = 10, Helye = 1 });
             AllFishes.Add(new Fish() { Elet = 100, sorszam = 2, Eleresiut = "fishmodel.png", regieleres = "fishmodel.png", pozicio = 30, Kozelsebzes = 10, Helye = 2 });
+            SaveAndReadPlayer.Save(this);
         }
 
     }

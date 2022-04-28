@@ -49,8 +49,9 @@ namespace TeamEditor.ViewModels
             this.logic = logic;
             AllFishes = new ObservableCollection<Fish>();
             FishesAboutToFight = new ObservableCollection<Fish>();
+
             
-            this.Player = (Player)SaveAndReadPlayer.Read(typeof(Player),Directory.GetCurrentDirectory());
+            this.Player = (Player)SaveAndReadPlayer.Read(typeof(Player));
             AllFishes = (ObservableCollection<Fish>)Player.AllFishes;
 
             AddToTeam = new RelayCommand(

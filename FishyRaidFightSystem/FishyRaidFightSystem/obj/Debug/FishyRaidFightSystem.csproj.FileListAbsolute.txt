@@ -141,7 +141,6 @@ C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\System.Security.Principal.Windows.dll
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\Microsoft.Win32.Registry.xml
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\NAudio.xml
-C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\System.Security.AccessControl.xml
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.csproj.AssemblyReference.cache

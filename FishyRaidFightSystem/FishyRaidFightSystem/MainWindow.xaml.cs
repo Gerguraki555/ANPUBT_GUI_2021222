@@ -30,7 +30,7 @@ namespace FishyRaidFightSystem
         {
             InitializeComponent();
             System.Media.SoundPlayer player = new System.Media.SoundPlayer("music.wav");
-            player.PlayLooping();
+            //player.PlayLooping();
           
         }
 
