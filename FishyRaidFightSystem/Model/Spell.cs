@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,7 @@ namespace FishyRaidFightSystem.Model
 
         public string Nev { get; set; }
 
-        public abstract void Tamad(Fish mit, List<Fish> halak);
+        public abstract void Tamad(Fish mit, ObservableCollection<Fish> halak);
 
         public abstract void SzovegLeszed();
 

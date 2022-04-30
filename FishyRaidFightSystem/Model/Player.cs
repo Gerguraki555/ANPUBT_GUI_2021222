@@ -1,26 +1,28 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FishyRaidFightSystem.Model
 {
-    public class Player
+    public class Player: ObservableRecipient
     {
-        public List<Fish> FishesInFight { get; set; }
-        public List<Fish> AllFishes { get; set; }
+        public ObservableCollection<Fish> FishesInFight { get; set; }
+        public ObservableCollection<Fish> AllFishes { get; set; }
         public int Level { get; set; }
-        public List<Potion> Potions { get; set; }
+        public ObservableCollection<Potion> Potions { get; set; }
         public int SeaCoin { get; set; }
         public int Energy { get; set; }
 
 
         public Player()
         {
-            FishesInFight = new List<Fish>();
-            AllFishes = new List<Fish>();
-            this.Potions = new List<Potion>();
+            FishesInFight = new ObservableCollection<Fish>();
+            AllFishes = new ObservableCollection<Fish>();
+            this.Potions = new ObservableCollection<Potion>();
             this.Energy = 3;
             //   FishesInFight.Add(new Fish() { Elet = 100, sorszam = 1, Eleresiut = "fishmodel.png", regieleres = "fishmodel.png", pozicio = 0, Kozelsebzes = 10, Helye = 1  });
             //   FishesInFight.Add(new Fish() { Elet = 100, sorszam = 2, Eleresiut = "fishmodel.png", regieleres = "fishmodel.png", pozicio = 30, Kozelsebzes = 10, Helye = 2 });

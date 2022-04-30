@@ -1,6 +1,7 @@
 ﻿using NAudio.Wave;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -90,7 +91,7 @@ namespace FishyRaidFightSystem.Model.Spells
 
 
 
-        public override void Tamad(Fish mit, List<Fish> halak)
+        public override void Tamad(Fish mit, ObservableCollection<Fish> halak)
         {
 
         }

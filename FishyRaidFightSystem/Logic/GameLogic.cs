@@ -9,6 +9,7 @@ using FishyRaidFightSystem.Model;
 using System.Threading;
 using FishyRaidFightSystem.Model.Spells;
 using System.IO;
+using System.Collections.ObjectModel;
 
 namespace FishyRaidFightSystem.Logic
 {
@@ -16,8 +17,8 @@ namespace FishyRaidFightSystem.Logic
     {
         public event EventHandler Changed;
         public Player Jatekos { get; set; }
-        public List<Fish> PlayerFish { get; set; }
-        public List<Fish> EnemyFish { get; set; }
+        public ObservableCollection<Fish> PlayerFish { get; set; }
+        public ObservableCollection<Fish> EnemyFish { get; set; }
         public int sorszam { get; set; }
         static Random R = new Random();
         public int Palyaszam { get; set; }
@@ -39,7 +40,7 @@ namespace FishyRaidFightSystem.Logic
             this.Palyaszam = 1;
             this.MaxPalyaszam = 1;
             //  this.PlayerFish = new List<Fish>();
-            this.EnemyFish = new List<Fish>();
+            this.EnemyFish = new ObservableCollection<Fish>();
             //  PlayerFish.Add(new Fish() { Elet = 100, sorszam = 1, Eleresiut = "fishmodel.png", regieleres = "fishmodel.png", pozicio=0, Kozelsebzes=10,Helye=1});
             //  PlayerFish.Add(new Fish() { Elet = 100, sorszam = 2, Eleresiut = "fishmodel.png", regieleres = "fishmodel.png", pozicio=30, Kozelsebzes=10,Helye=2});
             //  PlayerFish.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = "fishmodel.png",regieleres = "fishmodel.png", pozicio=20, Kozelsebzes=10,Helye=3});
