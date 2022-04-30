@@ -18,8 +18,7 @@ namespace BeforeFightMenu
         public int Stage { get; set; }
         public DungeonWindowViewModel()
         {
-            string curretD = Directory.GetCurrentDirectory();
-            Player p = (Player)SaveAndReadPlayer.Read(typeof(Player),curretD);
+            Player p = (Player)SaveAndReadPlayer.Read(typeof(Player));
 
             FishesToBattle = new ObservableCollection<Fish>();
             Enemies = new ObservableCollection<Fish>();
