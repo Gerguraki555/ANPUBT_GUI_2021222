@@ -11,7 +11,7 @@
     </Window.DataContext>
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="dungeon.jpg"/>
+            <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\BeforeFightMenu\dungeon.jpg"/>
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
@@ -22,13 +22,13 @@
 
         <Button Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Start" BorderThickness="0" FontFamily="Castellar" Height="124">
             <Button.Background>
-                <ImageBrush ImageSource="gomb.png"/>
+                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\BeforeFightMenu\gomb.png"/>
             </Button.Background>
         </Button>
 
         <Button Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="World View" BorderThickness="0" FontFamily="Castellar" Height="124">
             <Button.Background>
-                <ImageBrush ImageSource="gomb.png"/>
+                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\BeforeFightMenu\gomb.png"/>
             </Button.Background>
         </Button>
 

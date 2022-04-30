@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("buttonstyle.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("gomb.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("hal.bmp")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mainmenu.jpg")]
 

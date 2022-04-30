@@ -9,12 +9,16 @@
 
   <ItemGroup>
     <None Remove="buttonstyle.png" />
+    <None Remove="gomb.png" />
     <None Remove="hal.bmp" />
     <None Remove="mainmenu.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="buttonstyle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gomb.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="hal.bmp">

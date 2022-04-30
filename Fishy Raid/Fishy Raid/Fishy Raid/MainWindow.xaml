@@ -35,7 +35,7 @@
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Chocolate"/>
+                        <Setter Property="Background" Value="Beige"/>
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="{x:Type Button}">
@@ -44,7 +44,11 @@
                                     </Border>
                                     <ControlTemplate.Triggers>
                                         <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background"  Value="Black" TargetName="Border" />
+                                            <Setter Property="Background" TargetName="Border" >
+                                                <Setter.Value>
+                                                    <ImageBrush ImageSource="/gomb.png"  />
+                                                </Setter.Value>
+                                            </Setter>
                                         </Trigger>
                                     </ControlTemplate.Triggers>
                                 </ControlTemplate>

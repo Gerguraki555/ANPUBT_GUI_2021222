@@ -1,5 +1,7 @@
-﻿using System;
+﻿using FishyRaidFightSystem.Model;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +31,8 @@ namespace BeforeFightMenu
         public MainWindow(int stage)
         {
             InitializeComponent();
-            this.Stage = stage;
+            (this.DataContext as DungeonWindowViewModel).Stage =stage;
         }
+        
     }
 }
