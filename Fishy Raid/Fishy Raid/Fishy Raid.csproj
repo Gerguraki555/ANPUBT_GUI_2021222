@@ -103,11 +103,5 @@
   <ItemGroup>
     <Resource Include="hal.bmp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\FishyRaidFightSystem\FishyRaidFightSystem\FishyRaidFightSystem.csproj">
-      <Project>{5fe32d0a-6af3-4615-bbe8-48bc0e6b50a6}</Project>
-      <Name>FishyRaidFightSystem</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
