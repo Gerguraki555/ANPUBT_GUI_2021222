@@ -2,6 +2,7 @@
 using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.DependencyInjection;
 using Microsoft.Toolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -63,7 +64,7 @@ namespace TeamEditor.ViewModels
                 () => SelectedFromFishesAboutToFight != null
                 ) ;
         }
-       // Messenger.Register<TeamEditorWindowView,>
+        IMessenger.Register<TeamEditorWindowView>();
         public TeamEditorWindowView()
             :this(Ioc.Default.GetService<ITeamEditorLogic>())
         {
