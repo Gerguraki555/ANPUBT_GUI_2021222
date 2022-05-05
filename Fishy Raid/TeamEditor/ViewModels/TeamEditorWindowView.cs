@@ -45,15 +45,20 @@ namespace TeamEditor.ViewModels
         public ICommand AddToTeam { get; set; }
         public ICommand RemoveFromTeam { get; set; }
         private Player Player;
+        public ICommand Save { get; set; }
         public TeamEditorWindowView(ITeamEditorLogic logic)
         {
             this.logic = logic;
             AllFishes = new ObservableCollection<Fish>();
             FishesAboutToFight = new ObservableCollection<Fish>();
 
-            
-            this.Player = (Player)SaveAndReadPlayer.Read(typeof(Player));
-            AllFishes = (ObservableCollection<Fish>)Player.AllFishes;
+            Player = new Player();
+            string filePath=Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName, "player.json");
+            this.Player = (Player)SaveAndReadPlayer.Read(typeof(Player),filePath);
+            AllFishes = Player.AllFishes;
+            FishesAboutToFight = Player.FishesInFight;
+            ;
+            logic.Setup(AllFishes,FishesAboutToFight);
 
             AddToTeam = new RelayCommand(
                 ()=>logic.AddToTeam(SelectedFromAllFishes),
@@ -63,8 +68,16 @@ namespace TeamEditor.ViewModels
                 () => logic.RemoveFromTeam(SelectedFromFishesAboutToFight),
                 () => SelectedFromFishesAboutToFight != null
                 ) ;
+            Save = new RelayCommand(
+                () => logic.Save(ref this.Player)
+                );
+            Messenger.Register<TeamEditorWindowView, string, string>(this, "TeamInfo", (recipient,msg)=> 
+            {
+                OnPropertyChanged("Fish Added");
+                OnPropertyChanged("Fish Removed");
+            });
         }
-        IMessenger.Register<TeamEditorWindowView>();
+        
         public TeamEditorWindowView()
             :this(Ioc.Default.GetService<ITeamEditorLogic>())
         {

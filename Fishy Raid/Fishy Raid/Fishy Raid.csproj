@@ -108,6 +108,10 @@
       <Project>{5fe32d0a-6af3-4615-bbe8-48bc0e6b50a6}</Project>
       <Name>FishyRaidFightSystem</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TeamEditor\TeamEditor.csproj">
+      <Project>{2c0540eb-479d-4e61-a3f2-b4c58e8a4c47}</Project>
+      <Name>TeamEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

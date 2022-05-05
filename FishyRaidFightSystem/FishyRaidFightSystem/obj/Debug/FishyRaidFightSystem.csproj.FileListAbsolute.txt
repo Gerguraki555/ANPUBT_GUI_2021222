@@ -143,7 +143,6 @@ C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\NAudio.xml
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\System.Security.AccessControl.xml
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\bin\Debug\System.Security.Principal.Windows.xml
-C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.csproj.AssemblyReference.cache
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\MainWindow.g.cs
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\App.g.cs
 C:\Users\Dell\Source\Repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem_Content.g.cs
@@ -197,3 +196,4 @@ C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem
 C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.exe
 C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.pdb
 C:\Users\fogar\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\FishyRaidFightSystem\FishyRaidFightSystem\obj\Debug\FishyRaidFightSystem.csproj.AssemblyReference.cache

@@ -11,6 +11,7 @@ namespace TeamEditor.Logic
     {
         void AddToTeam(Fish selectedFish);
         void RemoveFromTeam(Fish selectedFish);
-        void Setup(IList<Fish> allfish, List<Fish> teamfishes);
+        void Setup(IList<Fish> allfish, IList<Fish> teamfishes);
+        void Save(ref Player p);
     }
 }
