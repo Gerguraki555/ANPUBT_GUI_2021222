@@ -42,6 +42,11 @@ namespace FishyRaidFightSystem.Model
 
         }
 
+        public static void LoadEnemys(string path) 
+        {
+        
+        } 
+
 
 
     }
