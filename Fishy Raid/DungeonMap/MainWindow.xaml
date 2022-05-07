@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DungeonMap"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="mygrid">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -26,46 +26,15 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
+        <Button Tag="1" x:Name="first" Click="Button_Click" Grid.Column="0" Grid.Row="4" Content="Start" BorderThickness="0" FontFamily="Castellar"/>
+        <Button x:Name="second" Tag="2" Click="Button_Click" Grid.Column="1" Grid.Row="3" Content="Start" BorderThickness="0" FontFamily="Castellar"/>
+        <Button x:Name="third" Tag="3" Click="Button_Click" Grid.Column="2" Grid.Row="2" Content="Start" BorderThickness="0" FontFamily="Castellar"/>
+        <Button x:Name="fourth" Tag="4" Click="Button_Click" Grid.Column="3" Grid.Row="1" Content="Start" BorderThickness="0" FontFamily="Castellar"/>
+        <Button x:Name="fifth" Tag="5" Click="Button_Click" Grid.Column="4" Grid.Row="0" Content="Start" BorderThickness="0" FontFamily="Castellar"/>
+        <Button x:Name="sixth" Tag="6" Click="Button_Click" Grid.Column="5" Grid.Row="1" Content="Start" BorderThickness="0" FontFamily="Castellar"/>
+        <Button x:Name="seventh" Tag="7" Click="Button_Click" Grid.Column="6" Grid.Row="2" Content="Start" BorderThickness="0" FontFamily="Castellar"/>
 
-        <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\DungeonMap.jpg"/>
-        </Grid.Background>
 
-        <Button Tag="1" Click="Button_Click" Grid.Column="0" Grid.Row="4" Content="Start" BorderThickness="0" FontFamily="Castellar">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\gomb.png"/>
-            </Button.Background>
-        </Button>
-        <Button Tag="2" Click="Button_Click" Grid.Column="1" Grid.Row="3" Content="Start" BorderThickness="0" FontFamily="Castellar">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\gomb.png"/>
-            </Button.Background>
-        </Button>
-        <Button Tag="3" Click="Button_Click" Grid.Column="2" Grid.Row="2" Content="Start" BorderThickness="0" FontFamily="Castellar">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\gomb.png"/>
-            </Button.Background>
-        </Button>
-        <Button Tag="4" Click="Button_Click" Grid.Column="3" Grid.Row="1" Content="Start" BorderThickness="0" FontFamily="Castellar">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\gomb.png"/>
-            </Button.Background>
-        </Button>
-        <Button Tag="5" Click="Button_Click" Grid.Column="4" Grid.Row="0" Content="Start" BorderThickness="0" FontFamily="Castellar">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\gomb.png"/>
-            </Button.Background>
-        </Button>
-        <Button Tag="6" Click="Button_Click" Grid.Column="5" Grid.Row="1" Content="Start" BorderThickness="0" FontFamily="Castellar">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\gomb.png"/>
-            </Button.Background>
-        </Button>
-        <Button Tag="7" Click="Button_Click" Grid.Column="6" Grid.Row="2" Content="Start" BorderThickness="0" FontFamily="Castellar">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\DungeonMap\gomb.png"/>
-            </Button.Background>
-        </Button>
 
 
 
