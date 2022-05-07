@@ -42,7 +42,7 @@ namespace BeforeFightMenu
 
             #endregion
 
-            #region
+            #region Geting Path for button backgroung
 
             string buttonPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "gomb.png");
             ImageBrush buttonBrush = new ImageBrush();
@@ -52,8 +52,11 @@ namespace BeforeFightMenu
             buttonBrush.ImageSource = image2.Source;
 
             #endregion
+
             InitializeComponent();
+            
             (this.DataContext as DungeonWindowViewModel).Stage =stage;
+           
             myGrid.Background = backgroundBrush;
             view.Background = buttonBrush;
             start.Background = buttonBrush;
