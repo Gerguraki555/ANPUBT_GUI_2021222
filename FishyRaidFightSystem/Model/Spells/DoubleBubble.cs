@@ -29,7 +29,7 @@ namespace FishyRaidFightSystem.Model.Spells
             this.punch = new AudioFileReader("bubble.wav");
             punchout = new WaveOut();
             punchout.Init(punch);
-            this.hit = new AudioFileReader("hit.wav");
+           this.hit = new AudioFileReader("hit.wav");
             hitout = new WaveOut();
             hitout.Init(hit);
             this.Nev = "Smelly Bubble";

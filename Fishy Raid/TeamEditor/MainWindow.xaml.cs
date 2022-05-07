@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,17 @@ namespace TeamEditor
     {
         public MainWindow()
         {
+            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "/Images", "background.jpg");
+            ImageBrush backgroundBrush = new ImageBrush();
+            Image image = new Image();
+            image.Source = new BitmapImage(
+                new Uri(imgPath));
+            backgroundBrush.ImageSource = image.Source;
+
+
             InitializeComponent();
+
+            myGrid.Background = backgroundBrush;
         }
        
     }

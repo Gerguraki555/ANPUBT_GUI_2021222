@@ -10,10 +10,7 @@
     <Window.DataContext>
         <view:TeamEditorWindowView/>
     </Window.DataContext>
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="background.jpg"/>
-        </Grid.Background>
+    <Grid x:Name="myGrid">      
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
