@@ -9,10 +9,7 @@
     <Window.DataContext>
         <local:DungeonWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\BeforeFightMenu\dungeon.jpg"/>
-        </Grid.Background>
+    <Grid x:Name="myGrid">        
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -20,16 +17,12 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Start" BorderThickness="0" FontFamily="Castellar" Height="124">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\BeforeFightMenu\gomb.png"/>
-            </Button.Background>
+        <Button x:Name="start" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Start" BorderThickness="0" FontFamily="Castellar" Height="124">
+            
         </Button>
 
-        <Button Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="World View" BorderThickness="0" FontFamily="Castellar" Height="124">
-            <Button.Background>
-                <ImageBrush ImageSource="C:\Users\Dell\source\repos\Gerguraki555\ANPUBT_GUI_2021222\Fishy Raid\BeforeFightMenu\gomb.png"/>
-            </Button.Background>
+        <Button x:Name="view" Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="World View" BorderThickness="0" FontFamily="Castellar" Height="124">
+            
         </Button>
 
         <ListBox Grid.Column="1" Background="Transparent" BorderBrush="AliceBlue" BorderThickness="5">

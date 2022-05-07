@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,8 +31,33 @@ namespace BeforeFightMenu
         }
         public MainWindow(int stage)
         {
+            #region Geting Path for grid background
+            
+            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "dungeon.jpg");
+            ImageBrush backgroundBrush = new ImageBrush();
+            Image image = new Image();
+            image.Source = new BitmapImage(
+                new Uri(imgPath));
+            backgroundBrush.ImageSource = image.Source;
+
+            #endregion
+
+            #region
+
+            string buttonPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "gomb.png");
+            ImageBrush buttonBrush = new ImageBrush();
+            Image image2 = new Image();
+            image2.Source = new BitmapImage(
+                new Uri(buttonPath));
+            buttonBrush.ImageSource = image2.Source;
+
+            #endregion
             InitializeComponent();
             (this.DataContext as DungeonWindowViewModel).Stage =stage;
+            myGrid.Background = backgroundBrush;
+            view.Background = buttonBrush;
+            start.Background = buttonBrush;
+
         }
         
     }

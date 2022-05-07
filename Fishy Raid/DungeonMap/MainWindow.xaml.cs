@@ -25,17 +25,19 @@ namespace DungeonMap
         public MainWindow()
         {
             #region Geting Background Path for grid
-            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName+"/Images", "DungeonMap.jpg");
+
+            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName+"/Images", "DungeonMap.jpg");
             ImageBrush backgroundBrush = new ImageBrush();
             Image image = new Image();
             image.Source = new BitmapImage(
                 new Uri(imgPath));
             backgroundBrush.ImageSource = image.Source;
+
             #endregion
 
             #region Geting Background Path for Buttons
 
-            string buttonPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "/Images", "gomb.png");
+            string buttonPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "gomb.png");
             ImageBrush buttonBrush = new ImageBrush();
             Image image2 = new Image();
             image2.Source = new BitmapImage(
