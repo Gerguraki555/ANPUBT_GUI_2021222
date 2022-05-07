@@ -12,9 +12,9 @@ namespace FishyRaidFightSystem.Model
 
     public static class SaveAndReadPlayer
     {
-        public static object Read(Type dataType)
+        public static object Read(Type dataType, string filePath)
         {
-            string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName, "player.json");
+            //string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName, "player.json");
             JObject obj = null;
             JsonSerializer jsonSerializer = new JsonSerializer();
             if (File.Exists(filePath))
@@ -27,11 +27,14 @@ namespace FishyRaidFightSystem.Model
             }
             return obj.ToObject(dataType);
         }
-        public static void Save(object data)
+        public static void Save(object data, string filePath)
         {
-            string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "player.json");
+            //string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "player.json");
             JsonSerializer jsonSerializer = new JsonSerializer();
-            if (File.Exists(filePath)) File.Delete(filePath);
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
             StreamWriter sw = new StreamWriter(filePath);
             JsonWriter jsonWriter = new JsonTextWriter(sw);
 
@@ -41,11 +44,6 @@ namespace FishyRaidFightSystem.Model
             sw.Close();
 
         }
-
-        public static void LoadEnemys(string path) 
-        {
-        
-        } 
 
 
 

@@ -19,14 +19,14 @@ namespace BeforeFightMenu
         public int Stage { get; set; }
         public DungeonWindowViewModel()
         {
-            Player p = (Player)SaveAndReadPlayer.Read(typeof(Player));
+           // Player p = (Player)SaveAndReadPlayer.Read(typeof(Player));
 
             FishesToBattle = new ObservableCollection<Fish>();
             Enemies = new ObservableCollection<Enemy>();
             Potions = new ObservableCollection<Potion>();
 
-            FishesToBattle = p.FishesInFight;
-            Potions = p.Potions;
+           // FishesToBattle = p.FishesInFight;
+           // Potions = p.Potions;
             
             Enemies= SetupEnemys();
             ;

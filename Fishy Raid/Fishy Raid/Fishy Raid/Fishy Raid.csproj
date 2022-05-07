@@ -32,6 +32,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\FishyRaidFightSystem\FishyRaidFightSystem.csproj" />
     <ProjectReference Include="..\..\DungeonMap\DungeonMap.csproj" />
+    <ProjectReference Include="..\..\TeamEditor\TeamEditor.csproj" />
   </ItemGroup>
 
 </Project>

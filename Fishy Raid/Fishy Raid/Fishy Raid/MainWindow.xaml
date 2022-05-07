@@ -118,7 +118,7 @@
                 </Button.Style>
 
             </Button>
-            <Button Grid.Row="3" Foreground="Yellow" Content="Team Editor" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
+            <Button Click="Open_New_Team_Editor" Grid.Row="3" Foreground="Yellow" Content="Team Editor" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>

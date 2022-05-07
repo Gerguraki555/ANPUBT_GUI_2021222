@@ -159,6 +159,9 @@
               "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj": {
                 "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj"
               },
+              "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\TeamEditor\\TeamEditor.csproj": {
+                "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\TeamEditor\\TeamEditor.csproj"
+              },
               "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj": {
                 "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj"
               }
@@ -174,6 +177,77 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\TeamEditor\\TeamEditor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\TeamEditor\\TeamEditor.csproj",
+        "projectName": "TeamEditor",
+        "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\TeamEditor\\TeamEditor.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\TeamEditor\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj": {
+                "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

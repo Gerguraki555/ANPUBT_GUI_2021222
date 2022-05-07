@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FishyRaidFightSystem;
 using DungeonMap;
+using TeamEditor;
 
 namespace Fishy_Raid
 {
@@ -61,6 +62,13 @@ namespace Fishy_Raid
             Window dungeon = new DungeonMap.MainWindow();
             this.Close();
             dungeon.ShowDialog();            
+        }
+
+        private void Open_New_Team_Editor(object sender, RoutedEventArgs e) 
+        {
+            Window editor = new TeamEditor.MainWindow();
+            this.Close();
+            editor.ShowDialog();
         }
     }
 }
