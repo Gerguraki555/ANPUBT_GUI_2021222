@@ -17,13 +17,13 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Click="start_Click" x:Name="start" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Start" BorderThickness="0" FontFamily="Castellar" Height="124">
-            
-        </Button>
+        <Button Click="start_Click" x:Name="start" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Start" BorderThickness="0" FontFamily="Castellar" Height="124"/>
 
-        <Button Click="view_Click" x:Name="view" Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="World View" BorderThickness="0" FontFamily="Castellar" Height="124">
-            
-        </Button>
+
+
+        <Button Click="view_Click" x:Name="view" Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="World View" BorderThickness="0" FontFamily="Castellar" Height="124"/>
+
+
 
         <ListBox Grid.Column="1" Background="Transparent" BorderBrush="AliceBlue" BorderThickness="5">
             <ListBox.ItemTemplate>

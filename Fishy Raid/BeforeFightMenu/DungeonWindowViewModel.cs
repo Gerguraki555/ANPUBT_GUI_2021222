@@ -14,7 +14,7 @@ namespace BeforeFightMenu
     public class DungeonWindowViewModel:ObservableRecipient
     {
         public ObservableCollection<Fish> FishesToBattle { get; set; }
-        public ObservableCollection<Fish> Enemies { get; set; }
+        public ObservableCollection<Enemy> Enemies { get; set; }
         public ObservableCollection<Potion> Potions { get; set; }
         public int Stage { get; set; }
         public DungeonWindowViewModel()
@@ -22,7 +22,7 @@ namespace BeforeFightMenu
             Player p = (Player)SaveAndReadPlayer.Read(typeof(Player));
 
             FishesToBattle = new ObservableCollection<Fish>();
-            Enemies = new ObservableCollection<Fish>();
+            Enemies = new ObservableCollection<Enemy>();
             Potions = new ObservableCollection<Potion>();
 
             FishesToBattle = p.FishesInFight;
@@ -31,10 +31,10 @@ namespace BeforeFightMenu
             Enemies= SetupEnemys();
             ;
         }
-        public ObservableCollection<Fish> SetupEnemys() 
+        public ObservableCollection<Enemy> SetupEnemys() 
         {
             StreamWriter sw = new StreamWriter("asd.txt");
-            ObservableCollection<Fish> enemys = new ObservableCollection<Fish>();
+            ObservableCollection<Enemy> enemys = new ObservableCollection<Enemy>();
             
             return enemys;
         }
