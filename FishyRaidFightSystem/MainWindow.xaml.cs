@@ -31,8 +31,6 @@ namespace FishyRaidFightSystem
             InitializeComponent();
             System.Media.SoundPlayer player = new System.Media.SoundPlayer("music.wav");
             player.PlayLooping();
-
-
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

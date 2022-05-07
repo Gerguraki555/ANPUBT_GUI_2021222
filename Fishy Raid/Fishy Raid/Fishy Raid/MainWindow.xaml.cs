@@ -26,22 +26,41 @@ namespace Fishy_Raid
     {
         public MainWindow()
         {
-            InitializeComponent();           // 
+            InitializeComponent();   
+            
         }
-
-
-
+        private void Setup()
+        {
+            //Brush b = new SolidColorBrush();
+            
+            //Trigger t = new Trigger()
+            //{
+            //    SourceName = "",
+            //    Value=true,
+            //    Property=Button.IsMouseOverProperty,
+                
+            //};
+            //arenabutton.
+            //Setter s = new Setter()
+            //{
+            //    Property = Button.IsMouseOverProperty,
+            //    Value =Foreground                
+                
+            //};
+        }
+            
         private void Open_New_Arena(object sender, RoutedEventArgs e)
         {
             Window win = new FishyRaidFightSystem.MainWindow();
-
-            win.ShowDialog();
+            this.Close();
+            win.ShowDialog();            
         }
 
         private void Open_New_SeaDungeon(object sender, RoutedEventArgs e)
         {
             Window dungeon = new DungeonMap.MainWindow();
-            dungeon.ShowDialog();
+            this.Close();
+            dungeon.ShowDialog();            
         }
     }
 }

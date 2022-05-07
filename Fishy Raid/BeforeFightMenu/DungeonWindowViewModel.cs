@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using FishyRaidFightSystem.Model;
 using Microsoft.Toolkit.Mvvm.ComponentModel;
 
@@ -18,22 +19,24 @@ namespace BeforeFightMenu
         public int Stage { get; set; }
         public DungeonWindowViewModel()
         {
-            //Player p = (Player)SaveAndReadPlayer.Read(typeof(Player));
+            Player p = (Player)SaveAndReadPlayer.Read(typeof(Player));
 
             FishesToBattle = new ObservableCollection<Fish>();
             Enemies = new ObservableCollection<Fish>();
             Potions = new ObservableCollection<Potion>();
 
-            //FishesToBattle = p.FishesInFight;
-            //Potions = p.Potions;
-            SetupEnemys();
+            FishesToBattle = p.FishesInFight;
+            Potions = p.Potions;
+            
+            Enemies= SetupEnemys();
             ;
         }
-        public void SetupEnemys() 
+        public ObservableCollection<Fish> SetupEnemys() 
         {
             StreamWriter sw = new StreamWriter("asd.txt");
-            sw.WriteLine("a");
-            sw.Close();
+            ObservableCollection<Fish> enemys = new ObservableCollection<Fish>();
+            
+            return enemys;
         }
         
 

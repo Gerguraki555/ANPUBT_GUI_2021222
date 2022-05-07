@@ -48,6 +48,9 @@ namespace DungeonMap
 
             InitializeComponent();
 
+            MediaPlayer mediaPlayer = new MediaPlayer();
+            mediaPlayer.Play();
+
             #region Setting up Backgrounds
             
             mygrid.Background = backgroundBrush;
@@ -68,6 +71,7 @@ namespace DungeonMap
             int stage = int.Parse((e.Source as Button).Tag.ToString()) ;
             Window start=new BeforeFightMenu.MainWindow(stage);
             //(start.DataContext as DungeonWindowViewModel).SetStage(stage);
+            this.Close();
             start.ShowDialog();
         }
 

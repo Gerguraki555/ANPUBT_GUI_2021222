@@ -60,8 +60,19 @@ namespace BeforeFightMenu
             myGrid.Background = backgroundBrush;
             view.Background = buttonBrush;
             start.Background = buttonBrush;
+            
 
         }
-        
+
+
+        private void view_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void start_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
