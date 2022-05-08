@@ -21,6 +21,26 @@ namespace TeamEditor.Logic
         }
         public void AddToTeam(Fish selectedFish)
         {
+            if (teamfishes.Count==0)
+            {
+                selectedFish.Helye = 1;
+                selectedFish.pozicio = 0;
+                selectedFish.sorszam = 1;
+            }
+            else if (teamfishes.Count==1)
+            {
+                selectedFish.Helye = 2;
+                selectedFish.pozicio = 30;
+                selectedFish.sorszam = 2;
+            }
+            else if (teamfishes.Count == 2)
+            {
+                selectedFish.Helye = 3;
+                selectedFish.pozicio = 20;
+                selectedFish.sorszam = 3;
+            }
+
+
             if (teamfishes.Count<3)
             {                
                 teamfishes.Add(selectedFish);
@@ -47,7 +67,7 @@ namespace TeamEditor.Logic
         {
             if (teamfishes.Count == 3)
             {
-                string filePath= Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName, "player.json");
+                string filePath= Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
                 SaveAndReadPlayer.Save(p,filePath);
                 MessageBox.Show("Team Saved!");
             }

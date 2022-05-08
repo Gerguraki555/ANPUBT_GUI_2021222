@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="1.png" />
     <None Remove="DungeonMap.jpg" />
     <None Remove="gomb.png" />
+    <None Remove="torottgomb.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +20,10 @@
     <Content Include="gomb.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="1.png" />
+    <Resource Include="torottgomb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

@@ -61,9 +61,51 @@ namespace DungeonMap
             fifth.Background = buttonBrush;
             sixth.Background = buttonBrush;
             seventh.Background = buttonBrush;
-            
-            
+
+
             #endregion
+
+            #region Setting up button triggers
+
+            first.Triggers.Add(SetingUpButtonEffect());
+            second.Triggers.Add(SetingUpButtonEffect());
+            third.Triggers.Add(SetingUpButtonEffect());
+            fourth.Triggers.Add(SetingUpButtonEffect());
+            fifth.Triggers.Add(SetingUpButtonEffect());
+            sixth.Triggers.Add(SetingUpButtonEffect());
+            seventh.Triggers.Add(SetingUpButtonEffect());
+
+            #endregion
+        }
+
+        private Trigger SetingUpButtonEffect() 
+        {
+            ControlTemplate ct = new ControlTemplate() 
+            {
+            TargetType=typeof(Button),
+            };
+
+            Trigger t = new Trigger()
+            {
+               Property=IsMouseOverProperty,
+               Value=true
+            };
+
+            string buttonPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "torottgomb.png");
+            ImageBrush buttonBrush = new ImageBrush();
+            Image image2 = new Image();
+            image2.Source = new BitmapImage(
+                new Uri(buttonPath));
+            buttonBrush.ImageSource = image2.Source;
+
+
+            Setter s = new Setter()
+            {        
+                TargetName="Background",
+                Value=buttonBrush
+            };
+            t.Setters.Add(s);            
+            return t;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
