@@ -549,19 +549,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {}
+    "C:\\Users\\fogar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
+      "projectUniqueName": "C:\\Users\\fogar\\Source\\Repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
       "projectName": "DungeonMap",
-      "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\obj\\",
+      "projectPath": "C:\\Users\\fogar\\Source\\Repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
+      "packagesPath": "C:\\Users\\fogar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fogar\\Source\\Repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fogar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -575,8 +575,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {
-              "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj"
+            "C:\\Users\\fogar\\Source\\Repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {
+              "projectPath": "C:\\Users\\fogar\\Source\\Repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj"
             }
           }
         }
@@ -608,7 +608,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
