@@ -26,12 +26,14 @@ namespace FishyRaidFightSystem
     {
         GameLogic logic;
         string Palyaszam;
+        System.Media.SoundPlayer player;
+        System.Media.SoundPlayer startMenuMusicPlayer;
         public MainWindow(int palyaszam) // pálya szám a konstruktorba
         {
             InitializeComponent();
             this.Palyaszam = palyaszam.ToString();
             string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "music.wav");
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(musicpath);
+            player = new System.Media.SoundPlayer(musicpath);
             player.PlayLooping();
         }
 
@@ -39,7 +41,7 @@ namespace FishyRaidFightSystem
         {
             InitializeComponent();
             string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "music.wav");
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(musicpath);
+            player = new System.Media.SoundPlayer(musicpath);
             player.PlayLooping();
         }
 
@@ -85,6 +87,14 @@ namespace FishyRaidFightSystem
         private void Dt_Tick(object sender, EventArgs e)
         {
             logic.TimeStep();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            player.Stop();
+            string menumusic = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "MapMusic.wav");
+            startMenuMusicPlayer = new System.Media.SoundPlayer(menumusic);
+            startMenuMusicPlayer.PlayLooping();
         }
     }
 }

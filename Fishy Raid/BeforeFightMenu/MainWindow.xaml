@@ -23,18 +23,37 @@
 
         <Button Click="view_Click" x:Name="view" Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="World View" BorderThickness="0" FontFamily="Castellar" Height="124"/>
 
+        <Grid Grid.Column="1" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
 
+            <ListBox ItemsSource="{Binding Enemies}" Grid.Column="1"  Background="#3FD1D1D1" BorderBrush="AliceBlue" BorderThickness="1" Foreground="Black">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Label Content="{Binding Level}" ContentStringFormat="Enemy's Level: {0}"  Foreground="FloralWhite"/>
+                            <Label Content="{Binding Energy}" ContentStringFormat="Enemy's Energy {0}"  Foreground="FloralWhite"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
 
-        <ListBox Grid.Column="1" Background="Transparent" BorderBrush="AliceBlue" BorderThickness="5">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <Label Content="Level: 1"  Foreground="FloralWhite"/>
-                        <Label Content="Enemy Type: Squid"  Foreground="FloralWhite"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+            <ListBox Grid.Row="1" ItemsSource="{Binding Potions}" Grid.Column="1"  Background="#3FD1D1D1" BorderBrush="AliceBlue" BorderThickness="1" Foreground="Black">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Label Content="asd" ContentStringFormat="Enemy's Level: {0}"  Foreground="FloralWhite"/>
+                            <Label Content="lol" ContentStringFormat="Enemy's Energy {0}"  Foreground="FloralWhite"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+        </Grid>
+
+        
 
     </Grid>
 </Window>

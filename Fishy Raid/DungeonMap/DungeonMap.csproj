@@ -22,7 +22,7 @@
     </Content>
     <Resource Include="1.png" />
     <Resource Include="torottgomb.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 

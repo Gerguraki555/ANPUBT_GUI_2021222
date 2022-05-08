@@ -25,17 +25,19 @@ namespace Fishy_Raid
     /// </summary>
     public partial class MainWindow : Window
     {
+        private System.Media.SoundPlayer player;
         public MainWindow()
         {
-            InitializeComponent();   
-            
+            InitializeComponent();
+            string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "MapMusic.wav");
+            player = new System.Media.SoundPlayer(musicpath);
+            player.PlayLooping();
         }
         
             
         private void Open_New_Arena(object sender, RoutedEventArgs e)
         {
             Window win = new FishyRaidFightSystem.MainWindow();
-            this.Close();
             win.ShowDialog();            
         }
 

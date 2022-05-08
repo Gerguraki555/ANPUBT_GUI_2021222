@@ -22,6 +22,7 @@ namespace DungeonMap
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             #region Geting Background Path for grid
@@ -48,11 +49,10 @@ namespace DungeonMap
 
             InitializeComponent();
 
-            MediaPlayer mediaPlayer = new MediaPlayer();
-            mediaPlayer.Play();
+            
 
             #region Setting up Backgrounds
-            
+
             mygrid.Background = backgroundBrush;
             first.Background = buttonBrush;
             second.Background = buttonBrush;
@@ -67,23 +67,19 @@ namespace DungeonMap
 
             #region Setting up button triggers
 
-            first.Triggers.Add(SetingUpButtonEffect());
-            second.Triggers.Add(SetingUpButtonEffect());
-            third.Triggers.Add(SetingUpButtonEffect());
-            fourth.Triggers.Add(SetingUpButtonEffect());
-            fifth.Triggers.Add(SetingUpButtonEffect());
-            sixth.Triggers.Add(SetingUpButtonEffect());
-            seventh.Triggers.Add(SetingUpButtonEffect());
+            //first.Triggers.Add(SetingUpButtonEffect());
+            //second.Triggers.Add(SetingUpButtonEffect());
+            //third.Triggers.Add(SetingUpButtonEffect());
+            //fourth.Triggers.Add(SetingUpButtonEffect());
+            //fifth.Triggers.Add(SetingUpButtonEffect());
+            //sixth.Triggers.Add(SetingUpButtonEffect());
+            //seventh.Triggers.Add(SetingUpButtonEffect());
 
             #endregion
         }
 
         private Trigger SetingUpButtonEffect() 
-        {
-            ControlTemplate ct = new ControlTemplate() 
-            {
-            TargetType=typeof(Button),
-            };
+        {           
 
             Trigger t = new Trigger()
             {
@@ -109,12 +105,10 @@ namespace DungeonMap
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            
+        {            
             int stage = int.Parse((e.Source as Button).Tag.ToString()) ;
              Window start=new BeforeFightMenu.MainWindow(stage);
             //(start.DataContext as DungeonWindowViewModel).SetStage(stage); - ez nem kell
-             this.Close();
              start.ShowDialog();
           //  MessageBox.Show(stage.ToString());
         }
