@@ -53,7 +53,7 @@ namespace TeamEditor.ViewModels
             FishesAboutToFight = new ObservableCollection<Fish>();
 
             Player = new Player();
-            string filePath=Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName, "player.json");
+            string filePath=Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
             this.Player = (Player)SaveAndReadPlayer.Read(typeof(Player),filePath);
             AllFishes = Player.AllFishes;
             FishesAboutToFight = Player.FishesInFight;

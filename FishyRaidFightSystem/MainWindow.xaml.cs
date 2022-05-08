@@ -37,7 +37,8 @@ namespace FishyRaidFightSystem
         public MainWindow()
         {
             InitializeComponent();
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer("music.wav");
+            string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "music.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(musicpath);
             player.PlayLooping();
         }
 

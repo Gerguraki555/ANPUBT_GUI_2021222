@@ -23,7 +23,7 @@ namespace TeamEditor
     {
         public MainWindow()
         {
-            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "/Images", "background.jpg");
+            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "background.jpg");
             ImageBrush backgroundBrush = new ImageBrush();
             Image image = new Image();
             image.Source = new BitmapImage(

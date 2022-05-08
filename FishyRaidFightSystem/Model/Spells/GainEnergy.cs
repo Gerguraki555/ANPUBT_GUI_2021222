@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -18,7 +19,8 @@ namespace FishyRaidFightSystem.Model.Spells
         public GainEnergy(Fish hal)
         {
             this.Energiakoltseg = 0;
-            this.effect = new AudioFileReader("holy.wav");
+            string holypath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "holy.wav");
+            this.effect = new AudioFileReader(holypath);
             effectout = new WaveOut();
             effectout.Init(effect);
             this.KorszamotNovelo = false;

@@ -2,6 +2,7 @@
 using NAudio.Wave;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -72,7 +73,8 @@ namespace FishyRaidFightSystem.Model
             this.elfoglalt = false;
             this.Ero = 10;
             this.Kepessegeffekt = "no";
-            this.punch = new AudioFileReader("punch.wav");
+            string punchpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "punch.wav");
+            this.punch = new AudioFileReader(punchpath);
             punchout = new WaveOut();
             punchout.Init(punch);
             this.csikmutat = true;

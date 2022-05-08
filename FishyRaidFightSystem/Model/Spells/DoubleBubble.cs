@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -26,10 +27,12 @@ namespace FishyRaidFightSystem.Model.Spells
         public DoubleBubble(Fish hal)
         {
             this.Hala = hal;
-            this.punch = new AudioFileReader("bubble.wav");
+            string bubble= System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "bubble.wav");
+            this.punch = new AudioFileReader(bubble);
             punchout = new WaveOut();
             punchout.Init(punch);
-           this.hit = new AudioFileReader("hit.wav");
+            string hitpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "hit.wav");
+            this.hit = new AudioFileReader(hitpath);
             hitout = new WaveOut();
             hitout.Init(hit);
             this.Nev = "Smelly Bubble";

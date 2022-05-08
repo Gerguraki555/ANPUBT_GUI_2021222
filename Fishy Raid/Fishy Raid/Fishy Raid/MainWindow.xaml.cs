@@ -30,25 +30,7 @@ namespace Fishy_Raid
             InitializeComponent();   
             
         }
-        private void Setup()
-        {
-            //Brush b = new SolidColorBrush();
-            
-            //Trigger t = new Trigger()
-            //{
-            //    SourceName = "",
-            //    Value=true,
-            //    Property=Button.IsMouseOverProperty,
-                
-            //};
-            //arenabutton.
-            //Setter s = new Setter()
-            //{
-            //    Property = Button.IsMouseOverProperty,
-            //    Value =Foreground                
-                
-            //};
-        }
+        
             
         private void Open_New_Arena(object sender, RoutedEventArgs e)
         {
