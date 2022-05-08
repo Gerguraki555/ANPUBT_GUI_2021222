@@ -26,12 +26,12 @@ namespace FishyRaidFightSystem.Model
             this.Potions = new ObservableCollection<Potion>();
             this.Energy = 3;
             string path= Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName+ "/Images" ,"1.png");
-            FishesInFight.Add(new Fish() { Elet = 100, sorszam = 1, Eleresiut = path, regieleres = path, pozicio = 0, Kozelsebzes = 10, Helye = 1  });
-            FishesInFight.Add(new Fish() { Elet = 100, sorszam = 2, Eleresiut = path, regieleres = path, pozicio = 30, Kozelsebzes = 10, Helye = 2 });
-            FishesInFight.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = path, regieleres = path, pozicio = 20, Kozelsebzes = 10, Helye = 3 });
+            //FishesInFight.Add(new Fish() { Elet = 100, sorszam = 1, Eleresiut = path, regieleres = path, pozicio = 0, Kozelsebzes = 10, Helye = 1 });
+            //FishesInFight.Add(new Fish() { Elet = 100, sorszam = 2, Eleresiut = path, regieleres = path, pozicio = 30, Kozelsebzes = 10, Helye = 2 });
+            //FishesInFight.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = path, regieleres = path, pozicio = 20, Kozelsebzes = 10, Helye = 3 });
 
-          //  string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
-          //   SaveAndReadPlayer.Save(this, filePath);
+            //  string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
+            //   SaveAndReadPlayer.Save(this, filePath);
         }
 
     }

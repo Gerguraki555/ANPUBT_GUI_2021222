@@ -68,6 +68,7 @@ namespace TeamEditor.Logic
             if (teamfishes.Count == 3)
             {
                 string filePath= Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
+               
                 SaveAndReadPlayer.Save(p,filePath);
                 MessageBox.Show("Team Saved!");
             }

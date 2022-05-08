@@ -36,8 +36,8 @@ namespace FishyRaidFightSystem.Logic
         public GameLogic()
         {
             this.melyikpalya = "2";
-          // this.Jatekos = new Player();
-           // PlayerSave();
+          //this.Jatekos = new Player();
+          //  PlayerSave();
            this.Jatekos = PlayerLoad();
             this.Enemy = new Enemy();
             this.Korszam = 0;
@@ -70,6 +70,11 @@ namespace FishyRaidFightSystem.Logic
                 item.Tavolsagi.Hala = item;
                 item.Buff.Hala = item;
             }
+            foreach (var item in p.AllFishes)
+            {
+                item.Tavolsagi.Hala = item;
+                item.Buff.Hala = item;
+            }
             return p;
         }
 
@@ -78,6 +83,11 @@ namespace FishyRaidFightSystem.Logic
             string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
 
             foreach (var item in this.Jatekos.FishesInFight)
+            {
+                item.Tavolsagi.Hala = null;
+                item.Buff.Hala = null;
+            }
+            foreach (var item in this.Jatekos.AllFishes)
             {
                 item.Tavolsagi.Hala = null;
                 item.Buff.Hala = null;

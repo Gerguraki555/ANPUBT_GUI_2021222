@@ -55,7 +55,11 @@ namespace TeamEditor.ViewModels
             Player = new Player();
             string filePath=Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
             this.Player = (Player)SaveAndReadPlayer.Read(typeof(Player),filePath);
+            
+
             AllFishes = Player.AllFishes;
+            string path = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "1.png");
+            AllFishes.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = path, regieleres = path, pozicio = 20, Kozelsebzes = 10, Helye = 3 });
             FishesAboutToFight = Player.FishesInFight;
             ;
             logic.Setup(AllFishes,FishesAboutToFight);
