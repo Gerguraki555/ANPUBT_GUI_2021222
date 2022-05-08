@@ -96,7 +96,7 @@ namespace FishyRaidFightSystem.Renderer
                             drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 3.9 - 100, Area.Height / 2 - 100 + item.pozicio, item.Elet * 1.5, 10));
 
                         }
-                        drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.Eleresiut), UriKind.RelativeOrAbsolute))), null, new Rect(item.x, item.y + item.pozicio, 200, 200));
+                        drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("/Images", item.Eleresiut), UriKind.RelativeOrAbsolute))), null, new Rect(item.x, item.y + item.pozicio, 200, 200));
 
 
 

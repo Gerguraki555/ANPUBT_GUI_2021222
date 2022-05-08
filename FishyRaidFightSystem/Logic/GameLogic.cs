@@ -36,7 +36,9 @@ namespace FishyRaidFightSystem.Logic
         public GameLogic()
         {
             this.melyikpalya = "2";
-            this.Jatekos = PlayerLoad();
+          // this.Jatekos = new Player();
+           // PlayerSave();
+           this.Jatekos = PlayerLoad();
             this.Enemy = new Enemy();
             this.Korszam = 0;
             this.Palyaszam = 1;
