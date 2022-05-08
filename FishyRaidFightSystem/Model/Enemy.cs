@@ -21,9 +21,7 @@ namespace FishyRaidFightSystem.Model
             this.FishesInFight = new ObservableCollection<Fish>();
             this.Energy = 3;
 
-            FishesInFight.Add(new Fish() { Elet = 100, sorszam = 1, Eleresiut = "polip.png", regieleres = "polip.png", pozicio = 10, Kozelsebzes = 10, Helye = 1 });
-            FishesInFight.Add(new Fish() { Elet = 100, sorszam = 2, Eleresiut = "polip.png", regieleres = "polip.png", pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-            FishesInFight.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = "polip.png", regieleres = "polip.png", pozicio = 30, Kozelsebzes = 10, Helye = 3 });
+           
         }
     }
 }

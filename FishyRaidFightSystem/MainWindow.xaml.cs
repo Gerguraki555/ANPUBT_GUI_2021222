@@ -25,8 +25,16 @@ namespace FishyRaidFightSystem
     public partial class MainWindow : Window
     {
         GameLogic logic;
+        string Palyaszam;
+        public MainWindow(int palyaszam) // pálya szám a konstruktorba
+        {
+            InitializeComponent();
+            this.Palyaszam = palyaszam.ToString();
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("music.wav");
+            player.PlayLooping();
+        }
 
-        public MainWindow() // pálya szám a konstruktorba
+        public MainWindow()
         {
             InitializeComponent();
             System.Media.SoundPlayer player = new System.Media.SoundPlayer("music.wav");
@@ -36,6 +44,8 @@ namespace FishyRaidFightSystem
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             logic = new GameLogic();
+            logic.melyikpalya = Palyaszam;
+            logic.LevelLoad();
             Display.SetupModel(logic);
             DispatcherTimer dt = new DispatcherTimer(); //Időzítő
             dt.Interval = TimeSpan.FromMilliseconds(5);

@@ -72,7 +72,9 @@ namespace BeforeFightMenu
 
         private void start_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new FishyRaidFightSystem.MainWindow(Stage);
+            this.Close();
+            window.ShowDialog();
         }
     }
 }

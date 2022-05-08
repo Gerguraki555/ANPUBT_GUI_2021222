@@ -46,7 +46,8 @@ namespace FishyRaidFightSystem.Model
         public string regieleres { get; set; }
         public bool csikmutat { get; set; }
         public string dead { get; set; }
-
+        public string tavolsagitipus { get; set; }
+        public string bufftipus { get; set; }
 
 
 

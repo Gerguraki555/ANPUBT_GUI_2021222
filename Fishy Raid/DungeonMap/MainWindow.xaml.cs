@@ -68,11 +68,13 @@ namespace DungeonMap
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             int stage = int.Parse((e.Source as Button).Tag.ToString()) ;
-            Window start=new BeforeFightMenu.MainWindow(stage);
-            //(start.DataContext as DungeonWindowViewModel).SetStage(stage);
-            this.Close();
-            start.ShowDialog();
+             Window start=new BeforeFightMenu.MainWindow(stage);
+            //(start.DataContext as DungeonWindowViewModel).SetStage(stage); - ez nem kell
+             this.Close();
+             start.ShowDialog();
+          //  MessageBox.Show(stage.ToString());
         }
 
         
