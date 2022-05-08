@@ -44,14 +44,12 @@ namespace Fishy_Raid
         private void Open_New_SeaDungeon(object sender, RoutedEventArgs e)
         {
             Window dungeon = new DungeonMap.MainWindow();
-            this.Close();
             dungeon.ShowDialog();            
         }
 
         private void Open_New_Team_Editor(object sender, RoutedEventArgs e) 
         {
             Window editor = new TeamEditor.MainWindow();
-            this.Close();
             editor.ShowDialog();
         }
     }
