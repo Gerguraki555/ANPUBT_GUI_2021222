@@ -19,21 +19,40 @@ namespace TeamEditor.Logic
         {
             this.messenger = messenger;
         }
-        public void AddToTeam(Fish selectedFish)
+        public void AddToTeam(Fish selectedFish) //Lehet, hogy megőrírt a halott enemyt
         {
-            if (teamfishes.Count==0)
+            bool helyegy = false;
+            bool helyketto = false;
+            bool helyharom = false;
+            foreach (var item in teamfishes)
+            {
+                if (item.Helye == 1)
+                {
+                    helyegy = true;
+                }
+                else if (item.Helye == 2)
+                {
+                    helyketto = true;
+                }
+                else if (item.Helye == 3)
+                {
+                    helyharom = true;
+                }
+            }
+
+            if (helyegy==false)
             {
                 selectedFish.Helye = 1;
                 selectedFish.pozicio = 0;
                 selectedFish.sorszam = 1;
             }
-            else if (teamfishes.Count==1)
+            else if (helyketto==false)
             {
                 selectedFish.Helye = 2;
                 selectedFish.pozicio = 30;
                 selectedFish.sorszam = 2;
             }
-            else if (teamfishes.Count == 2)
+            else if (helyharom==false)
             {
                 selectedFish.Helye = 3;
                 selectedFish.pozicio = 20;
@@ -68,7 +87,33 @@ namespace TeamEditor.Logic
             if (teamfishes.Count == 3)
             {
                 string filePath= Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
-               
+
+                foreach (var item in p.FishesInFight)
+                {
+                    if (item.Tavolsagi != null)
+                    {
+                        item.Tavolsagi.Hala = null;
+                    }
+                    if (item.Buff != null)
+                    {
+                        item.Buff.Hala = null;
+                    }
+                }
+                foreach (var item in p.AllFishes)
+                {
+                    if (item.Tavolsagi != null)
+                    {
+                        item.Tavolsagi.Hala = null;
+                    }
+                    if (item.Buff != null)
+                    {
+                        item.Buff.Hala = null;
+                    }
+                }
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
                 SaveAndReadPlayer.Save(p,filePath);
                 MessageBox.Show("Team Saved!");
             }

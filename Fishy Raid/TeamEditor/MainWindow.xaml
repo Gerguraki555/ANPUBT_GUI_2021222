@@ -25,7 +25,7 @@
                     <Border>
                         <StackPanel>
                             <Label Content="{Binding Level}" ContentStringFormat="Level: {0}" Foreground="Gold" OpacityMask="Black"/>
-                            <Label Content="{Binding EXP}" ContentStringFormat="XP: {0}" Foreground="Gold"/>
+                            <Label Content="{Binding EXP}" ContentStringFormat="EXP: {0}" Foreground="Gold"/>
                             <Label Content="{Binding Elet}" ContentStringFormat="Health: {0}" Foreground="Gold"/>
                         </StackPanel>
                     </Border>
@@ -46,7 +46,7 @@
                         <StackPanel>
 
                             <Label Content="{Binding Level}" ContentStringFormat="Level {0}" Foreground="Black" />
-                            <Label Content="{Binding EXP}" ContentStringFormat="Level {0}" Foreground="Black"/>
+                            <Label Content="{Binding EXP}" ContentStringFormat="EXP {0}" Foreground="Black"/>
                             <Label Content="{Binding Elet}" ContentStringFormat="Health: {0}" Foreground="Black"/>
 
                         </StackPanel>

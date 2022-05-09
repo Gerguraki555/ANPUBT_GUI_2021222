@@ -68,11 +68,13 @@ namespace FishyRaidFightSystem
                      {
                          MessageBox.Show("Win");
                          this.Close();
+                         vegveto.Stop();
                      }
                      else
                      {
                          MessageBox.Show("defeat");
                          this.Close();
+                         vegveto.Stop();
                      }
                  }
                  else

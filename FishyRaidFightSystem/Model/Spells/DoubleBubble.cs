@@ -64,7 +64,10 @@ namespace FishyRaidFightSystem.Model.Spells
                 Task vegzo = new Task(() =>
                 {
                     masodik.Wait();
-                    Hala.elfoglalt = false;
+                    if (Hala != null)
+                    {
+                        Hala.elfoglalt = false;
+                    }
                 });
                 vegzo.Start();
 
