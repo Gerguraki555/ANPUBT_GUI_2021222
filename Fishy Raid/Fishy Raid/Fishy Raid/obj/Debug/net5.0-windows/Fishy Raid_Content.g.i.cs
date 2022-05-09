@@ -12,5 +12,6 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("gomb.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("hal.bmp")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mainmenu.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("torottbutton.png")]
 
 

@@ -19,14 +19,15 @@ namespace BeforeFightMenu
         public int Stage { get; set; }
         public DungeonWindowViewModel()
         {
-           // Player p = (Player)SaveAndReadPlayer.Read(typeof(Player));
+           string path = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
+            Player p = (Player)SaveAndReadPlayer.Read(typeof(Player),path);
 
             FishesToBattle = new ObservableCollection<Fish>();
             Enemies = new ObservableCollection<Enemy>();
             Potions = new ObservableCollection<Potion>();
 
-           // FishesToBattle = p.FishesInFight;
-           // Potions = p.Potions;
+            FishesToBattle = p.FishesInFight;
+            Potions = p.Potions;
             
             Enemies= SetupEnemys();
             ;

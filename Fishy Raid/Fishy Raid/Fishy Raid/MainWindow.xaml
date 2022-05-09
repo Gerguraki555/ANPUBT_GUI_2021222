@@ -46,7 +46,7 @@
                                         <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="Background" TargetName="Border" >
                                                 <Setter.Value>
-                                                    <ImageBrush ImageSource="/gomb.png"/>
+                                                    <ImageBrush ImageSource="/torottbutton.png"/>
                                                 </Setter.Value>
                                             </Setter>
                                         </Trigger>
@@ -68,9 +68,10 @@
                     <ImageBrush ImageSource="buttonstyle.png" x:Name="img"/>
                 </Button.Background>
 
+
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Chocolate"/>
+                        <Setter Property="Background" Value="Beige"/>
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="{x:Type Button}">
@@ -79,7 +80,11 @@
                                     </Border>
                                     <ControlTemplate.Triggers>
                                         <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background"  Value="Black" TargetName="Border" />
+                                            <Setter Property="Background" TargetName="Border" >
+                                                <Setter.Value>
+                                                    <ImageBrush ImageSource="/torottbutton.png"/>
+                                                </Setter.Value>
+                                            </Setter>
                                         </Trigger>
                                     </ControlTemplate.Triggers>
                                 </ControlTemplate>
@@ -87,6 +92,7 @@
                         </Setter>
                     </Style>
                 </Button.Style>
+
 
             </Button>
             <Button Grid.Row="2" Foreground="Yellow" Content="Totem Shop" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
@@ -97,9 +103,10 @@
                     <ImageBrush ImageSource="buttonstyle.png"/>
                 </Button.Background>
 
+
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Chocolate"/>
+                        <Setter Property="Background" Value="Beige"/>
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="{x:Type Button}">
@@ -108,7 +115,11 @@
                                     </Border>
                                     <ControlTemplate.Triggers>
                                         <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background"  Value="Black" TargetName="Border" />
+                                            <Setter Property="Background" TargetName="Border" >
+                                                <Setter.Value>
+                                                    <ImageBrush ImageSource="/torottbutton.png"/>
+                                                </Setter.Value>
+                                            </Setter>
                                         </Trigger>
                                     </ControlTemplate.Triggers>
                                 </ControlTemplate>
@@ -116,6 +127,7 @@
                         </Setter>
                     </Style>
                 </Button.Style>
+
 
             </Button>
             <Button Click="Open_New_Team_Editor" Grid.Row="3" Foreground="Yellow" Content="Team Editor" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
@@ -126,9 +138,10 @@
                     <ImageBrush ImageSource="buttonstyle.png" />
                 </Button.Background>
 
+
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Chocolate"/>
+                        <Setter Property="Background" Value="Beige"/>
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="{x:Type Button}">
@@ -137,7 +150,11 @@
                                     </Border>
                                     <ControlTemplate.Triggers>
                                         <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background"  Value="Black" TargetName="Border" />
+                                            <Setter Property="Background" TargetName="Border" >
+                                                <Setter.Value>
+                                                    <ImageBrush ImageSource="/torottbutton.png"/>
+                                                </Setter.Value>
+                                            </Setter>
                                         </Trigger>
                                     </ControlTemplate.Triggers>
                                 </ControlTemplate>
@@ -145,6 +162,7 @@
                         </Setter>
                     </Style>
                 </Button.Style>
+
 
             </Button>
 
