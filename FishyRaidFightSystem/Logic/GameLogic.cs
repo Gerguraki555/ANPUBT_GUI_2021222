@@ -40,6 +40,7 @@ namespace FishyRaidFightSystem.Logic
         public GameLogic()
         {
             this.melyikpalya = "2";
+
             // this.Jatekos = new Player();
             //  PlayerSave();
 
@@ -49,6 +50,11 @@ namespace FishyRaidFightSystem.Logic
             this.Nyert = false;
 
             this.Jatekos = PlayerLoad();
+
+            // this.Jatekos = new Player();
+            //  PlayerSave();
+
+
             this.Enemy = new Enemy();
             this.Korszam = 0;
             this.Palyaszam = 1;
@@ -61,7 +67,7 @@ namespace FishyRaidFightSystem.Logic
             //  EnemyFish.Add(new Fish() { Elet = 100, sorszam = 1, Eleresiut = "polip.png", regieleres = "polip.png", pozicio=10, Kozelsebzes=10,Helye=1});
             //  EnemyFish.Add(new Fish() { Elet = 100, sorszam = 2, Eleresiut = "polip.png", regieleres = "polip.png", pozicio=23, Kozelsebzes=10,Helye=2});
             //  EnemyFish.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = "polip.png",regieleres = "polip.png", pozicio=30, Kozelsebzes=10,Helye=3});
-            
+
             this.sorszam = 0;
             if (Jatekos.FishesInFight[0].Tavolsagi != null)
             {
@@ -73,8 +79,8 @@ namespace FishyRaidFightSystem.Logic
 
         public Player PlayerLoad()
         {
-                  string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
-                Player p= (Player)SaveAndReadPlayer.Read(typeof(Player), filePath);
+            string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
+            Player p = (Player)SaveAndReadPlayer.Read(typeof(Player), filePath);
             Player p2 = new Player();
             foreach (var item in p.FishesInFight)
             {
@@ -83,8 +89,212 @@ namespace FishyRaidFightSystem.Logic
 
                 item.Tavolsagi.Hala = item;
                 item.Buff.Hala = item;
+                Fish fishy = new Fish() { Elet = item.Maxhp, sorszam = item.sorszam, Eleresiut = item.Eleresiut, regieleres = item.regieleres, pozicio = item.pozicio, Kozelsebzes = item.Kozelsebzes, Helye = item.Helye, Tavolsagi = item.Tavolsagi, Buff = item.Buff, Level = item.Level, EXP = item.EXP, Ero = item.Ero, Maxhp = item.Maxhp };
+                fishy.Tavolsagi.Hala = fishy;
+                fishy.Buff.Hala = fishy;
+                p2.FishesInFight.Add(fishy);
             }
-            return p;
+            p2.AllFishes = p.AllFishes;
+            p2.SeaCoin = p.SeaCoin;
+            return p2;
+        }
+
+        public void GameoverCheck()
+        {
+            bool meghaltazenemy = false;
+            int halottszam = 0;
+            foreach (var item in Enemy.FishesInFight)
+            {
+                if (item.Eleresiut == item.dead)
+                {
+                    halottszam++;
+                }
+            }
+            if (halottszam == 3)
+            {
+                meghaltazenemy = true;
+                Nyert = true;
+                GameEnd();
+            }
+            else if (!meghaltazenemy)
+            {
+                halottszam = 0;
+                foreach (var item in Jatekos.FishesInFight)
+                {
+                    if (item.Eleresiut != item.regieleres)
+                    {
+                        halottszam++;
+                    }
+                }
+                if (halottszam == 3)
+                {
+                    Nyert = false;
+                    GameEnd();
+                }
+            }
+
+
+        }
+
+        public void GameEnd()
+        {
+            if (Nyert)
+            {
+                Random R = new Random();
+                if (Gamemode == "arena")
+                {
+                    int max = 1;
+                    foreach (var item in Jatekos.FishesInFight)
+                    {
+                        if (item.Level > max)
+                        {
+                            max = item.Level;
+                        }
+                    }
+                    int mennyi = R.Next(10, max * 10);
+                    AddExp(Jatekos.FishesInFight, mennyi);
+                }
+
+
+                if (Gamemode == "seadungeon")
+                {
+
+                    int szam = R.Next(1, 101);
+                    if (szam <= 30)
+                    {
+                        int melyik = 0;
+                        string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
+                        if (melyikpalya == "1")
+                        {
+                            melyik = R.Next(1, 51);
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(40, 110),
+                                Eleresiut = kepe,
+                                Ero = R.Next(5, 13),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null
+                            };
+                            Jatekos.AllFishes.Add(reward);
+                            AddExp(Jatekos.FishesInFight, 10);
+                        }
+                        else if (melyikpalya == "2")
+                        {
+                            melyik = R.Next(1, 51);
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(60, 130),
+                                Eleresiut = kepe,
+                                Ero = R.Next(9, 18),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null
+                            };
+                            int legyentavolsagi = R.Next(1, 3);
+                            if (legyentavolsagi != 1)
+                            {
+                                reward.Tavolsagi = new SmellyBubble(reward);
+                            }
+
+                            Jatekos.AllFishes.Add(reward);
+                            AddExp(Jatekos.FishesInFight, 20);
+
+                        }
+                        else if (melyikpalya == "3")
+                        {
+                            melyik = R.Next(50, 101);
+                            AddExp(Jatekos.FishesInFight, 30);
+                        }
+                        else if (melyikpalya == "4")
+                        {
+                            melyik = R.Next(50, 101);
+                            AddExp(Jatekos.FishesInFight, 40);
+                        }
+                        else if (melyikpalya == "5")
+                        {
+                            melyik = R.Next(50, 101);
+                            AddExp(Jatekos.FishesInFight, 50);
+                        }
+                        else if (melyikpalya == "6")
+                        {
+                            melyik = R.Next(50, 101);
+                            AddExp(Jatekos.FishesInFight, 60);
+                        }
+                        else if (melyikpalya == "7")
+                        {
+                            melyik = R.Next(50, 101);
+                            AddExp(Jatekos.FishesInFight, 70);
+                        }
+                    }
+                }
+                PlayerSave();
+                Jatekvege = true;
+            }
+
+            /*  Task vegveto = new Task(() =>
+              {
+
+
+                  bool mehet = false;
+                  while (!mehet)
+                  {
+                      bool jo = true;
+                      foreach (var item in Enemy.FishesInFight)
+                      {
+                          if (item.tamad != false)
+                          {
+                              jo = false;
+                          }
+                      }
+                      foreach (var item in Jatekos.FishesInFight)
+                      {
+                          if (item.tamad != false)
+                          {
+                              jo = false;
+                          }
+                      }
+
+                      if (jo)
+                      {
+                          mehet = true;
+                      }
+                  }
+                  PlayerSave();
+                  Jatekvege = true;
+              });
+              vegveto.Start();*/
+
+
+
+        }
+
+        public void AddExp(IList<Fish> halak, int mennyi)
+        {
+            foreach (var item in halak)
+            {
+                if ((item.EXP + mennyi) >= item.Level * 100)
+                {
+                    item.Level += 1;
+                    item.Ero += 10;
+                    item.Elet += 30;
+                    item.Kozelsebzes += 10;
+                    item.EXP = (item.EXP + mennyi) - 100;
+                }
+                else
+                {
+                    item.EXP += mennyi;
+                }
+            }
+
+
+            /*     foreach (var item in p.AllFishes)
+                 {
+                     item.Tavolsagi.Hala = item;
+                     item.Buff.Hala = item;
+                 }
+                 return p;*/
+
         }
 
         public void PlayerSave()
@@ -96,13 +306,26 @@ namespace FishyRaidFightSystem.Logic
             }
             foreach (var item in this.Jatekos.FishesInFight)
             {
-                item.Tavolsagi.Hala = null;
-                item.Buff.Hala = null;
+                if (item.Tavolsagi != null)
+                {
+                    item.Tavolsagi.Hala = null;
+                }
+                if (item.Buff != null)
+                {
+                    item.Buff.Hala = null;
+                }
+                item.Elet = item.Maxhp;
             }
             foreach (var item in this.Jatekos.AllFishes)
             {
-                item.Tavolsagi.Hala = null;
-                item.Buff.Hala = null;
+                if (item.Tavolsagi != null)
+                {
+                    item.Tavolsagi.Hala = null;
+                }
+                if (item.Buff != null)
+                {
+                    item.Buff.Hala = null;
+                }
             }
 
             SaveAndReadPlayer.Save(Jatekos, filePath);
@@ -120,7 +343,7 @@ namespace FishyRaidFightSystem.Logic
                 foreach (var item in Enemy.FishesInFight)
                 {
                     item.Tavolsagi = new DoubleBubble(item);
-                   
+
                 }
             }
             else if (melyikpalya == "2")
@@ -266,7 +489,7 @@ namespace FishyRaidFightSystem.Logic
                             {
 
 
-                                hal.Eleresiut =  System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "punch.png");
+                                hal.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "punch.png");
                                 Thread.Sleep(50);
                                 // hal.Eleresiutatcserel(regi);
 
@@ -320,7 +543,7 @@ namespace FishyRaidFightSystem.Logic
                 }
             }
 
-            if (Korszam == 1 || Korszam == 3 || Korszam == 5) //Ellenséges halak támadási logikája
+            if ((Korszam == 1 || Korszam == 3 || Korszam == 5) && Jatekvege == false) //Ellenséges halak támadási logikája
             {
                 int melyik = 0; //Itt kell beállítani a textet
                 if (Jatekos.FishesInFight[0].Tavolsagi != null)
@@ -347,18 +570,18 @@ namespace FishyRaidFightSystem.Logic
                     else { KovetkezoHal = "1. TRACKLE"; }
                 }
 
-                if (Enemy.FishesInFight[melyik].meghalt)
+                if (Enemy.FishesInFight[melyik].Eleresiut == Enemy.FishesInFight[melyik].dead)
                 {
                     if (melyik + 1 < Enemy.FishesInFight.Count)
                     {
-                        if (!Enemy.FishesInFight[melyik + 1].meghalt)
+                        if (!(Enemy.FishesInFight[melyik + 1].Eleresiut == Enemy.FishesInFight[melyik + 1].dead))
                         {
                             melyik += 1;
                         }
                     }
                     else if (melyik - 1 >= 0)
                     {
-                        if (!Enemy.FishesInFight[melyik - 1].meghalt)
+                        if (!(Enemy.FishesInFight[melyik - 1].Eleresiut == Enemy.FishesInFight[melyik - 1].dead))
                         {
                             melyik -= 1;
                         }
@@ -420,7 +643,7 @@ namespace FishyRaidFightSystem.Logic
                                 }
                                 if (szabadok == 3)
                                 {
-                                 //   Thread.Sleep(2000);
+                                    //   Thread.Sleep(2000);
                                     mehet = true;
                                 }
                                 else { Thread.Sleep(700); }
@@ -428,7 +651,30 @@ namespace FishyRaidFightSystem.Logic
 
                             if (Jatekos.FishesInFight[melyiket].meghalt == false)
                             {
-                                Enemy.FishesInFight[melyik].Tamad(Jatekos.FishesInFight[melyiket]);
+                                if ((Enemy.FishesInFight[melyik].Eleresiut == Enemy.FishesInFight[melyik].dead))
+                                {
+                                    Enemy.FishesInFight[melyik].tamad = false;
+
+                                    if (melyik + 1 < Enemy.FishesInFight.Count)
+                                    {
+                                        if (!(Enemy.FishesInFight[melyik + 1].Eleresiut == Enemy.FishesInFight[melyik + 1].dead))
+                                        {
+                                            melyik += 1;
+                                        }
+                                    }
+                                    else if (melyik - 1 >= 0)
+                                    {
+                                        if (!(Enemy.FishesInFight[melyik - 1].Eleresiut == Enemy.FishesInFight[melyik - 1].dead))
+                                        {
+                                            melyik -= 1;
+                                        }
+                                    }
+                                }
+
+                                if (!Jatekvege)
+                                {
+                                    Enemy.FishesInFight[melyik].Tamad(Jatekos.FishesInFight[melyiket]);
+                                }
                             }
                             else
                             {
@@ -436,7 +682,31 @@ namespace FishyRaidFightSystem.Logic
                                 {
                                     if (Jatekos.FishesInFight[melyiket + 1].meghalt == false)
                                     {
-                                        Enemy.FishesInFight[melyik].Tamad(Jatekos.FishesInFight[melyiket + 1]);
+
+                                        if ((Enemy.FishesInFight[melyik].Eleresiut == Enemy.FishesInFight[melyik].dead))
+                                        {
+                                            Enemy.FishesInFight[melyik].tamad = false;
+
+                                            if (melyik + 1 < Enemy.FishesInFight.Count)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik + 1].Eleresiut == Enemy.FishesInFight[melyik + 1].dead))
+                                                {
+                                                    melyik += 1;
+                                                }
+                                            }
+                                            else if (melyik - 1 >= 0)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik - 1].Eleresiut == Enemy.FishesInFight[melyik - 1].dead))
+                                                {
+                                                    melyik -= 1;
+                                                }
+                                            }
+                                        }
+
+                                        if (!Jatekvege)
+                                        {
+                                            Enemy.FishesInFight[melyik].Tamad(Jatekos.FishesInFight[melyiket + 1]);
+                                        }
                                     }
 
                                 }
@@ -444,7 +714,30 @@ namespace FishyRaidFightSystem.Logic
                                 {
                                     if (Jatekos.FishesInFight[melyiket - 1].meghalt == false)
                                     {
-                                        Enemy.FishesInFight[melyik].Tamad(Jatekos.FishesInFight[melyiket - 1]);
+                                        if ((Enemy.FishesInFight[melyik].Eleresiut == Enemy.FishesInFight[melyik].dead))
+                                        {
+                                            Enemy.FishesInFight[melyik].tamad = false;
+
+                                            if (melyik + 1 < Enemy.FishesInFight.Count)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik + 1].Eleresiut == Enemy.FishesInFight[melyik + 1].dead))
+                                                {
+                                                    melyik += 1;
+                                                }
+                                            }
+                                            else if (melyik - 1 >= 0)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik - 1].Eleresiut == Enemy.FishesInFight[melyik - 1].dead))
+                                                {
+                                                    melyik -= 1;
+                                                }
+                                            }
+                                        }
+
+                                        if (!Jatekvege)
+                                        {
+                                            Enemy.FishesInFight[melyik].Tamad(Jatekos.FishesInFight[melyiket - 1]);
+                                        }
                                     }
                                 }
                             }
@@ -481,7 +774,31 @@ namespace FishyRaidFightSystem.Logic
 
                             if (Jatekos.FishesInFight[melyiket].meghalt == false)
                             {
-                                Enemy.FishesInFight[melyik].Tavolsagi.Tamad(Jatekos.FishesInFight[melyiket], Jatekos.FishesInFight);
+                                if ((Enemy.FishesInFight[melyik].Eleresiut == Enemy.FishesInFight[melyik].dead))
+                                {
+                                    Enemy.FishesInFight[melyik].tamad = false;
+
+                                    if (melyik + 1 < Enemy.FishesInFight.Count)
+                                    {
+                                        if (!(Enemy.FishesInFight[melyik + 1].Eleresiut == Enemy.FishesInFight[melyik + 1].dead))
+                                        {
+                                            melyik += 1;
+                                        }
+                                    }
+                                    else if (melyik - 1 >= 0)
+                                    {
+                                        if (!(Enemy.FishesInFight[melyik - 1].Eleresiut == Enemy.FishesInFight[melyik - 1].dead))
+                                        {
+                                            melyik -= 1;
+                                        }
+                                    }
+                                }
+                                if (!Jatekvege)
+                                {
+                                    Enemy.FishesInFight[melyik].Tavolsagi.Tamad(Jatekos.FishesInFight[melyiket], Jatekos.FishesInFight);
+                                }
+
+
                             }
                             else
                             {
@@ -489,6 +806,27 @@ namespace FishyRaidFightSystem.Logic
                                 {
                                     if (Jatekos.FishesInFight[melyiket + 1].meghalt == false)
                                     {
+
+                                        if ((Enemy.FishesInFight[melyik].Eleresiut == Enemy.FishesInFight[melyik].dead))
+                                        {
+                                            Enemy.FishesInFight[melyik].tamad = false;
+
+                                            if (melyik + 1 < Enemy.FishesInFight.Count)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik + 1].Eleresiut == Enemy.FishesInFight[melyik + 1].dead))
+                                                {
+                                                    melyik += 1;
+                                                }
+                                            }
+                                            else if (melyik - 1 >= 0)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik - 1].Eleresiut == Enemy.FishesInFight[melyik - 1].dead))
+                                                {
+                                                    melyik -= 1;
+                                                }
+                                            }
+                                        }
+
                                         Enemy.FishesInFight[melyik].Tavolsagi.Tamad(Jatekos.FishesInFight[melyiket + 1], Jatekos.FishesInFight);
                                     }
 
@@ -497,7 +835,31 @@ namespace FishyRaidFightSystem.Logic
                                 {
                                     if (Jatekos.FishesInFight[melyiket - 1].meghalt == false)
                                     {
-                                        Enemy.FishesInFight[melyik].Tavolsagi.Tamad(Jatekos.FishesInFight[melyiket - 1], Jatekos.FishesInFight);
+
+                                        if ((Enemy.FishesInFight[melyik].Eleresiut == Enemy.FishesInFight[melyik].dead))
+                                        {
+                                            Enemy.FishesInFight[melyik].tamad = false;
+
+                                            if (melyik + 1 < Enemy.FishesInFight.Count)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik + 1].Eleresiut == Enemy.FishesInFight[melyik + 1].dead))
+                                                {
+                                                    melyik += 1;
+                                                }
+                                            }
+                                            else if (melyik - 1 >= 0)
+                                            {
+                                                if (!(Enemy.FishesInFight[melyik - 1].Eleresiut == Enemy.FishesInFight[melyik - 1].dead))
+                                                {
+                                                    melyik -= 1;
+                                                }
+                                            }
+                                        }
+
+                                        if (!Jatekvege)
+                                        {
+                                            Enemy.FishesInFight[melyik].Tavolsagi.Tamad(Jatekos.FishesInFight[melyiket - 1], Jatekos.FishesInFight);
+                                        }
                                     }
                                 }
                             }
@@ -538,6 +900,8 @@ namespace FishyRaidFightSystem.Logic
                     }
                     else { Korszam++; }
 
+
+
                     Task Novelo = new Task(() =>
                     {
                         while (Enemy.FishesInFight[melyik].tamad == true)
@@ -566,6 +930,8 @@ namespace FishyRaidFightSystem.Logic
             switch (control)
             {
                 case Controls.First:
+
+
                     bool vanetamado = false;
                     foreach (var item in Jatekos.FishesInFight)
                     {
