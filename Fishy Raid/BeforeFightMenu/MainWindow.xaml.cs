@@ -53,10 +53,12 @@ namespace BeforeFightMenu
 
             #endregion
 
-            InitializeComponent();
             
-            (this.DataContext as DungeonWindowViewModel).Stage =stage;
-           
+
+            InitializeComponent();
+            (this.DataContext as DungeonWindowViewModel).Stage = stage;
+            InitializeComponent();
+            ;
             myGrid.Background = backgroundBrush;
             view.Background = buttonBrush;
             start.Background = buttonBrush;
