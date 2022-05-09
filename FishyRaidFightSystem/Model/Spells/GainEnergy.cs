@@ -38,11 +38,11 @@ namespace FishyRaidFightSystem.Model.Spells
 
                 effect.CurrentTime = new TimeSpan(0L);
                 effectout.Play();
-                mit.Eleresiut = "hpholy.png";
+                mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "hpholy.png");
                 Thread.Sleep(200);
                 mit.Eleresiut = mit.regieleres;
                 Thread.Sleep(200);
-                mit.Eleresiut = "hpholy.png";
+                mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "hpholy.png");
                 Thread.Sleep(200);
 
                 // hal.Eleresiutatcserel(regi);

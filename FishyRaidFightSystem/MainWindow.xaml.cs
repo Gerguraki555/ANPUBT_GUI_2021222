@@ -55,6 +55,30 @@ namespace FishyRaidFightSystem
             dt.Start();
             Display.SetupSizes(new Size((int)Grid.ActualWidth, (int)Grid.ActualHeight));
             logic.SetupSizes(new Size((int)Grid.ActualWidth, (int)Grid.ActualHeight));
+
+            DispatcherTimer vegveto = new DispatcherTimer();
+            vegveto.Interval = TimeSpan.FromMilliseconds(1); //Megvárja, amíg befejeződnek a képességek
+            vegveto.Tick += delegate
+             {
+                 if (logic.Jatekvege)
+                 {
+                     if (logic.Nyert)
+                     {
+                         MessageBox.Show("Win");
+                         this.Close();
+                     }
+                     else
+                     {
+                         MessageBox.Show("defeat");
+                         this.Close();
+                     }
+                 }
+                 else
+                 {
+                     logic.GameoverCheck();
+                 }
+             };
+            vegveto.Start();
         }
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)

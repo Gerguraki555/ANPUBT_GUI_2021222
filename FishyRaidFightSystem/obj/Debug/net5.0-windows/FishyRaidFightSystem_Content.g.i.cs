@@ -15,6 +15,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fishbone.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fishboneenemy.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fishmodel.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/hpholy.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/leftarrow.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/polip.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/punch.png")]

@@ -85,8 +85,8 @@ namespace FishyRaidFightSystem.Model
             this.tamad = false;
             this.visszamegy = false;
             this.locker = new object();
-            this.dead = "fishbone.png";
-            this.lovedeke = new Lovedek(this.x, this.y, "bubble.png");
+            this.dead = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
+            this.lovedeke = new Lovedek(this.x, this.y, System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "bubble.png"));
 
 
             dt.Interval = TimeSpan.FromMilliseconds(1);
@@ -168,7 +168,7 @@ namespace FishyRaidFightSystem.Model
                                 {
                                     mit.Elet = 0;
                                     mit.meghalt = true;
-                                    mit.Eleresiut = "fishbone.png";
+                                    mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
                                 }
                                 sebzett = true;
 
@@ -274,7 +274,7 @@ namespace FishyRaidFightSystem.Model
                             {
                                 mit.Elet = 0;
                                 mit.meghalt = true;
-                                mit.Eleresiut = "fishbone.png";
+                                mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
                             }
                             sebzett = true;
 

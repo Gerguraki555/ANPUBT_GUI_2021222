@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -41,7 +42,7 @@ namespace FishyRaidFightSystem.Model.Spells
         {
             Hala.elfoglalt = true;
 
-            if (!mit.meghalt && mit.Eleresiut != "fishbone.png")
+            if (!mit.meghalt && mit.Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
             {
                 //  Task elso = new Task(() =>
                 // {
@@ -141,7 +142,7 @@ namespace FishyRaidFightSystem.Model.Spells
                     if (mit.Elet <= 0)
                     {
                         mit.meghalt = true;
-                        mit.Eleresiut = "fishbone.png";
+                        mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
                     }
                     Hala.lovedeke.aktiv = false;
                     Hala.lovedeke.x = Hala.x;
@@ -160,7 +161,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 dt.Stop();
                 hit.CurrentTime = new TimeSpan(0L);
                 hitout.Play();
-                mit.Eleresiut = "bubblehit.png";
+                mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "bubblehit.png");
                 Thread.Sleep(100);
                 // hal.Eleresiutatcserel(regi);
 

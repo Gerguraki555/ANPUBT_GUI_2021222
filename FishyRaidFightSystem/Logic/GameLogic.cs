@@ -28,6 +28,10 @@ namespace FishyRaidFightSystem.Logic
         public string melyikpalya { get; set; } //Ez alapján dől el, hogy milyen enemy jöjjön
         public Enemy Enemy { get; set; }
 
+        public bool Jatekvege { get; set; }
+        public bool Nyert { get; set; }
+        public string Gamemode { get; set; }
+
         public enum Controls
         {
             First, Second, Third, Fourth
@@ -36,9 +40,15 @@ namespace FishyRaidFightSystem.Logic
         public GameLogic()
         {
             this.melyikpalya = "2";
-          // this.Jatekos = new Player();
-           // PlayerSave();
-           this.Jatekos = PlayerLoad();
+            // this.Jatekos = new Player();
+            //  PlayerSave();
+
+            this.Gamemode = "arena";
+            //  this.melyikpalya = "2";
+            this.Jatekvege = false;
+            this.Nyert = false;
+
+            this.Jatekos = PlayerLoad();
             this.Enemy = new Enemy();
             this.Korszam = 0;
             this.Palyaszam = 1;
@@ -65,18 +75,208 @@ namespace FishyRaidFightSystem.Logic
         {
                   string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
                 Player p= (Player)SaveAndReadPlayer.Read(typeof(Player), filePath);
+            Player p2 = new Player();
             foreach (var item in p.FishesInFight)
             {
+                //Néhány dolog mentéskor sérül a régi objektumokban, így újakat hozok létre, amelyek törlik a hibás tulajdonságokat
+
+
                 item.Tavolsagi.Hala = item;
                 item.Buff.Hala = item;
+                Fish fishy = new Fish() { Elet = item.Maxhp, sorszam = item.sorszam, Eleresiut = item.Eleresiut, regieleres = item.regieleres, pozicio = item.pozicio, Kozelsebzes = item.Kozelsebzes, Helye = item.Helye, Tavolsagi = item.Tavolsagi, Buff = item.Buff, Level = item.Level, EXP = item.EXP, Ero = item.Ero, Maxhp=item.Maxhp };
+                fishy.Tavolsagi.Hala = fishy;
+                fishy.Buff.Hala = fishy;
+                p2.FishesInFight.Add(fishy);
             }
-            return p;
+             p2.AllFishes = p.AllFishes;
+            p2.SeaCoin = p.SeaCoin;
+            return p2;
+        }
+
+        public void GameoverCheck()
+        {
+            bool meghaltazenemy = false;
+            int halottszam = 0;
+            foreach (var item in Enemy.FishesInFight)
+            {
+                if (item.Eleresiut==item.dead)
+                {
+                    halottszam++;
+                }
+            }
+            if (halottszam == 3)
+            {
+                meghaltazenemy = true;
+                Nyert = true;
+                GameEnd();
+            }
+            else if (!meghaltazenemy)
+            {
+                halottszam = 0;
+                foreach (var item in Jatekos.FishesInFight)
+                {
+                    if (item.Eleresiut!=item.regieleres)
+                    {
+                        halottszam++;
+                    }
+                }
+            }
+            if (halottszam == 3)
+            {
+                Nyert = false;
+                GameEnd();
+            }
+        }
+
+        public void GameEnd()
+        {
+            if (Nyert)
+            {
+                Random R = new Random();
+                if (Gamemode == "arena")
+                {
+                    int max = 1;
+                    foreach (var item in Jatekos.FishesInFight)
+                    {
+                        if (item.Level > max)
+                        {
+                            max = item.Level;
+                        }
+                    }
+                    int mennyi = R.Next(10, max * 10);
+                    AddExp(Jatekos.FishesInFight, mennyi);
+                }
+
+
+                if (Gamemode == "seadungeon")
+                {
+
+                    int szam = R.Next(1, 101);
+                    if (szam <= 30)
+                    {
+                        int melyik = 0;
+                        string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik+".png");
+                        if (melyikpalya == "1")
+                        {
+                            melyik = R.Next(1, 51);
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(40, 110),
+                                Eleresiut = kepe,
+                                Ero = R.Next(5, 13),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null
+                            };
+                            Jatekos.AllFishes.Add(reward);
+                        }
+                        else if (melyikpalya == "2")
+                        {
+                            melyik = R.Next(1, 51);
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(60, 130),
+                                Eleresiut = kepe,
+                                Ero = R.Next(9, 18),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null
+                            };
+                            int legyentavolsagi = R.Next(1, 3);
+                            if (legyentavolsagi != 1)
+                            {
+                                reward.Tavolsagi = new SmellyBubble(reward);
+                            }
+
+                            Jatekos.AllFishes.Add(reward);
+
+                        }
+                        else if (melyikpalya == "3")
+                        {
+                            melyik = R.Next(50, 101);
+                        }
+                        else if (melyikpalya == "4")
+                        {
+                            melyik = R.Next(50, 101);
+                        }
+                        else if (melyikpalya == "5")
+                        {
+                            melyik = R.Next(50, 101);
+                        }
+                        else if (melyikpalya == "6")
+                        {
+                            melyik = R.Next(50, 101);
+                        }
+                        else if (melyikpalya == "7")
+                        {
+                            melyik = R.Next(50, 101);
+                        }
+                    }
+                }
+                PlayerSave();
+                Jatekvege = true;
+            }
+
+            /*  Task vegveto = new Task(() =>
+              {
+
+
+                  bool mehet = false;
+                  while (!mehet)
+                  {
+                      bool jo = true;
+                      foreach (var item in Enemy.FishesInFight)
+                      {
+                          if (item.tamad != false)
+                          {
+                              jo = false;
+                          }
+                      }
+                      foreach (var item in Jatekos.FishesInFight)
+                      {
+                          if (item.tamad != false)
+                          {
+                              jo = false;
+                          }
+                      }
+
+                      if (jo)
+                      {
+                          mehet = true;
+                      }
+                  }
+                  PlayerSave();
+                  Jatekvege = true;
+              });
+              vegveto.Start();*/
+            
+
+
+        }
+
+        public void AddExp(IList<Fish> halak, int mennyi)
+        {
+            foreach (var item in halak)
+            {
+                if (item.EXP + mennyi >= item.Level * 100)
+                {
+                    item.Level += 1;
+                    item.Ero += 10;
+                    item.Elet += 30;
+                    item.Kozelsebzes += 10;
+                    item.EXP = (item.EXP + mennyi) - 100;
+                }
+            }
+
         }
 
         public void PlayerSave()
         {
             string filePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
-
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
             foreach (var item in this.Jatekos.FishesInFight)
             {
                 item.Tavolsagi.Hala = null;
@@ -98,17 +298,18 @@ namespace FishyRaidFightSystem.Logic
                 foreach (var item in Enemy.FishesInFight)
                 {
                     item.Tavolsagi = new DoubleBubble(item);
+                   
                 }
             }
             else if (melyikpalya == "2")
             {
                 string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "polip.png");
 
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 8, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
                 imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
-                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 6, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
                 imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
-                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 6, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
                 foreach (var item in Enemy.FishesInFight)
                 {
                     item.Tavolsagi = new DoubleBubble(item);
@@ -207,7 +408,9 @@ namespace FishyRaidFightSystem.Logic
                             string regi = enemy.Eleresiut;
                             Task t = new Task(() =>
                             {
-                                enemy.Eleresiut = "punch.png";
+                                string hitpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "punch.png");
+                                // enemy.Eleresiut = "punch.png";
+                                enemy.Eleresiut = hitpath;
                                 Thread.Sleep(50);
 
                             });
@@ -241,7 +444,7 @@ namespace FishyRaidFightSystem.Logic
                             {
 
 
-                                hal.Eleresiut = "punch.png";
+                                hal.Eleresiut =  System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "punch.png");
                                 Thread.Sleep(50);
                                 // hal.Eleresiutatcserel(regi);
 
@@ -377,7 +580,7 @@ namespace FishyRaidFightSystem.Logic
 
                     Task tamad = new Task(() => //Ez a baj
                     {
-                        if (Enemy.FishesInFight[melyik].meghalt == false && Enemy.FishesInFight[melyik].Eleresiut != "fishbone.png")
+                        if (Enemy.FishesInFight[melyik].meghalt == false && Enemy.FishesInFight[melyik].Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
                         {
                             Enemy.FishesInFight[melyik].tamad = true;
                             // Thread.Sleep(5500);
@@ -430,7 +633,7 @@ namespace FishyRaidFightSystem.Logic
 
                     Task tavolsagi = new Task(() =>
                     {
-                        if (Enemy.FishesInFight[melyik].meghalt == false && Enemy.FishesInFight[melyik].Eleresiut != "fishbone.png")
+                        if (Enemy.FishesInFight[melyik].meghalt == false && Enemy.FishesInFight[melyik].Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
                         {
                             Enemy.FishesInFight[melyik].tamad = true;
                             // Thread.Sleep(5500);

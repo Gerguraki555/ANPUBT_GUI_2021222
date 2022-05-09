@@ -74,7 +74,7 @@ namespace BeforeFightMenu
         {
             Window window = new FishyRaidFightSystem.MainWindow(Stage);
             this.Close();
-            window.ShowDialog();
+            window.Show();
         }
     }
 }

@@ -21,6 +21,7 @@
     <None Remove="Images\fishbone.png" />
     <None Remove="Images\fishboneEnemy.png" />
     <None Remove="Images\fishmodel.png" />
+    <None Remove="Images\hpholy.png" />
     <None Remove="Images\leftarrow.png" />
     <None Remove="Images\polip.png" />
     <None Remove="Images\punch.png" />
@@ -51,6 +52,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\fishmodel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\hpholy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\leftarrow.png">

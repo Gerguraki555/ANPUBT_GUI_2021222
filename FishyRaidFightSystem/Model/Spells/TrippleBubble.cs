@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -38,7 +39,7 @@ namespace FishyRaidFightSystem.Model.Spells
 
         public override void Tamad(Fish mit, ObservableCollection<Fish> halak)
         {
-            if (!mit.meghalt && mit.Eleresiut != "fishbone.png")
+            if (!mit.meghalt && mit.Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
             {
                 Hala.elfoglalt = true;
                 Task elso = new Task(() =>
@@ -52,7 +53,7 @@ namespace FishyRaidFightSystem.Model.Spells
 
                     elso.Wait();
                     Thread.Sleep(2000);
-                    if (mit.Eleresiut != "fishbone.png")
+                    if (mit.Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
                     {
                         Csinal(mit);
                     }
@@ -64,7 +65,7 @@ namespace FishyRaidFightSystem.Model.Spells
 
                     masodik.Wait();
                     Thread.Sleep(2000);
-                    if (mit.Eleresiut != "fishbone.png")
+                    if (mit.Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
                     {
                         Csinal(mit);
                     }
@@ -101,7 +102,7 @@ namespace FishyRaidFightSystem.Model.Spells
 
                     elso.Wait();
                     Thread.Sleep(2000);
-                    if (halak[index].Eleresiut != "fishbone.png")
+                    if (halak[index].Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
                     {
                         Csinal(halak[index]);
                     }
@@ -113,7 +114,7 @@ namespace FishyRaidFightSystem.Model.Spells
                     masodik.Wait();
                     Thread.Sleep(2000);
 
-                    if (halak[index].Eleresiut != "fishbone.png")
+                    if (halak[index].Eleresiut != System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png"))
                     {
                         Csinal(halak[index]);
                     }
@@ -195,7 +196,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 if (mit.Elet <= 0)
                 {
                     mit.meghalt = true;
-                    mit.Eleresiut = "fishbone.png";
+                    mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
                 }
                 Hala.lovedeke.aktiv = false;
                 Hala.lovedeke.x = Hala.x;
@@ -208,7 +209,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 while (Hala.lovedeke.aktiv) { } //Várakozik
                 hit.CurrentTime = new TimeSpan(0L);
                 hitout.Play();
-                mit.Eleresiut = "bubblehit.png";
+                mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "bubblehit.png");
                 Thread.Sleep(100);
                 // hal.Eleresiutatcserel(regi);
 

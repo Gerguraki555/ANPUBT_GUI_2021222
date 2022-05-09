@@ -73,7 +73,7 @@ namespace DungeonMap
              Window start=new BeforeFightMenu.MainWindow(stage);
             //(start.DataContext as DungeonWindowViewModel).SetStage(stage); - ez nem kell
              this.Close();
-             start.ShowDialog();
+             start.Show();
           //  MessageBox.Show(stage.ToString());
         }
 

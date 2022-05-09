@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {}
+    "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {
+    "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj",
         "projectName": "BeforeFightMenu",
-        "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\obj\\",
+        "projectPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -28,8 +32,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj": {
-                "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj"
+              "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj": {
+                "projectPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj"
               }
             }
           }
@@ -63,26 +67,33 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            },
             "Microsoft.WindowsDesktop.App.WPF": {
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj": {
+    "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj",
         "projectName": "FishyRaidFightSystem",
-        "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\obj\\",
+        "projectPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\FishyRaidFightSystem.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\FishyRaidFightSystem\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -134,11 +145,14 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            },
             "Microsoft.WindowsDesktop.App.WPF": {
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -49,11 +50,11 @@ namespace FishyRaidFightSystem.Model.Spells
 
                 effect.CurrentTime = new TimeSpan(0L);
                 effectout.Play();
-                mit.Eleresiut = "holy.png";
+                mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "holy.png");
                 Thread.Sleep(200);
                 mit.Eleresiut = mit.regieleres;
                 Thread.Sleep(200);
-                mit.Eleresiut = "holy.png";
+                mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "holy.png");
                 Thread.Sleep(200);
 
                 // hal.Eleresiutatcserel(regi);

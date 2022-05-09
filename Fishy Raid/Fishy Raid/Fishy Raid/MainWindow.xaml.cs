@@ -43,7 +43,9 @@ namespace Fishy_Raid
         {
             Window dungeon = new DungeonMap.MainWindow();
             this.Close();
-            dungeon.ShowDialog();            
+
+            dungeon.Show();
+         
         }
 
         private void Open_New_Team_Editor(object sender, RoutedEventArgs e) 
