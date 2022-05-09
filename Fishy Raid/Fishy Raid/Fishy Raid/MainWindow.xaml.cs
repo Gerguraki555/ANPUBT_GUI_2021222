@@ -17,6 +17,7 @@ using System.Windows.Shapes;
 using FishyRaidFightSystem;
 using DungeonMap;
 using TeamEditor;
+using FishyRaidFightSystem.Model;
 
 namespace Fishy_Raid
 {
@@ -28,13 +29,32 @@ namespace Fishy_Raid
         private System.Media.SoundPlayer player;
         public MainWindow()
         {
+            ChangePathForThisPc();
             InitializeComponent();
             string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "MapMusic.wav");
             player = new System.Media.SoundPlayer(musicpath);
             player.PlayLooping();
         }
-        
+
+        private void ChangePathForThisPc() 
+        {
+           Player p = (Player)SaveAndReadPlayer.Read(typeof(Player), System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json"));
             
+            foreach (var item in p.AllFishes)
+            {
+                item.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", "64.png");
+                item.regieleres= System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", "64.png");
+                item.dead= System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", "fishbone.png");
+            }
+            foreach (var item in p.FishesInFight)
+            {
+                item.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", "64.png");
+                item.regieleres = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", "64.png");
+                item.dead = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
+            }
+
+            SaveAndReadPlayer.Save(p, System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json"));
+        }    
         private void Open_New_Arena(object sender, RoutedEventArgs e)
         {
             Window win = new FishyRaidFightSystem.MainWindow();
