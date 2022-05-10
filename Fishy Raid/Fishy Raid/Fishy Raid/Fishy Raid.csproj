@@ -13,6 +13,7 @@
     <None Remove="hal.bmp" />
     <None Remove="mainmenu.jpg" />
     <None Remove="torottbutton.png" />
+    <None Remove="torottgomb.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +30,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="torottbutton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="torottgomb.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

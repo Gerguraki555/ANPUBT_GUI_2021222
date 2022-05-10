@@ -22,7 +22,6 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
 
             <Button x:Name="arenabutton"  Click="Open_New_Arena" Grid.Row="0" Foreground="Yellow" Content="Arena"  MinHeight="100" HorizontalAlignment="Stretch" FontSize="35"  BorderBrush="{x:Null}" >
@@ -30,7 +29,7 @@
                     <DropShadowEffect/>
                 </Button.Effect>
                 <Button.Background>
-                    <ImageBrush ImageSource="buttonstyle.png"/>
+                    <ImageBrush ImageSource="gomb.png"/>
                 </Button.Background>
 
                 <Button.Style>
@@ -46,7 +45,7 @@
                                         <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="Background" TargetName="Border" >
                                                 <Setter.Value>
-                                                    <ImageBrush ImageSource="/torottbutton.png"/>
+                                                    <ImageBrush ImageSource="/torottgomb.png"/>
                                                 </Setter.Value>
                                             </Setter>
                                         </Trigger>
@@ -65,7 +64,7 @@
                 </Button.Effect>
 
                 <Button.Background>
-                    <ImageBrush ImageSource="buttonstyle.png" x:Name="img"/>
+                    <ImageBrush ImageSource="gomb.png" x:Name="img"/>
                 </Button.Background>
 
 
@@ -82,7 +81,7 @@
                                         <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="Background" TargetName="Border" >
                                                 <Setter.Value>
-                                                    <ImageBrush ImageSource="/torottbutton.png"/>
+                                                    <ImageBrush ImageSource="/torottgomb.png"/>
                                                 </Setter.Value>
                                             </Setter>
                                         </Trigger>
@@ -95,12 +94,13 @@
 
 
             </Button>
-            <Button Grid.Row="2" Foreground="Yellow" Content="Totem Shop" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
+            
+            <Button Click="Open_New_Team_Editor" Grid.Row="2" Foreground="Yellow" Content="Team Editor" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
                 <Button.Background>
-                    <ImageBrush ImageSource="buttonstyle.png"/>
+                    <ImageBrush ImageSource="gomb.png" />
                 </Button.Background>
 
 
@@ -117,42 +117,7 @@
                                         <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="Background" TargetName="Border" >
                                                 <Setter.Value>
-                                                    <ImageBrush ImageSource="/torottbutton.png"/>
-                                                </Setter.Value>
-                                            </Setter>
-                                        </Trigger>
-                                    </ControlTemplate.Triggers>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Button.Style>
-
-
-            </Button>
-            <Button Click="Open_New_Team_Editor" Grid.Row="3" Foreground="Yellow" Content="Team Editor" MinHeight="100" HorizontalAlignment="Stretch" FontSize="35" BorderBrush="{x:Null}">
-                <Button.Effect>
-                    <DropShadowEffect/>
-                </Button.Effect>
-                <Button.Background>
-                    <ImageBrush ImageSource="buttonstyle.png" />
-                </Button.Background>
-
-
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Beige"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border x:Name="Border" Background="{TemplateBinding Background}">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                    </Border>
-                                    <ControlTemplate.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" TargetName="Border" >
-                                                <Setter.Value>
-                                                    <ImageBrush ImageSource="/torottbutton.png"/>
+                                                    <ImageBrush ImageSource="/torottgomb.png"/>
                                                 </Setter.Value>
                                             </Setter>
                                         </Trigger>
