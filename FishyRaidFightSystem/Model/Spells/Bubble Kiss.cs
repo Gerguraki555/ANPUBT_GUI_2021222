@@ -17,7 +17,7 @@ namespace FishyRaidFightSystem.Model.Spells
         {
             throw new NotImplementedException();
         }
-
+       
         AudioFileReader punch;
         WaveOut punchout;
         AudioFileReader hit;
@@ -154,7 +154,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 if (mit.Elet <= 0)
                 {
                     mit.meghalt = true;
-                    mit.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
+                    mit.Eleresiut = Fishbone.AddFishbonepath();
                 }
                 Hala.lovedeke.aktiv = false;
                 Hala.lovedeke.x = Hala.x;

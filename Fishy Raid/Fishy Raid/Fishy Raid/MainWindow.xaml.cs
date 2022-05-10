@@ -99,8 +99,8 @@ namespace Fishy_Raid
         private void Open_New_Arena(object sender, RoutedEventArgs e)
         {
             Window win = new FishyRaidFightSystem.MainWindow();
-            this.Close(); 
             win.Show();
+            this.Close();
             
         }
 
@@ -109,7 +109,7 @@ namespace Fishy_Raid
         private void Open_New_SeaDungeon(object sender, RoutedEventArgs e)
         {
             Window dungeon = new DungeonMap.MainWindow();
-            dungeon.Show();            
+            dungeon.Show();     
         }
 
         private void Open_New_Team_Editor(object sender, RoutedEventArgs e) 
