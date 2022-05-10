@@ -18,6 +18,7 @@ using FishyRaidFightSystem;
 using DungeonMap;
 using TeamEditor;
 using FishyRaidFightSystem.Model;
+using FishyRaidFightSystem.Model.Spells;
 
 namespace Fishy_Raid
 {
@@ -51,6 +52,46 @@ namespace Fishy_Raid
                 item.Eleresiut = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", item.kepszam + ".png");
                 item.regieleres = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", item.kepszam + ".png");
                 item.dead = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishbone.png");
+            }
+
+            foreach (var item in p.FishesInFight)
+            {
+                if (item.Tavolsagi != null)
+                {
+                    item.Tavolsagi.Hala = null;
+                }
+                if (item.Buff != null)
+                {
+                    item.Buff.Hala = null;
+                }
+                if (item.Kozelharci != null)
+                {
+                    if (item.Kozelharci is Trackle)
+                    {
+                        item.Kozelharci = new Trackle(item);
+                        item.Kozelharci.Hala = null;
+                    }
+                }
+                item.Elet = item.Maxhp;
+            }
+            foreach (var item in p.AllFishes)
+            {
+                if (item.Tavolsagi != null)
+                {
+                    item.Tavolsagi.Hala = null;
+                }
+                if (item.Buff != null)
+                {
+                    item.Buff.Hala = null;
+                }
+                if (item.Kozelharci != null)
+                {
+                    if (item.Kozelharci is Trackle)
+                    {
+                        item.Kozelharci = new Trackle(item);
+                        item.Kozelharci.Hala = null;
+                    }
+                }
             }
 
             SaveAndReadPlayer.Save(p, System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json"));
