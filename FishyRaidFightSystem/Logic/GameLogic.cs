@@ -1246,7 +1246,6 @@ namespace FishyRaidFightSystem.Logic
                                 Enemy.Energy++;
                                 Korszam++;
                                 Jatekos.FishesInFight[hely].Buff.Befejezett = false;
-
                             }
                         }
 

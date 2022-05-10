@@ -29,6 +29,7 @@ namespace FishyRaidFightSystem
         string Palyaszam;
         System.Media.SoundPlayer player;
         System.Media.SoundPlayer startMenuMusicPlayer;
+        public bool IsClosed { get; set; }
         public MainWindow(int palyaszam) // pálya szám a konstruktorba
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace FishyRaidFightSystem
          
         public MainWindow() //Arena
         {
-            InitializeComponent();
+            InitializeComponent();          
             logic = new GameLogic("arena","no");
             logic.melyikpalya = "0";
             logic.Palyaszam = 0;
@@ -133,7 +134,7 @@ namespace FishyRaidFightSystem
             player.Stop();
             string menumusic = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "MapMusic.wav");
             startMenuMusicPlayer = new System.Media.SoundPlayer(menumusic);
-            startMenuMusicPlayer.PlayLooping();
+            startMenuMusicPlayer.PlayLooping();            
         }
     }
 }
