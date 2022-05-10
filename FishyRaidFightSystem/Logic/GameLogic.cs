@@ -1587,11 +1587,19 @@ namespace FishyRaidFightSystem.Logic
                                 Jatekos.Energy -= Jatekos.FishesInFight[hely].Tavolsagi.Energiakoltseg;
                                 Enemy.Energy++;
                                 Korszam++;
+                                if (Jatekos.FishesInFight[hely].Buff==null)
+                                {
+                                    MessageBox.Show("This Fish doesn't have Buff ability!");
+                                }
                                 if (Jatekos.FishesInFight[hely].Buff!=null)
                                 {
                                     Jatekos.FishesInFight[hely].Buff.Befejezett = false;
                                 }
                                 
+                            }
+                            else if (Jatekos.Energy < Jatekos.FishesInFight[hely].Tavolsagi.Energiakoltseg)
+                            {
+                                MessageBox.Show("You don't have enough Energy to use that Buff!");
                             }
                         }
                         
