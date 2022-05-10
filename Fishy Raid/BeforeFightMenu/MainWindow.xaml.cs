@@ -23,7 +23,7 @@ namespace BeforeFightMenu
     /// </summary>
     public partial class MainWindow : Window
     {
-
+       private ImageBrush brokenbrush;
         public int Stage { get; set; }
         public MainWindow()
         {
@@ -53,17 +53,35 @@ namespace BeforeFightMenu
 
             #endregion
 
+            #region Getin BrokenButton img Path
+
+            string brokenpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "torottgomb.png");
+            brokenbrush = new ImageBrush();
+            Image brokenimg = new Image();
+            brokenimg.Source = new BitmapImage(
+                new Uri(brokenpath));
+            brokenbrush.ImageSource = brokenimg.Source;
+
+            #endregion
+
             InitializeComponent();
+            (this.DataContext as DungeonWindowViewModel).Stage = stage;
+            (this.DataContext as DungeonWindowViewModel).Enemies.EnemyLoad(Convert.ToString(stage));
             
-            (this.DataContext as DungeonWindowViewModel).Stage =stage;
-           
+            #region Setting up Images
+            
             myGrid.Background = backgroundBrush;
             view.Background = buttonBrush;
             start.Background = buttonBrush;
-            
 
+            #endregion
+
+          
+
+            UpdateLayout();
         }
 
+        
 
         private void view_Click(object sender, RoutedEventArgs e)
         {
@@ -77,5 +95,7 @@ namespace BeforeFightMenu
             this.Close();
             window.Show();
         }
+
+        
     }
 }

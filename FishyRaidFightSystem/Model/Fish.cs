@@ -26,6 +26,7 @@ namespace FishyRaidFightSystem.Model
         public bool delegalthozzaadva { get; set; }
 
         public Lovedek lovedeke { get; set; }
+        public string kepszam { get; set; }
         public Spell Tavolsagi { get; set; }
         public Spell Buff { get; set; }
         public string Eleresiut { get; set; }
@@ -69,6 +70,7 @@ namespace FishyRaidFightSystem.Model
         {
             this.Kozelharci = new Trackle(this);
             this.Levelformat = EXP + "/" + Level * 100;
+            this.kepszam = "1";
             this.Tavolsagi = new DoubleBubble(this);
             this.delegalthozzaadva = false;
             this.Buff = new GainEnergy(this);

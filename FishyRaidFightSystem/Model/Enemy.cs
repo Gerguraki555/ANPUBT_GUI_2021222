@@ -38,7 +38,6 @@ namespace FishyRaidFightSystem.Model
                 foreach (var item in this.FishesInFight)
                 {
                     item.Tavolsagi = new DoubleBubble(item);
-
                 }
             }
             else if (melyikpalya == "2")

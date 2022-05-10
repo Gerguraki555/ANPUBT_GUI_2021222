@@ -35,7 +35,7 @@ namespace FishyRaidFightSystem.Renderer
         {
             get
             {
-                return new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", "arenakep.png"), UriKind.RelativeOrAbsolute)));
+                return new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "arenakep.png"), UriKind.RelativeOrAbsolute)));
             }
         }
 
@@ -43,7 +43,7 @@ namespace FishyRaidFightSystem.Renderer
         {
             get
             {
-                return new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", "fishmodel.png"), UriKind.RelativeOrAbsolute)));
+                return new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "fishmodel.png"), UriKind.RelativeOrAbsolute)));
             }
         }
 
@@ -126,15 +126,15 @@ namespace FishyRaidFightSystem.Renderer
 
                             if (model.Korszam == 2 && model.Jatekos.FishesInFight[1].meghalt == false && model.Enemy.FishesInFight[0].tamad == false && model.Enemy.FishesInFight[1].tamad == false && model.Enemy.FishesInFight[2].tamad == false)
                             {
-                                drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", "leftarrow.png"), UriKind.RelativeOrAbsolute))), null, new Rect(item.x + 200, item.y + 100 + item.pozicio, 70, 40));
+                                drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "leftarrow.png"), UriKind.RelativeOrAbsolute))), null, new Rect(item.x + 200, item.y + 100 + item.pozicio, 70, 40));
                             }
                             drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 14 - 100, Area.Height / 8 - 100 + item.pozicio, item.Elet * 1.5, 10));
                         }
 
-                        drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.Eleresiut), UriKind.RelativeOrAbsolute))), null, new Rect(item.x, item.y + item.pozicio, 200, 200));
+                        drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.Eleresiut, UriKind.RelativeOrAbsolute))), null, new Rect(item.x, item.y + item.pozicio, 200, 200));
                         if (item.lovedeke.aktiv)
                         {
-                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.lovedeke.eleres), UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
+                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.lovedeke.eleres, UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
                         }
                         else
                         {
@@ -157,15 +157,15 @@ namespace FishyRaidFightSystem.Renderer
 
                             if (model.Korszam == 4 && model.Jatekos.FishesInFight[2].meghalt == false && model.Enemy.FishesInFight[0].tamad == false && model.Enemy.FishesInFight[1].tamad == false && model.Enemy.FishesInFight[2].tamad == false)
                             {
-                                drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", "leftarrow.png"), UriKind.RelativeOrAbsolute))), null, new Rect(item.x + 200, item.y + 100 + item.pozicio, 70, 40));
+                                drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "leftarrow.png"), UriKind.RelativeOrAbsolute))), null, new Rect(item.x + 200, item.y + 100 + item.pozicio, 70, 40));
                             }
                             drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 14 - 100, Area.Height / 1.3 - 100 + item.pozicio, item.Elet * 1.5, 10));
                         }
 
-                        drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.Eleresiut), UriKind.RelativeOrAbsolute))), null, new Rect(item.x, item.y + item.pozicio, 200, 200));
+                        drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.Eleresiut, UriKind.RelativeOrAbsolute))), null, new Rect(item.x, item.y + item.pozicio, 200, 200));
                         if (item.lovedeke.aktiv)
                         {
-                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.lovedeke.eleres), UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
+                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.lovedeke.eleres, UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
                         }
                         if (item.lovedeke.aktiv == false)
                         {
@@ -244,7 +244,7 @@ namespace FishyRaidFightSystem.Renderer
 
                         if (item.lovedeke.aktiv)
                         {
-                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.lovedeke.eleres), UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
+                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.lovedeke.eleres, UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
                         }
                     }
                     else if (item.sorszam == 2)
@@ -288,7 +288,7 @@ namespace FishyRaidFightSystem.Renderer
 
                         if (item.lovedeke.aktiv)
                         {
-                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.lovedeke.eleres), UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
+                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.lovedeke.eleres, UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
                         }
                     }
                     else if (item.sorszam == 3)
@@ -333,7 +333,7 @@ namespace FishyRaidFightSystem.Renderer
 
                         if (item.lovedeke.aktiv)
                         {
-                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(Path.Combine("Images", item.lovedeke.eleres), UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
+                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.lovedeke.eleres, UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
                         }
 
 

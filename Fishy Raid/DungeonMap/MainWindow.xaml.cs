@@ -108,8 +108,8 @@ namespace DungeonMap
         {            
             int stage = int.Parse((e.Source as Button).Tag.ToString()) ;
              Window start=new BeforeFightMenu.MainWindow(stage);
-            //(start.DataContext as DungeonWindowViewModel).SetStage(stage); - ez nem kell
-             this.Close();
+            //(start.DataContext as DungeonWindowViewModel).SetStage(stage);
+             this.Close();            
              start.Show();
           //  MessageBox.Show(stage.ToString());
         }

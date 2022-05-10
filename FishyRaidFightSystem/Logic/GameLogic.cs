@@ -268,7 +268,8 @@ namespace FishyRaidFightSystem.Logic
                                 Kozelsebzes = R.Next(5, 13),
                                 Level = 1,
                                 Buff = null,
-                                Tavolsagi = null
+                                Tavolsagi = null,
+                                kepszam = melyik.ToString()
                             };
                             Jatekos.AllFishes.Add(reward);
                           
@@ -287,7 +288,8 @@ namespace FishyRaidFightSystem.Logic
                                 Kozelsebzes = R.Next(9, 18),
                                 Level = 1,
                                 Buff = null,
-                                Tavolsagi = null
+                                Tavolsagi = null,
+                                kepszam=melyik.ToString()
                             };
                             int legyentavolsagi = R.Next(1, 3);
                             if (legyentavolsagi != 1)

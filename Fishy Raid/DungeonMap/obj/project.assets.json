@@ -181,6 +181,19 @@
           }
         }
       },
+      "AfterFightMenu/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AfterFightMenu.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AfterFightMenu.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "BeforeFightMenu/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -195,14 +208,14 @@
           "bin/placeholder/BeforeFightMenu.dll": {}
         },
         "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF",
-          "Microsoft.WindowsDesktop.App.WindowsForms"
+          "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
       "FishyRaidFightSystem/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AfterFightMenu": "1.0.0",
           "Microsoft.Toolkit.Mvvm": "7.1.2",
           "NAudio": "2.0.1",
           "Newtonsoft.Json": "13.0.1"
@@ -214,8 +227,7 @@
           "bin/placeholder/FishyRaidFightSystem.dll": {}
         },
         "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF",
-          "Microsoft.WindowsDesktop.App.WindowsForms"
+          "Microsoft.WindowsDesktop.App.WPF"
         ]
       }
     }
@@ -534,6 +546,11 @@
         "version.txt"
       ]
     },
+    "AfterFightMenu/1.0.0": {
+      "type": "project",
+      "path": "../AfterFightMenu/AfterFightMenu.csproj",
+      "msbuildProject": "../AfterFightMenu/AfterFightMenu.csproj"
+    },
     "BeforeFightMenu/1.0.0": {
       "type": "project",
       "path": "../BeforeFightMenu/BeforeFightMenu.csproj",
@@ -551,25 +568,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
       "projectName": "DungeonMap",
-      "projectPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\DungeonMap.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\DungeonMap\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"
@@ -582,8 +594,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {
-              "projectPath": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj"
+            "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj": {
+              "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\BeforeFightMenu\\BeforeFightMenu.csproj"
             }
           }
         }
@@ -611,14 +623,11 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
-          },
           "Microsoft.WindowsDesktop.App.WPF": {
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
