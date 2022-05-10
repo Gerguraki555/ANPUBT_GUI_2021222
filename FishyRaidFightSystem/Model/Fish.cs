@@ -22,7 +22,7 @@ namespace FishyRaidFightSystem.Model
         public int Level { get; set; }
         public int EXP { get; set; }
         public int Maxhp { get; set; }
-
+        public string Levelformat { get; set; }
         public bool delegalthozzaadva { get; set; }
 
         public Lovedek lovedeke { get; set; }
@@ -55,7 +55,7 @@ namespace FishyRaidFightSystem.Model
         public DispatcherTimer dt = new DispatcherTimer(); //Támadásért felel
         public DispatcherTimer vegzo = new DispatcherTimer();
 
-
+        public Spell Kozelharci { get; set; }
 
 
         //--------------------Képesség effektek--------------------
@@ -67,7 +67,8 @@ namespace FishyRaidFightSystem.Model
         string bubblepath;
         public Fish()
         {
-
+            this.Kozelharci = new Trackle(this);
+            this.Levelformat = EXP + "/" + Level * 100;
             this.Tavolsagi = new DoubleBubble(this);
             this.delegalthozzaadva = false;
             this.Buff = new GainEnergy(this);

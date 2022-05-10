@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TeamEditor"
         xmlns:view="clr-namespace:TeamEditor.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
     <Window.DataContext>
         <view:TeamEditorWindowView/>
     </Window.DataContext>

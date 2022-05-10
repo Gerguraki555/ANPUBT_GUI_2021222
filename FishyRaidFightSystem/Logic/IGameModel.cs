@@ -20,5 +20,6 @@ namespace FishyRaidFightSystem.Logic
         int MaxPalyaszam { get; set; }
         string KovetkezoHal { get; set; }
         int Korszam { get; set; }
+        string Gamemode { get; set; }
     }
 }

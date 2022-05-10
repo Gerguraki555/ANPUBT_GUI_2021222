@@ -32,14 +32,20 @@ namespace FishyRaidFightSystem
         {
             InitializeComponent();
             this.Palyaszam = palyaszam.ToString();
+            logic = new GameLogic("seadungeon", Palyaszam.ToString());
+            logic.Palyaszam = Convert.ToInt32(palyaszam);
+            this.Palyaszam = palyaszam.ToString();
             string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "music.wav");
             player = new System.Media.SoundPlayer(musicpath);
             player.PlayLooping();
         }
-
-        public MainWindow()
+         
+        public MainWindow() //Arena
         {
             InitializeComponent();
+            logic = new GameLogic("arena","no");
+            logic.melyikpalya = "0";
+            logic.Palyaszam = 0;
             string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "music.wav");
             player = new System.Media.SoundPlayer(musicpath);
             player.PlayLooping();
@@ -47,8 +53,12 @@ namespace FishyRaidFightSystem
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            logic = new GameLogic();
-            logic.melyikpalya = Palyaszam;
+          //  logic = new GameLogic();
+          //  logic.melyikpalya = Palyaszam;
+            if (logic.Palyaszam != 0)
+            {
+                logic.Gamemode = "seadungeon";
+            }
             logic.LevelLoad();
             Display.SetupModel(logic);
             DispatcherTimer dt = new DispatcherTimer(); //Időzítő

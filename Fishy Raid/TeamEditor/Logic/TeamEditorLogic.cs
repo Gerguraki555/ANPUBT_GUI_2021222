@@ -43,20 +43,23 @@ namespace TeamEditor.Logic
             if (helyegy==false)
             {
                 selectedFish.Helye = 1;
+              //  selectedFish.sorszam = 1;
                 selectedFish.pozicio = 0;
-                selectedFish.sorszam = 1;
+                selectedFish.sorszam = 1; //1
             }
             else if (helyketto==false)
             {
                 selectedFish.Helye = 2;
+             //   selectedFish.sorszam = 2;
                 selectedFish.pozicio = 30;
-                selectedFish.sorszam = 2;
+                selectedFish.sorszam = 2; //3
             }
             else if (helyharom==false)
             {
                 selectedFish.Helye = 3;
+               // selectedFish.sorszam = 3;
                 selectedFish.pozicio = 20;
-                selectedFish.sorszam = 3;
+                selectedFish.sorszam = 3; //2
             }
 
 

@@ -32,7 +32,7 @@ namespace BeforeFightMenu
         public MainWindow(int stage)
         {
             #region Geting Path for grid background
-            
+            this.Stage = stage;
             string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "dungeon.jpg");
             ImageBrush backgroundBrush = new ImageBrush();
             Image image = new Image();
@@ -72,6 +72,7 @@ namespace BeforeFightMenu
 
         private void start_Click(object sender, RoutedEventArgs e)
         {
+           
             Window window = new FishyRaidFightSystem.MainWindow(Stage);
             this.Close();
             window.Show();
