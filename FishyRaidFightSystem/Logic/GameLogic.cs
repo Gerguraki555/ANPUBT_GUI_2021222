@@ -141,7 +141,7 @@ namespace FishyRaidFightSystem.Logic
                 {
                     item.Kozelharci.Hala = item;
                 }
-                Fish fishy = new Fish() { Elet = item.Maxhp, sorszam = item.sorszam, Eleresiut = item.Eleresiut, regieleres = item.regieleres, pozicio = item.pozicio, Kozelsebzes = item.Kozelsebzes, Helye = item.Helye, Tavolsagi = item.Tavolsagi, Buff = item.Buff, Level = item.Level, EXP = item.EXP, Ero = item.Ero, Maxhp = item.Maxhp };
+                Fish fishy = new Fish() { Elet = item.Maxhp, sorszam = item.sorszam, Eleresiut = item.Eleresiut, regieleres = item.regieleres, pozicio = item.pozicio, Kozelsebzes = item.Kozelsebzes, Helye = item.Helye, Tavolsagi = item.Tavolsagi, Buff = item.Buff, Level = item.Level, EXP = item.EXP, Ero = item.Ero, Maxhp = item.Maxhp, kepszam=item.kepszam };
                 if (fishy.Tavolsagi != null)
                 {
                     fishy.Tavolsagi.Hala = fishy;
@@ -287,17 +287,19 @@ namespace FishyRaidFightSystem.Logic
                 else { 
 
                     int szam = R.Next(1, 101);
-                    if (szam <= 30)
+                    if (szam <= 3000)
                     {
                         int melyik = 0;
                         
                         if (melyikpalya == "1")
                         {
                             melyik = R.Next(1, 51);
+
                             string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
                             Fish reward = new Fish()
                             {
                                 Elet = R.Next(40, 110),
+                                kepszam=melyik.ToString(),
                                 Eleresiut = kepe,
                                 regieleres=kepe,
                                 Ero = R.Next(5, 13),
@@ -305,7 +307,7 @@ namespace FishyRaidFightSystem.Logic
                                 Level = 1,
                                 Buff = null,
                                 Tavolsagi = null,
-                                kepszam = melyik.ToString()
+                              
                             };
                             Jatekos.AllFishes.Add(reward);
                             this.kapottexp = "10";
