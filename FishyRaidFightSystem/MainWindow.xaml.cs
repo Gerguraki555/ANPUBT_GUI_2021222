@@ -78,7 +78,7 @@ namespace FishyRaidFightSystem
                  {
                      if (logic.Nyert)
                      {
-                         Window win = new AfterFightMenu.MainWindow("10");
+                         Window win = new AfterFightMenu.MainWindow(logic.kapottexp);
                          this.Close();                         
                          vegveto.Stop();
                          win.Show();
