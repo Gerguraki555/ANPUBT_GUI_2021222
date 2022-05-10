@@ -251,7 +251,7 @@ namespace FishyRaidFightSystem.Logic
                 else { 
 
                     int szam = R.Next(1, 101);
-                    if (szam <= 30)
+                    if (szam <= 3000)
                     {
                         int melyik = 0;
                         

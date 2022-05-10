@@ -54,7 +54,7 @@
                             <StackPanel>
                                 <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Level}" ContentStringFormat="Fish's Level: {0}"  Foreground="FloralWhite"/>
                                 <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Ero}" ContentStringFormat="Fish's Power {0}"  Foreground="FloralWhite"/>
-                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding EXP}" ContentStringFormat="Fish's Xp {0}"  Foreground="FloralWhite"/>
+                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Levelformat}" ContentStringFormat="Fish's Xp {0}"  Foreground="FloralWhite"/>
                                 <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Elet}" ContentStringFormat="Fish's Health {0}"  Foreground="FloralWhite"/>
                             </StackPanel>
                         </Border>                        

@@ -58,6 +58,16 @@ namespace TeamEditor.ViewModels
             
 
             AllFishes = Player.AllFishes;
+
+            foreach (var item in Player.AllFishes)
+            {
+                item.Levelformat = item.EXP +"/"+ item.Level * 100;
+            }
+            foreach (var item in Player.FishesInFight)
+            {
+                item.Levelformat = item.EXP + "/" + item.Level * 100;
+            }
+
             string path = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "1.png");
            // AllFishes.Add(new Fish() { Elet = 100, sorszam = 3, Eleresiut = path, regieleres = path, pozicio = 20, Kozelsebzes = 10, Helye = 3 });
             FishesAboutToFight = Player.FishesInFight;

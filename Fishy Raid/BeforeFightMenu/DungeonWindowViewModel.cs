@@ -23,6 +23,15 @@ namespace BeforeFightMenu
            string path = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "player.json");
             Player p = (Player)SaveAndReadPlayer.Read(typeof(Player),path);
 
+            foreach (var item in p.AllFishes)
+            {
+                item.Levelformat = item.EXP + "/" + item.Level * 100;
+            }
+            foreach (var item in p.FishesInFight)
+            {
+                item.Levelformat = item.EXP + "/" + item.Level * 100;
+            }
+
             FishesToBattle = new ObservableCollection<Fish>();
             Enemies = new Enemy();
             Potions = new ObservableCollection<Potion>();
