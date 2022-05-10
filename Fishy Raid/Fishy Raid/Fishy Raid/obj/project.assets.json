@@ -221,6 +221,19 @@
           }
         }
       },
+      "AfterFightMenu/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AfterFightMenu.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AfterFightMenu.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "BeforeFightMenu/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -258,6 +271,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AfterFightMenu": "1.0.0",
           "Microsoft.Toolkit.Mvvm": "7.1.2",
           "NAudio": "2.0.1",
           "Newtonsoft.Json": "13.0.1"
@@ -680,6 +694,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AfterFightMenu/1.0.0": {
+      "type": "project",
+      "path": "../../AfterFightMenu/AfterFightMenu.csproj",
+      "msbuildProject": "../../AfterFightMenu/AfterFightMenu.csproj"
     },
     "BeforeFightMenu/1.0.0": {
       "type": "project",

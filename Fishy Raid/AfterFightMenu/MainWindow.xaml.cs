@@ -14,17 +14,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TeamEditor
+namespace AfterFightMenu
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(string EXP)
         {
-            #region Geting Background img path
-            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "background.jpg");
+            #region Geting background Img Path
+            string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "after.jpg");
             ImageBrush backgroundBrush = new ImageBrush();
             Image image = new Image();
             image.Source = new BitmapImage(
@@ -32,7 +32,7 @@ namespace TeamEditor
             backgroundBrush.ImageSource = image.Source;
             #endregion
 
-            #region Geting Button img path
+            #region Geting button Img Path
 
             string buttonPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "gomb.png");
             ImageBrush buttonBrush = new ImageBrush();
@@ -41,13 +41,18 @@ namespace TeamEditor
                 new Uri(buttonPath));
             buttonBrush.ImageSource = image2.Source;
 
-            #endregion            
+            #endregion
 
             InitializeComponent();
 
             myGrid.Background = backgroundBrush;
-            
+            menu.Background = buttonBrush;
+            Xp.Content = EXP ;
         }
-       
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

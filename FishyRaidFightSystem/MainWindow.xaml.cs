@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using static FishyRaidFightSystem.Logic.GameLogic;
+using AfterFightMenu;
 
 namespace FishyRaidFightSystem
 {
@@ -66,15 +67,17 @@ namespace FishyRaidFightSystem
                  {
                      if (logic.Nyert)
                      {
-                         MessageBox.Show("Win");
-                         this.Close();
+                         Window win = new AfterFightMenu.MainWindow("10");
+                         this.Close();                         
                          vegveto.Stop();
+                         win.Show();
                      }
                      else
                      {
-                         MessageBox.Show("defeat");
-                         this.Close();
+                         Window lost = new AfterFightMenu.YouLostWindow();
+                         this.Close();                         
                          vegveto.Stop();
+                         lost.Show();
                      }
                  }
                  else

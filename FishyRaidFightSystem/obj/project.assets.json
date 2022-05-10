@@ -180,6 +180,19 @@
             "rid": "win"
           }
         }
+      },
+      "AfterFightMenu/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AfterFightMenu.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AfterFightMenu.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -496,10 +509,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AfterFightMenu/1.0.0": {
+      "type": "project",
+      "path": "../Fishy Raid/AfterFightMenu/AfterFightMenu.csproj",
+      "msbuildProject": "../Fishy Raid/AfterFightMenu/AfterFightMenu.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "AfterFightMenu >= 1.0.0",
       "Microsoft.Toolkit.Mvvm >= 7.1.2",
       "NAudio >= 2.0.1",
       "Newtonsoft.Json >= 13.0.1"
@@ -531,7 +550,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\AfterFightMenu\\AfterFightMenu.csproj": {
+              "projectPath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222\\Fishy Raid\\AfterFightMenu\\AfterFightMenu.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

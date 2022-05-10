@@ -89,4 +89,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fishy Raid\AfterFightMenu\AfterFightMenu.csproj" />
+  </ItemGroup>
+
 </Project>
