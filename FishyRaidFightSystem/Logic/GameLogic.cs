@@ -1023,15 +1023,15 @@ namespace FishyRaidFightSystem.Logic
                     
                     if (Korszam == 5)
                     {
-                        if(Jatekos.FishesInFight[0].Eleresiut!= Jatekos.FishesInFight[0].dead)
+                        if(!Jatekos.FishesInFight[0].meghalt)
                         {
                             Korszam = 0;
                         }
-                        else if ( Jatekos.FishesInFight[1].Eleresiut != Jatekos.FishesInFight[1].dead)
+                        else if (!Jatekos.FishesInFight[1].meghalt)
                         {
                             Korszam = 2;
                         }
-                        else if(Jatekos.FishesInFight[2].Eleresiut!=Jatekos.FishesInFight[2].dead)
+                        else if(!Jatekos.FishesInFight[2].meghalt)
                         {
                             Korszam = 4;
                         }
@@ -1040,34 +1040,46 @@ namespace FishyRaidFightSystem.Logic
                     }
                     else if (Korszam == 1)
                     {
-                        if (Jatekos.FishesInFight[1].Eleresiut != Jatekos.FishesInFight[1].dead)
+                        if (!Jatekos.FishesInFight[1].meghalt)
                         {
                             Korszam = 2;
                         }
-                        else if (Jatekos.FishesInFight[0].Eleresiut != Jatekos.FishesInFight[0].dead)
+                        else if (!Jatekos.FishesInFight[0].meghalt)
                         {
                             Korszam = 0;
                         }
-                        else if (Jatekos.FishesInFight[2].Eleresiut != Jatekos.FishesInFight[2].dead)
+                        else if (!Jatekos.FishesInFight[2].meghalt)
                         {
                             Korszam = 4;
                         }
                     }
                     else if (Korszam == 3)
                     {
-                        if (Jatekos.FishesInFight[2].Eleresiut != Jatekos.FishesInFight[2].dead)
+                        if (!Jatekos.FishesInFight[2].meghalt)
                         {
                             Korszam = 4;
                         }
-                        else if (Jatekos.FishesInFight[0].Eleresiut != Jatekos.FishesInFight[0].dead)
+                        else if (!Jatekos.FishesInFight[0].meghalt)
+                        {
+                            Korszam = 0;
+                        }
+                        else if (!Jatekos.FishesInFight[1].meghalt)
+                        {
+                            Korszam = 2;
+                        }
+
+                    }
+                    else {
+
+                        if (Korszam == 5)
                         {
                             Korszam = 0;
                         }
                         else
                         {
-                            Korszam = 2;
+                            Korszam++;
                         }
-
+                    
                     }
 
 
