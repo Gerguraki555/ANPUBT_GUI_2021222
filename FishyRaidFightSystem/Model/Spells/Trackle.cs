@@ -116,6 +116,7 @@ namespace FishyRaidFightSystem.Model.Spells
                         index = i;
                     }
                 }
+                
                 Csinal(halak[index]);
             }
 
@@ -134,7 +135,7 @@ namespace FishyRaidFightSystem.Model.Spells
             int mity = (int)mit.y;
             bool sebzett = false;
             Hala.elfoglalt = true;
-
+            ;
 
             if (!delegalthozzaadva)
             {
@@ -170,9 +171,14 @@ namespace FishyRaidFightSystem.Model.Spells
                             {
                                 if (!sebzett)
                                 {
-                                    mit.Elet -= Hala.Kozelsebzes;
-                                    punch.CurrentTime = new TimeSpan(0L);
-                                    punchout.Play();
+
+                                    if (!Hala.meghalt)
+                                    {
+                                        mit.Elet -= Hala.Kozelsebzes;
+                                        punch.CurrentTime = new TimeSpan(0L);
+                                        punchout.Play();
+                                    }
+
 
                                     if (mit.Elet <= 0)
                                     {

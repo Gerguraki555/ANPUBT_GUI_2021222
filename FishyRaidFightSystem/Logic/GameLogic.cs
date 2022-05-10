@@ -1226,7 +1226,11 @@ namespace FishyRaidFightSystem.Logic
                                 Jatekos.Energy -= Jatekos.FishesInFight[hely].Tavolsagi.Energiakoltseg;
                                 Enemy.Energy++;
                                 Korszam++;
-                                Jatekos.FishesInFight[hely].Buff.Befejezett = false;
+                                if (Jatekos.FishesInFight[hely].Buff!=null)
+                                {
+                                    Jatekos.FishesInFight[hely].Buff.Befejezett = false;
+                                }
+                                
                             }
                         }
 
