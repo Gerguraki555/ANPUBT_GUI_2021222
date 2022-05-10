@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Threading;
 
 namespace FishyRaidFightSystem.Model.Spells
@@ -45,6 +46,84 @@ namespace FishyRaidFightSystem.Model.Spells
 
         public override void Tamad(Fish mit, ObservableCollection<Fish> halak)
         {
+            int index = -1;
+
+            string szoveg2 = Fishbone.AddFishbonepath();
+
+            for (int i = 0; i < halak.Count; i++)
+            {
+                if (halak[i].Helye == Hala.Helye)
+                {
+                    if (halak[i].Eleresiut != szoveg2)
+                    {
+                        index = i;
+                    }
+                }
+            }
+
+            if (index == -1)
+            {
+                for (int i = 0; i < halak.Count; i++)
+                {
+                    
+                        if (halak[i].Eleresiut != szoveg2)
+                        {
+                            index = i;
+                        }
+                    
+                }
+            }
+
+         //   string szoveg1 = mit.Eleresiut;
+
+           
+
+            if (index!=-1)
+            {
+                if(halak[index].Eleresiut != szoveg2)
+                {
+                    string valodieleres = halak[index].Eleresiut;
+                    int tamadoindex = 0;
+
+                    for(int i = 0; i < halak.Count; i++)
+                    {
+                        if (Hala.Helye == halak[i].Helye)
+                        {
+                            if (halak[i].Eleresiut == valodieleres)
+                            {
+                                tamadoindex = i;
+                                break;
+                            }
+                        }
+                        else if (halak[i].Eleresiut == valodieleres)
+                        {
+                            tamadoindex = i;
+                       
+                        }
+                    }
+
+                    Csinal(halak[tamadoindex]);
+                }
+            }
+            else
+            {
+                 index = 0;
+                Hala.elfoglalt = true;
+                for (int i = 0; i < halak.Count; i++)
+                {
+                    if (halak[i].Eleresiut!= Fishbone.AddFishbonepath())
+                    {
+                        index = i;
+                    }
+                }
+                Csinal(halak[index]);
+            }
+
+            }
+
+        public void Csinal(Fish mit)
+        {
+
 
 
             Hala.oldx = Hala.x;
@@ -99,7 +178,8 @@ namespace FishyRaidFightSystem.Model.Spells
                                     {
                                         mit.Elet = 0;
                                         mit.meghalt = true;
-                                        mit.Eleresiut = fishbonepath;
+                                       // mit.dead = fishbonepath;
+                                        mit.Eleresiut = Fishbone.AddFishbonepath();
                                     }
                                     sebzett = true;
 
@@ -158,7 +238,7 @@ namespace FishyRaidFightSystem.Model.Spells
             dt.Start();
             vegzo.Start();
 
-
         }
     }
-}
+    }
+
