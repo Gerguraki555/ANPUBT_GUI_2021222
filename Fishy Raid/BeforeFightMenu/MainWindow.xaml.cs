@@ -73,12 +73,14 @@ namespace BeforeFightMenu
             myGrid.Background = backgroundBrush;
             view.Background = buttonBrush;
             start.Background = buttonBrush;
+            enemy_lb.InvalidateVisual();
 
-            #endregion
-
-          
+            #endregion          
 
             UpdateLayout();
+           
+            ;
+
         }
 
         

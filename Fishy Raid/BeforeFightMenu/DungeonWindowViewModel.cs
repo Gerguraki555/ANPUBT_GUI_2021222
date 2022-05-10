@@ -15,7 +15,16 @@ namespace BeforeFightMenu
     {
         public ObservableCollection<Fish> FishesToBattle { get; set; }
 
-        public Enemy Enemies { get; set; }
+        private Enemy enemy;
+
+        public Enemy Enemies
+        {
+            get { return enemy; }
+            set {
+                SetProperty(ref enemy, value);
+            }
+        }
+
         public ObservableCollection<Potion> Potions { get; set; }
         public int Stage { get; set; }
         public DungeonWindowViewModel()
@@ -40,7 +49,7 @@ namespace BeforeFightMenu
             Potions = p.Potions;
 
             Enemies = new Enemy();
-            Enemies.EnemyLoad(Convert.ToString(Stage));
+            Enemies.EnemyLoad(Convert.ToString(Stage));           
         }
 
         

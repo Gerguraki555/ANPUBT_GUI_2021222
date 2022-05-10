@@ -33,14 +33,15 @@
             </Grid.RowDefinitions>
             <TextBox Grid.Row="0" Text="Enemy's Team" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"  FontFamily="Castellar" Background="Transparent" BorderThickness="0" FontWeight="Bold" />
 
-            <ListBox HorizontalContentAlignment="Stretch" ItemsSource="{Binding Enemies.FishesInFight}" Grid.Column="1" Grid.Row="1" Background="#3FD1D1D1" BorderBrush="AliceBlue" BorderThickness="1" Foreground="Black">
+            <ListBox x:Name="enemy_lb" ItemsSource="{Binding Enemies.FishesInFight}" Grid.Column="1" Grid.Row="1" Background="#3FD1D1D1" BorderBrush="AliceBlue" BorderThickness="1" Foreground="Black">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Border BorderBrush="White" BorderThickness="2">
                             <StackPanel>
-                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Level}" ContentStringFormat="Fish's Level: {0}"  Foreground="FloralWhite"/>
-                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Elet}" ContentStringFormat="Fish's Health: {0}"  Foreground="FloralWhite"/>
-                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Ero}" ContentStringFormat="Fish's Power: {0}"  Foreground="FloralWhite"/>
+                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Level}" ContentStringFormat="Enemy's Level: {0}"  Foreground="FloralWhite"/>
+                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Elet}" ContentStringFormat="Enemy's Health: {0}"  Foreground="FloralWhite"/>
+                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Ero}" ContentStringFormat="Enemy's Power: {0}"  Foreground="FloralWhite"/>
+                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Buff.Nev}" ContentStringFormat="Enemy's Power: {0}"  Foreground="FloralWhite"/>
                             </StackPanel>
                         </Border>
                     </DataTemplate>
@@ -56,6 +57,7 @@
                                 <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Ero}" ContentStringFormat="Fish's Power {0}"  Foreground="FloralWhite"/>
                                 <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Levelformat}" ContentStringFormat="Fish's Xp {0}"  Foreground="FloralWhite"/>
                                 <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Elet}" ContentStringFormat="Fish's Health {0}"  Foreground="FloralWhite"/>
+                                <Label HorizontalContentAlignment="Center" FontSize="15px" Content="{Binding Buff.Nev}" ContentStringFormat="Fish's Buff {0}"  Foreground="FloralWhite"/>
                             </StackPanel>
                         </Border>                        
                     </DataTemplate>
