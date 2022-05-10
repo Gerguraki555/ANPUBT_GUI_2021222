@@ -281,11 +281,11 @@ namespace FishyRaidFightSystem.Logic
                             string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
                             Fish reward = new Fish()
                             {
-                                Elet = R.Next(60, 130),
+                                Elet = R.Next(60, 150),
                                 Eleresiut = kepe,
                                 regieleres=kepe,
-                                Ero = R.Next(9, 18),
-                                Kozelsebzes = R.Next(9, 18),
+                                Ero = R.Next(9, 26),
+                                Kozelsebzes = R.Next(9, 26),
                                 Level = 1,
                                 Buff = null,
                                 Tavolsagi = null,
@@ -294,7 +294,20 @@ namespace FishyRaidFightSystem.Logic
                             int legyentavolsagi = R.Next(1, 3);
                             if (legyentavolsagi != 1)
                             {
-                                reward.Tavolsagi = new SmellyBubble(reward);
+                                reward.Tavolsagi = new DoubleBubble(reward);
+                            }
+                            int legyenbuff = R.Next(1, 3);
+                            if (legyenbuff != 1)
+                            {
+                                int milyenbuff = R.Next(0, 5);
+                                if (milyenbuff == 0)
+                                {
+                                    reward.Buff = new GainEnergy(reward);
+                                }
+                                else
+                                {
+                                    reward.Buff = new LittleHealth(reward);
+                                }
                             }
 
                             Jatekos.AllFishes.Add(reward);
@@ -304,28 +317,304 @@ namespace FishyRaidFightSystem.Logic
                         }
                         else if (melyikpalya == "3")
                         {
-                            melyik = R.Next(50, 101);
+                            
+                           
+
+                            melyik = R.Next(1, 51);
+                            string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(110, 190),
+                                Eleresiut = kepe,
+                                regieleres = kepe,
+                                Ero = R.Next(20, 50),
+                                Kozelsebzes = R.Next(20, 50),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null,
+                                kepszam = melyik.ToString()
+                            };
+                            int legyentavolsagi = R.Next(1, 3);
+                            if (legyentavolsagi != 1)
+                            {
+                                int milyentavolsagi = R.Next(0, 2);
+                                if (milyentavolsagi == 0)
+                                {
+                                    reward.Tavolsagi = new DoubleBubble(reward);
+                                }
+                                else
+                                {
+                                    reward.Tavolsagi = new RandomBubble(reward);
+                                }
+                                
+                            }
+                            int legyenbuff = R.Next(1, 3);
+                            if (legyenbuff != 1)
+                            {
+                                int milyenbuff = R.Next(0, 5);
+                                if (milyenbuff == 0)
+                                {
+                                    reward.Buff = new GainEnergy(reward);
+                                }
+                                else if(milyenbuff==1||milyenbuff==2||milyenbuff==3)
+                                {
+                                    reward.Buff = new LittleHealth(reward);
+                                }
+                                else
+                                {
+                                    reward.Buff = new Health(reward);
+                                }
+                            }
                             AddExp(Jatekos.FishesInFight, 30);
+                            Jatekos.AllFishes.Add(reward);
                         }
                         else if (melyikpalya == "4")
                         {
                             melyik = R.Next(50, 101);
+                            string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(230, 280),
+                                Eleresiut = kepe,
+                                regieleres = kepe,
+                                Ero = R.Next(30, 70),
+                                Kozelsebzes = R.Next(30, 70),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null,
+                                kepszam = melyik.ToString()
+                            };
+                            int legyentavolsagi = R.Next(1, 3);
+                            if (legyentavolsagi != 1)
+                            {
+                                int milyentavolsagi = R.Next(0, 3);
+                                if (milyentavolsagi == 0)
+                                {
+                                    reward.Tavolsagi = new DoubleBubble(reward);
+                                }
+                                else if (milyentavolsagi == 0)
+                                {
+                                    reward.Tavolsagi = new TrippleBubble(reward);
+                                }
+                                else
+                                {
+                                    reward.Tavolsagi = new RandomBubble(reward);
+                                }
+
+                            }
+                            int legyenbuff = R.Next(1, 3);
+                            if (legyenbuff != 1)
+                            {
+                                int milyenbuff = R.Next(0, 5);
+                                if (milyenbuff == 0)
+                                {
+                                    reward.Buff = new GainEnergy(reward);
+                                }
+                                else if (milyenbuff == 1 || milyenbuff == 2 || milyenbuff == 3)
+                                {
+                                    reward.Buff = new LittleHealth(reward);
+                                }
+                                else
+                                {
+                                    reward.Buff = new Health(reward);
+                                }
+                            }
                             AddExp(Jatekos.FishesInFight, 40);
+                            Jatekos.AllFishes.Add(reward);
                         }
                         else if (melyikpalya == "5")
                         {
                             melyik = R.Next(50, 101);
+                            string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(320, 320),
+                                Eleresiut = kepe,
+                                regieleres = kepe,
+                                Ero = R.Next(45, 78),
+                                Kozelsebzes = R.Next(45, 78),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null,
+                                kepszam = melyik.ToString()
+                            };
+                            int legyentavolsagi = R.Next(1, 3);
+                            if (legyentavolsagi != 1)
+                            {
+                                int milyentavolsagi = R.Next(0, 4);
+                                if (milyentavolsagi == 0)
+                                {
+                                    reward.Tavolsagi = new DoubleBubble(reward);
+                                }
+                                else if (milyentavolsagi == 1)
+                                {
+                                    reward.Tavolsagi = new TrippleBubble(reward);
+                                }
+                                else if (milyentavolsagi == 2)
+                                {
+                                    reward.Tavolsagi = new BubbleKiss(reward);
+                                }
+                                else
+                                {
+                                    reward.Tavolsagi = new RandomBubble(reward);
+                                }
+
+                            }
+                            int legyenbuff = R.Next(1, 3);
+                            if (legyenbuff != 1)
+                            {
+                                int milyenbuff = R.Next(0, 5);
+                                if (milyenbuff == 0)
+                                {
+                                    reward.Buff = new GainEnergy(reward);
+                                }
+                                else if (milyenbuff == 1 )
+                                {
+                                    reward.Buff = new LittleHealth(reward);
+                                }
+                                else if(milyenbuff == 2 || milyenbuff == 3)
+                                {
+                                    reward.Buff = new Health(reward);
+                                }
+                                else
+                                {
+                                    reward.Buff = new MaxHealth(reward);
+                                }
+                            }
                             AddExp(Jatekos.FishesInFight, 50);
+                            Jatekos.AllFishes.Add(reward);
                         }
                         else if (melyikpalya == "6")
                         {
-                            melyik = R.Next(50, 101);
-                            AddExp(Jatekos.FishesInFight, 60);
+                            melyik = R.Next(151, 191);
+                            string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(450, 470),
+                                Eleresiut = kepe,
+                                regieleres = kepe,
+                                Ero = R.Next(55, 86),
+                                Kozelsebzes = R.Next(55, 86),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null,
+                                kepszam = melyik.ToString()
+                            };
+                            int legyentavolsagi = R.Next(1, 3);
+                            if (legyentavolsagi != 1)
+                            {
+                                int milyentavolsagi = R.Next(0, 5);
+                                if (milyentavolsagi == 0)
+                                {
+                                    reward.Tavolsagi = new DoubleBubble(reward);
+                                }
+                                else if (milyentavolsagi == 1)
+                                {
+                                    reward.Tavolsagi = new TrippleBubble(reward);
+                                }
+                                else if (milyentavolsagi == 2)
+                                {
+                                    reward.Tavolsagi = new BubbleKiss(reward);
+                                }
+                                else if (milyentavolsagi == 3)
+                                {
+                                    reward.Tavolsagi = new BabyThrow(reward);
+                                }
+                                else
+                                {
+                                    reward.Tavolsagi = new RandomBubble(reward);
+                                }
+
+                            }
+                            int legyenbuff = R.Next(1, 3);
+                            if (legyenbuff != 1)
+                            {
+                                int milyenbuff = R.Next(0, 5);
+                                if (milyenbuff == 0)
+                                {
+                                    reward.Buff = new GainEnergy(reward);
+                                }
+                                else if (milyenbuff == 1)
+                                {
+                                    reward.Buff = new LittleHealth(reward);
+                                }
+                                else if (milyenbuff == 2 || milyenbuff == 3)
+                                {
+                                    reward.Buff = new Health(reward);
+                                }
+                                else
+                                {
+                                    reward.Buff = new MaxHealth(reward);
+                                }
+                            }
+                            AddExp(Jatekos.FishesInFight, 50);
+                            Jatekos.AllFishes.Add(reward);
                         }
                         else if (melyikpalya == "7")
                         {
-                            melyik = R.Next(50, 101);
-                            AddExp(Jatekos.FishesInFight, 70);
+                            melyik = R.Next(151, 191);
+                            string kepe = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Fishes", melyik + ".png");
+                            Fish reward = new Fish()
+                            {
+                                Elet = R.Next(490, 540),
+                                Eleresiut = kepe,
+                                regieleres = kepe,
+                                Ero = R.Next(65, 98),
+                                Kozelsebzes = R.Next(65, 98),
+                                Level = 1,
+                                Buff = null,
+                                Tavolsagi = null,
+                                kepszam = melyik.ToString()
+                            };
+                            int legyentavolsagi = R.Next(1, 3);
+                            if (legyentavolsagi != 1)
+                            {
+                                int milyentavolsagi = R.Next(0, 5);
+                                if (milyentavolsagi == 0)
+                                {
+                                    reward.Tavolsagi = new DoubleBubble(reward);
+                                }
+                                else if (milyentavolsagi == 1)
+                                {
+                                    reward.Tavolsagi = new TrippleBubble(reward);
+                                }
+                                else if (milyentavolsagi == 2)
+                                {
+                                    reward.Tavolsagi = new BubbleKiss(reward);
+                                }
+                                else if (milyentavolsagi == 3)
+                                {
+                                    reward.Tavolsagi = new BabyThrow(reward);
+                                }
+                                else
+                                {
+                                    reward.Tavolsagi = new RandomBubble(reward);
+                                }
+
+                            }
+                            int legyenbuff = R.Next(1, 3);
+                            if (legyenbuff != 1)
+                            {
+                                int milyenbuff = R.Next(0, 5);
+                                if (milyenbuff == 0)
+                                {
+                                    reward.Buff = new GainEnergy(reward);
+                                }
+                                else if (milyenbuff == 1)
+                                {
+                                    reward.Buff = new LittleHealth(reward);
+                                }
+                                else if (milyenbuff == 2 || milyenbuff == 3)
+                                {
+                                    reward.Buff = new Health(reward);
+                                }
+                                else
+                                {
+                                    reward.Buff = new MaxHealth(reward);
+                                }
+                            }
+                            AddExp(Jatekos.FishesInFight, 50);
+                            Jatekos.AllFishes.Add(reward);
                         }
                     }
                 }
