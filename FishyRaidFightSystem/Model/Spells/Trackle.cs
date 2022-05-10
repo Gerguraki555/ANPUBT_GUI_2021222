@@ -21,6 +21,8 @@ namespace FishyRaidFightSystem.Model.Spells
         AudioFileReader punch;
         WaveOut punchout;
 
+        public Fish mittamad { get; set; }
+
         public Trackle(Fish hal)
         {
             this.Hala = hal;
@@ -137,7 +139,7 @@ namespace FishyRaidFightSystem.Model.Spells
             Hala.elfoglalt = true;
             Fish tamadni = mit;
             ;
-
+            this.mittamad = mit;
             if (!delegalthozzaadva)
             {
                 dt.Tick += delegate

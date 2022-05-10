@@ -91,9 +91,9 @@ namespace FishyRaidFightSystem.Renderer
                                 drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "leftarrow.png"), UriKind.RelativeOrAbsolute))), null, new Rect(item.x + 200, item.y + 100 + item.pozicio, 70, 40));
                             }
 
+                            int szazalek = (int)Math.Round((double)(100 * item.Elet) / item.Maxhp);
 
-
-                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 3.9 - 100, Area.Height / 2 - 100 + item.pozicio, item.Elet * 1.5, 10));
+                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 3.9 - 100, Area.Height / 2 - 100 + item.pozicio, szazalek * 1.5, 10));
 
                         }
                         drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.Eleresiut, UriKind.RelativeOrAbsolute))), null, new Rect(item.x, item.y + item.pozicio, 200, 200));
@@ -211,8 +211,11 @@ namespace FishyRaidFightSystem.Renderer
 
                         if (item.csikmutat && item.Elet > 0)
                         {
+                            int szazalek = (int)Math.Round((double)(100 * item.Elet) / item.Maxhp);
 
-                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.35 - 100, Area.Height / 2 - 100 + item.pozicio, item.Elet * 1.5, 10));
+
+
+                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.35 - 100, Area.Height / 2 - 100 + item.pozicio, szazalek * 1.5, 10));
                         }
 
                         BitmapImage enemy1 = new BitmapImage(new Uri(Path.Combine("Images", item.Eleresiut), UriKind.RelativeOrAbsolute));
@@ -259,8 +262,10 @@ namespace FishyRaidFightSystem.Renderer
 
                         if (item.csikmutat && item.Elet > 0)
                         {
+                            int szazalek = (int)Math.Round((double)(100 * item.Elet) / item.Maxhp);
+ 
 
-                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.159 - 100, Area.Height / 8 - 100 + item.pozicio, item.Elet * 1.5, 10));
+                             drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.159 - 100, Area.Height / 8 - 100 + item.pozicio, szazalek * 1.5, 10));
                         }
 
                         BitmapImage enemy2 = new BitmapImage(new Uri(Path.Combine("Images", item.Eleresiut), UriKind.RelativeOrAbsolute));
@@ -303,8 +308,9 @@ namespace FishyRaidFightSystem.Renderer
 
                         if (item.csikmutat && item.Elet > 0)
                         {
+                            int szazalek = (int)Math.Round((double)(100 * item.Elet) / item.Maxhp);
 
-                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.159 - 100, Area.Height / 1.3 - 100 + item.pozicio, item.Elet * 1.5, 10));
+                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.159 - 100, Area.Height / 1.3 - 100 + item.pozicio, szazalek * 1.5, 10));
                         }
 
                         BitmapImage enemy3 = new BitmapImage(new Uri(Path.Combine("Images", item.Eleresiut), UriKind.RelativeOrAbsolute));

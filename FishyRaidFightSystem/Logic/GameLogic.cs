@@ -251,7 +251,7 @@ namespace FishyRaidFightSystem.Logic
                 else { 
 
                     int szam = R.Next(1, 101);
-                    if (szam <= 3000)
+                    if (szam <= 30)
                     {
                         int melyik = 0;
                         
@@ -383,9 +383,9 @@ namespace FishyRaidFightSystem.Logic
                 if ((item.EXP + mennyi) >= item.Level * 100)
                 {
                     item.Level += 1;
-                    item.Ero += 10;
+                    item.Ero += 15;
                     item.Elet += 30;
-                    item.Kozelsebzes += 10;
+                    item.Kozelsebzes += 15;
                     item.EXP = (item.EXP + mennyi) - 100;
                 }
                 else
@@ -460,14 +460,19 @@ namespace FishyRaidFightSystem.Logic
         {
             if (melyikpalya == "1")
             {
-                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
+                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
                 Enemy.FishesInFight = new ObservableCollection<Fish>();
-                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1, Level=1, Maxhp=60 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2, Level = 1, Maxhp=60 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3, Level = 1, Maxhp=60 });
+                int szamlalo = 1;
                 foreach (var item in Enemy.FishesInFight)
                 {
-                    item.Tavolsagi = new DoubleBubble(item);
+                    
+                        item.Tavolsagi = new RandomBubble(item);
+                    
+
+                    szamlalo++;
 
                 }
             }
@@ -475,11 +480,11 @@ namespace FishyRaidFightSystem.Logic
             {
                 string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "polip.png");
                 Enemy.FishesInFight = new ObservableCollection<Fish>();
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 160, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Ero=30, Kozelsebzes = 20, Helye = 1 , Level=4, Maxhp=160});
                 imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
-                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
-                Enemy.FishesInFight.Add(new Fish() { Elet = 60, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
+                Enemy.FishesInFight.Add(new Fish() { Elet = 120, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Ero = 20, Kozelsebzes = 20, Helye = 2, Level = 4, Maxhp=120 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 120, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Ero = 20, Kozelsebzes = 20, Helye = 3, Level = 4, Maxhp=120 });
                 foreach (var item in Enemy.FishesInFight)
                 {
                     item.Tavolsagi = new DoubleBubble(item);
@@ -487,63 +492,77 @@ namespace FishyRaidFightSystem.Logic
             }
             else if (melyikpalya == "3")
             {
-                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
-
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
+                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "polip.png");
+                Enemy.FishesInFight = new ObservableCollection<Fish>();
+                Enemy.FishesInFight.Add(new Fish() { Elet = 160, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, Ero = 40, pozicio = 10, Kozelsebzes = 20, Helye = 1, Level = 1, Maxhp = 160 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 140, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, Ero = 30, pozicio = 23, Kozelsebzes = 20, Helye = 2, Level = 1, Maxhp = 140 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "polip.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 160, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, Ero = 40, pozicio = 30, Kozelsebzes = 20, Helye = 3, Level = 1, Maxhp = 160 });
                 foreach (var item in Enemy.FishesInFight)
                 {
                     item.Tavolsagi = new DoubleBubble(item);
                 }
+                Enemy.FishesInFight[1].Tavolsagi = new RandomBubble(Enemy.FishesInFight[1]);
             }
             else if (melyikpalya == "4")
             {
-                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
-
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
+                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
+                Enemy.FishesInFight = new ObservableCollection<Fish>();
+                Enemy.FishesInFight.Add(new Fish() { Elet = 240, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, Ero = 50, pozicio = 10, Kozelsebzes = 60, Helye = 1, Level = 1, Maxhp = 240 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "polip.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 160, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, Ero = 40, pozicio = 23, Kozelsebzes = 40, Helye = 2, Level = 1, Maxhp = 160 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "polip.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 160, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, Ero = 40, pozicio = 30, Kozelsebzes = 40, Helye = 3, Level = 1, Maxhp = 160 });
                 foreach (var item in Enemy.FishesInFight)
                 {
-                    item.Tavolsagi = new DoubleBubble(item);
+                    item.Tavolsagi = new RandomBubble(item);
                 }
+                Enemy.FishesInFight[0].Tavolsagi = new BubbleKiss(Enemy.FishesInFight[0]);
             }
             else if (melyikpalya == "5")
             {
-                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
-
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
+                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "polip.png");
+                Enemy.FishesInFight = new ObservableCollection<Fish>();
+                Enemy.FishesInFight.Add(new Fish() { Elet = 360, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, Ero = 60, pozicio = 10, Kozelsebzes = 60, Helye = 1, Level = 1, Maxhp = 360 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 160, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, Ero = 40, pozicio = 23, Kozelsebzes = 40, Helye = 2, Level = 1, Maxhp = 160 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 360, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, Ero = 60, pozicio = 30, Kozelsebzes = 40, Helye = 3, Level = 1, Maxhp = 360 });
                 foreach (var item in Enemy.FishesInFight)
                 {
                     item.Tavolsagi = new DoubleBubble(item);
                 }
+                Enemy.FishesInFight[0].Tavolsagi = new RandomBubble(Enemy.FishesInFight[0]);
+                Enemy.FishesInFight[2].Tavolsagi = new RandomBubble(Enemy.FishesInFight[2]);
             }
             else if (melyikpalya == "6")
             {
-                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
+                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "axolotl.png");
+                Enemy.FishesInFight = new ObservableCollection<Fish>();
+                Enemy.FishesInFight.Add(new Fish() { Elet = 540, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, Ero = 50, pozicio = 10, Kozelsebzes = 60, Helye = 1, Level = 1, Maxhp = 540 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 360, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, Ero = 80, pozicio = 23, Kozelsebzes = 80, Helye = 2, Level = 1, Maxhp = 360 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 360, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, Ero = 80, pozicio = 30, Kozelsebzes = 80, Helye = 3, Level = 1, Maxhp = 360 });
 
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
-                foreach (var item in Enemy.FishesInFight)
-                {
-                    item.Tavolsagi = new DoubleBubble(item);
-                }
+                Enemy.FishesInFight[0].Tavolsagi = new BabyThrow(Enemy.FishesInFight[0]);
+                Enemy.FishesInFight[1].Tavolsagi = new RandomBubble(Enemy.FishesInFight[0]);
+                Enemy.FishesInFight[2].Tavolsagi = new RandomBubble(Enemy.FishesInFight[2]);
             }
             else if (melyikpalya == "7")
             {
-                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "jellyfish.png");
+                string imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "axolotl.png");
+                Enemy.FishesInFight = new ObservableCollection<Fish>();
+                Enemy.FishesInFight.Add(new Fish() { Elet = 860, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, Ero = 50, pozicio = 10, Kozelsebzes = 60, Helye = 1, Level = 1, Maxhp = 540 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "sponge.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 720, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, Ero = 80, pozicio = 23, Kozelsebzes = 80, Helye = 2, Level = 1, Maxhp = 360 });
+                imgPath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "axolotl.png");
+                Enemy.FishesInFight.Add(new Fish() { Elet = 860, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, Ero = 80, pozicio = 30, Kozelsebzes = 80, Helye = 3, Level = 1, Maxhp = 360 });
 
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 1, Eleresiut = imgPath, regieleres = imgPath, pozicio = 10, Kozelsebzes = 10, Helye = 1 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 2, Eleresiut = imgPath, regieleres = imgPath, pozicio = 23, Kozelsebzes = 10, Helye = 2 });
-                Enemy.FishesInFight.Add(new Fish() { Elet = 80, sorszam = 3, Eleresiut = imgPath, regieleres = imgPath, pozicio = 30, Kozelsebzes = 10, Helye = 3 });
-                foreach (var item in Enemy.FishesInFight)
-                {
-                    item.Tavolsagi = new DoubleBubble(item);
-                }
+                Enemy.FishesInFight[0].Tavolsagi = new BabyThrow(Enemy.FishesInFight[0]);
+                Enemy.FishesInFight[1].Tavolsagi = new RandomBubble(Enemy.FishesInFight[0]);
+                Enemy.FishesInFight[2].Tavolsagi = new BabyThrow(Enemy.FishesInFight[2]);
             }
 
         }
@@ -1245,6 +1264,8 @@ namespace FishyRaidFightSystem.Logic
                                 
                             }
                         }
+                        
+
 
 
 
