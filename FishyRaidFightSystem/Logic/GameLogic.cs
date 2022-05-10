@@ -16,6 +16,7 @@ namespace FishyRaidFightSystem.Logic
     internal class GameLogic : IGameModel
     {
         public event EventHandler Changed;
+        public string kapottexp { get; set; }
         public Player Jatekos { get; set; }
         public ObservableCollection<Fish> PlayerFish { get; set; }
         public ObservableCollection<Fish> EnemyFish { get; set; }
@@ -39,6 +40,7 @@ namespace FishyRaidFightSystem.Logic
 
         public GameLogic(string mod, string levelszam)
         {
+            this.kapottexp = "10";
             this.melyikpalya = levelszam;
 
             // this.Jatekos = new Player();
@@ -57,6 +59,39 @@ namespace FishyRaidFightSystem.Logic
 
             this.Enemy = new Enemy();
             this.Korszam = 0;
+            Task korszamkarbantarto = new Task(() =>
+              {
+
+                  while (!Jatekvege)
+                  {
+                      if (Korszam == 1 && Enemy.FishesInFight[0].meghalt)
+                      {
+                          Korszam++;
+                      }
+                      if (Korszam == 3 && Enemy.FishesInFight[1].meghalt)
+                      {
+                          Korszam++;
+                      }
+                      if (Korszam == 5 && Enemy.FishesInFight[2].meghalt)
+                      {
+                          Korszam = 0;
+                      }
+                      if (Korszam == 0 && Jatekos.FishesInFight[0].meghalt)
+                      {
+                          Korszam++;
+                      }
+                      if (Korszam == 2 && Jatekos.FishesInFight[1].meghalt)
+                      {
+                          Korszam++;
+                      }
+                      if (Korszam == 4 && Jatekos.FishesInFight[2].meghalt)
+                      {
+                          Korszam = 0;
+                      }
+                      Thread.Sleep(300);
+                  }
+              });
+            korszamkarbantarto.Start();
             this.Palyaszam = 1;
             this.MaxPalyaszam = 1;
             //  this.PlayerFish = new List<Fish>();
@@ -246,12 +281,13 @@ namespace FishyRaidFightSystem.Logic
                         }
                     }
                     int mennyi = R.Next(10, max * 10);
+                    this.kapottexp = mennyi.ToString();
                     AddExp(Jatekos.FishesInFight, mennyi);
                 }
                 else { 
 
                     int szam = R.Next(1, 101);
-                    if (szam <= 3000)
+                    if (szam <= 30)
                     {
                         int melyik = 0;
                         
@@ -272,7 +308,7 @@ namespace FishyRaidFightSystem.Logic
                                 kepszam = melyik.ToString()
                             };
                             Jatekos.AllFishes.Add(reward);
-                          
+                            this.kapottexp = "10";
                             AddExp(Jatekos.FishesInFight, 10);
                         }
                         else if (melyikpalya == "2")
@@ -311,7 +347,7 @@ namespace FishyRaidFightSystem.Logic
                             }
 
                             Jatekos.AllFishes.Add(reward);
-                           
+                            this.kapottexp = "20";
                             AddExp(Jatekos.FishesInFight, 20);
 
                         }
@@ -365,6 +401,7 @@ namespace FishyRaidFightSystem.Logic
                                     reward.Buff = new Health(reward);
                                 }
                             }
+                            this.kapottexp = "30";
                             AddExp(Jatekos.FishesInFight, 30);
                             Jatekos.AllFishes.Add(reward);
                         }
@@ -419,6 +456,7 @@ namespace FishyRaidFightSystem.Logic
                                     reward.Buff = new Health(reward);
                                 }
                             }
+                            this.kapottexp = "40";
                             AddExp(Jatekos.FishesInFight, 40);
                             Jatekos.AllFishes.Add(reward);
                         }
@@ -481,6 +519,7 @@ namespace FishyRaidFightSystem.Logic
                                     reward.Buff = new MaxHealth(reward);
                                 }
                             }
+                            this.kapottexp = "50";
                             AddExp(Jatekos.FishesInFight, 50);
                             Jatekos.AllFishes.Add(reward);
                         }
@@ -547,7 +586,8 @@ namespace FishyRaidFightSystem.Logic
                                     reward.Buff = new MaxHealth(reward);
                                 }
                             }
-                            AddExp(Jatekos.FishesInFight, 50);
+                            this.kapottexp = "60";
+                            AddExp(Jatekos.FishesInFight, 60);
                             Jatekos.AllFishes.Add(reward);
                         }
                         else if (melyikpalya == "7")
@@ -613,6 +653,7 @@ namespace FishyRaidFightSystem.Logic
                                     reward.Buff = new MaxHealth(reward);
                                 }
                             }
+                            this.kapottexp = "70";
                             AddExp(Jatekos.FishesInFight, 50);
                             Jatekos.AllFishes.Add(reward);
                         }

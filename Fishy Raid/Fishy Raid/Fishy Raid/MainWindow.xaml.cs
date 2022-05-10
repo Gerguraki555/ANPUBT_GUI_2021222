@@ -100,7 +100,7 @@ namespace Fishy_Raid
         {
             Window win = new FishyRaidFightSystem.MainWindow();
             win.Show();
-            this.Close();
+            
             
         }
 
