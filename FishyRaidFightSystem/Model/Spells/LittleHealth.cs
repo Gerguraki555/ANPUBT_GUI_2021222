@@ -18,7 +18,8 @@ namespace FishyRaidFightSystem.Model.Spells
         public LittleHealth(Fish hal)
         {
             this.Energiakoltseg = 1;
-            this.effect = new AudioFileReader("holy.wav");
+            string musicpath = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "holy.wav");
+            this.effect = new AudioFileReader(musicpath);
             effectout = new WaveOut();
             this.Hala = hal;
             effectout.Init(effect);

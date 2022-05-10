@@ -152,22 +152,22 @@ namespace FishyRaidFightSystem.Model.Spells
                         {
                             if (Hala.visszamegy == false)
                             {
-                                if (Hala.x != mitx)
+                                if (Hala.x != tamadni.x)
                                 {
-                                    if (Hala.x > mitx)
+                                    if (Hala.x > tamadni.x)
                                     {
                                         Hala.x--;
                                     }
-                                    else if (Hala.x < mitx) { Hala.x++; }
+                                    else if (Hala.x < tamadni.x) { Hala.x++; }
                                 }
 
-                                if (Hala.y != mity)
+                                if (Hala.y != tamadni.y)
                                 {
-                                    if (Hala.y > mity)
+                                    if (Hala.y > tamadni.y)
                                     {
                                         Hala.y--;
                                     }
-                                    else if (Hala.y < mity) { Hala.y++; }
+                                    else if (Hala.y < tamadni.y) { Hala.y++; }
                                 }
                             }
                             if (Hala.visszamegy == true)
@@ -186,13 +186,12 @@ namespace FishyRaidFightSystem.Model.Spells
                                                     tamadni = item;
                                                 }
                                             }
-                                        }                                        
+                                        }
                                         tamadni.Elet -= Hala.Kozelsebzes;
                                         punch.CurrentTime = new TimeSpan(0L);
                                         punchout.Play();
-                                                                                
                                     }
-
+                                    
 
                                     if (tamadni.Elet <= 0)
                                     {
