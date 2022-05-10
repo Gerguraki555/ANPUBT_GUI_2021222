@@ -102,7 +102,7 @@ namespace FishyRaidFightSystem.Model.Spells
                         }
                     }
 
-                    Csinal(halak[tamadoindex]);
+                    Csinal(halak[tamadoindex],halak);
                 }
             }
             else
@@ -117,12 +117,12 @@ namespace FishyRaidFightSystem.Model.Spells
                     }
                 }
                 
-                Csinal(halak[index]);
+                Csinal(halak[index],halak);
             }
 
             }
 
-        public void Csinal(Fish mit)
+        public void Csinal(Fish mit, ObservableCollection<Fish> halak)
         {
 
 
@@ -135,6 +135,7 @@ namespace FishyRaidFightSystem.Model.Spells
             int mity = (int)mit.y;
             bool sebzett = false;
             Hala.elfoglalt = true;
+            Fish tamadni = mit;
             ;
 
             if (!delegalthozzaadva)
@@ -174,18 +175,29 @@ namespace FishyRaidFightSystem.Model.Spells
 
                                     if (!Hala.meghalt)
                                     {
-                                        mit.Elet -= Hala.Kozelsebzes;
+                                        if (tamadni.meghalt)
+                                        {
+                                            foreach (var item in halak)
+                                            {
+                                                if (!item.meghalt)
+                                                {
+                                                    tamadni = item;
+                                                }
+                                            }
+                                        }                                        
+                                        tamadni.Elet -= Hala.Kozelsebzes;
                                         punch.CurrentTime = new TimeSpan(0L);
                                         punchout.Play();
+                                                                                
                                     }
 
 
-                                    if (mit.Elet <= 0)
+                                    if (tamadni.Elet <= 0)
                                     {
-                                        mit.Elet = 0;
-                                        mit.meghalt = true;
+                                        tamadni.Elet = 0;
+                                        tamadni.meghalt = true;
                                        // mit.dead = fishbonepath;
-                                        mit.Eleresiut = Fishbone.AddFishbonepath();
+                                        tamadni.Eleresiut = Fishbone.AddFishbonepath();
                                     }
                                     sebzett = true;
 
