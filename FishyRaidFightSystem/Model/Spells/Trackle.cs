@@ -133,21 +133,33 @@ namespace FishyRaidFightSystem.Model.Spells
             Hala.oldy = Hala.y;
             Hala.tamad = true;
             Hala.csikmutat = false;
-            int mitx = (int)mit.x;
-            int mity = (int)mit.y;
+          
             bool sebzett = false;
             Hala.elfoglalt = true;
             Fish tamadni = mit;
+            int mitx = (int)tamadni.x;
+            int mity = (int)tamadni.y;
             ;
             this.mittamad = mit;
-            if (!delegalthozzaadva)
-            {
-                dt.Tick += delegate
+              if (!delegalthozzaadva)
+              {
+          //  dt = new DispatcherTimer();
+           // dt.Interval = TimeSpan.FromMilliseconds(10);
+
+            dt.Tick += delegate
                 {
                     int szamlalo = 0;
 
                     while (szamlalo < 10)
                     {
+                        if (Hala.meghalt)
+                        {
+                            Hala.tamad = false; //Befagyasztja a játékot
+                            Hala.elfoglalt = false;
+                            Hala.visszamegy = false;
+                            sebzett = true;
+                        }
+
                         if (Hala != null)
                         {
                             if (Hala.visszamegy == false)
@@ -197,6 +209,7 @@ namespace FishyRaidFightSystem.Model.Spells
                                     {
                                         tamadni.Elet = 0;
                                         tamadni.meghalt = true;
+                                     
                                        // mit.dead = fishbonepath;
                                         tamadni.Eleresiut = Fishbone.AddFishbonepath();
                                     }

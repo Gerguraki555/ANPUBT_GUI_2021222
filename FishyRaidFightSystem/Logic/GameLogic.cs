@@ -1150,6 +1150,11 @@ namespace FishyRaidFightSystem.Logic
 
                                 if (!Jatekvege)
                                 {
+                                /*    if (Enemy.FishesInFight[melyik].Kozelharci is Trackle)
+                                    {
+                                        Enemy.FishesInFight[melyik].Kozelharci = new Trackle(Enemy.FishesInFight[melyik]);
+                                    }*/
+
                                     Enemy.FishesInFight[melyik].Kozelharci.Tamad(Jatekos.FishesInFight[melyiket],Jatekos.FishesInFight);
                                 }
                             }
@@ -1182,6 +1187,11 @@ namespace FishyRaidFightSystem.Logic
 
                                         if (!Jatekvege)
                                         {
+                                        /*    if (Enemy.FishesInFight[melyik].Kozelharci is Trackle)
+                                            {
+                                                Enemy.FishesInFight[melyik].Kozelharci = new Trackle(Enemy.FishesInFight[melyik]);
+                                            }*/
+
                                             Enemy.FishesInFight[melyik].Kozelharci.Tamad(Jatekos.FishesInFight[melyiket + 1],Jatekos.FishesInFight);
                                         }
                                     }
@@ -1213,6 +1223,11 @@ namespace FishyRaidFightSystem.Logic
 
                                         if (!Jatekvege)
                                         {
+                                         /*   if (Enemy.FishesInFight[melyik].Kozelharci is Trackle)
+                                            {
+                                                Enemy.FishesInFight[melyik].Kozelharci = new Trackle(Enemy.FishesInFight[melyik]);
+                                            }*/
+
                                             Enemy.FishesInFight[melyik].Kozelharci.Tamad(Jatekos.FishesInFight[melyiket - 1],Jatekos.FishesInFight);
                                         }
                                     }
@@ -1511,6 +1526,11 @@ namespace FishyRaidFightSystem.Logic
 
                         if (Enemy.FishesInFight[melyiket].Eleresiut != Fishbone.AddFishbonepath())
                         {
+                            if(Jatekos.FishesInFight[hely].Kozelharci is Trackle)
+                            {
+                                Jatekos.FishesInFight[hely].Kozelharci = new Trackle(Jatekos.FishesInFight[hely]);
+                            }
+
                             Jatekos.FishesInFight[hely].Kozelharci.Tamad(Enemy.FishesInFight[melyiket], Enemy.FishesInFight);
                         }
                         else
@@ -1523,6 +1543,12 @@ namespace FishyRaidFightSystem.Logic
                                     index = i;
                                 }
                             }
+
+                            if (Jatekos.FishesInFight[hely].Kozelharci is Trackle)
+                            {
+                                Jatekos.FishesInFight[hely].Kozelharci = new Trackle(Jatekos.FishesInFight[hely]);
+                            }
+
                             Jatekos.FishesInFight[hely].Kozelharci.Tamad(Enemy.FishesInFight[index], Enemy.FishesInFight);
                         }
 
