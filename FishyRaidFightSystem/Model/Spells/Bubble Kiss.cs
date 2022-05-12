@@ -154,6 +154,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 if (mit.Elet <= 0)
                 {
                     mit.meghalt = true;
+                    
                     mit.Eleresiut = Fishbone.AddFishbonepath();
                 }
                 Hala.lovedeke.aktiv = false;
