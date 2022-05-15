@@ -1,1 +1,2432 @@
-{"FishesInFight":[{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":100,"Ero":20,"Level":2,"EXP":169,"Maxhp":100,"Levelformat":"0/0","delegalthozzaadva":false,"lovedeke":{"x":380.0,"y":408.5,"aktiv":false,"eleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"1","Tavolsagi":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":3,"Nev":"Smelly Bubble"},"Buff":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":"GAINED 1 ENERGY","KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":"GAIN ENERGY"},"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","elfoglalt":false,"sorszam":1,"pozicio":21,"meghalt":false,"x":380.0,"y":408.5,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":20,"Helye":1,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":100,"Ero":20,"Level":2,"EXP":195,"Maxhp":100,"Levelformat":"0/0","delegalthozzaadva":false,"lovedeke":{"x":28.0,"y":27.125,"aktiv":false,"eleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"1","Tavolsagi":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":3,"Nev":"Smelly Bubble"},"Buff":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":"GAINED 1 ENERGY","KorszamotNovelo":false,"Befejezett":true,"Energiakoltseg":0,"Nev":"GAIN ENERGY"},"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","elfoglalt":false,"sorszam":2,"pozicio":1,"meghalt":false,"x":28.0,"y":27.125,"oldx":28.0,"oldy":27.125,"tamad":false,"visszamegy":false,"Kozelsebzes":20,"Helye":2,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":100,"Ero":8,"Level":1,"EXP":30,"Maxhp":100,"Levelformat":"0/0","delegalthozzaadva":false,"lovedeke":{"x":28.0,"y":682.3076923076923,"aktiv":false,"eleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"42","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\42.png","elfoglalt":false,"sorszam":3,"pozicio":1,"meghalt":false,"x":28.0,"y":682.3076923076923,"oldx":28.0,"oldy":682.3076923076923,"tamad":false,"visszamegy":false,"Kozelsebzes":10,"Helye":3,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\42.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"}],"AllFishes":[{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":100,"Ero":10,"Level":1,"EXP":82,"Maxhp":100,"Levelformat":"82/100","delegalthozzaadva":false,"lovedeke":{"x":28.0,"y":27.125,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"1","Tavolsagi":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":3,"Nev":"Smelly Bubble"},"Buff":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":"GAINED 1 ENERGY","KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":"GAIN ENERGY"},"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","elfoglalt":false,"sorszam":2,"pozicio":18,"meghalt":false,"x":28.0,"y":27.125,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":10,"Helye":2,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":100,"Ero":20,"Level":2,"EXP":39,"Maxhp":100,"Levelformat":"39/200","delegalthozzaadva":false,"lovedeke":{"x":28.0,"y":682.3076923076923,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"1","Tavolsagi":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":3,"Nev":"Smelly Bubble"},"Buff":{"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":"GAINED 1 ENERGY","KorszamotNovelo":false,"Befejezett":true,"Energiakoltseg":0,"Nev":"GAIN ENERGY"},"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","elfoglalt":false,"sorszam":3,"pozicio":27,"meghalt":false,"x":28.0,"y":682.3076923076923,"oldx":28.0,"oldy":682.3076923076923,"tamad":false,"visszamegy":false,"Kozelsebzes":20,"Helye":3,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":44,"Ero":10,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/100","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"38","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\38.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":8,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\38.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":58,"Ero":7,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/100","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"33","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\33.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":5,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\33.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":100,"Ero":8,"Level":1,"EXP":30,"Maxhp":100,"Levelformat":"30/100","delegalthozzaadva":false,"lovedeke":{"x":1180.0,"y":408.5,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"16","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\16.png","elfoglalt":true,"sorszam":1,"pozicio":26,"meghalt":false,"x":1170.0,"y":408.5,"oldx":380.0,"oldy":408.5,"tamad":true,"visszamegy":true,"Kozelsebzes":5,"Helye":1,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\16.png","csikmutat":false,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":48,"Ero":6,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/100","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"50","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\50.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":9,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\50.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":93,"Ero":8,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/100","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"26","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\26.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":11,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\26.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":79,"Ero":10,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/100","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"12","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\12.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":6,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\12.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":100,"Ero":7,"Level":1,"EXP":40,"Maxhp":100,"Levelformat":"40/100","delegalthozzaadva":false,"lovedeke":{"x":1408.0,"y":682.3076923076923,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"8","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\8.png","elfoglalt":true,"sorszam":3,"pozicio":19,"meghalt":false,"x":1398.0,"y":682.3076923076923,"oldx":28.0,"oldy":682.3076923076923,"tamad":true,"visszamegy":true,"Kozelsebzes":9,"Helye":3,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\8.png","csikmutat":false,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":56,"Ero":5,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/0","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"5","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\5.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":11,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\5.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":71,"Ero":10,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/0","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"41","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\41.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":11,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\41.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"},{"locker":{},"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0010000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"Elet":95,"Ero":12,"Level":1,"EXP":0,"Maxhp":100,"Levelformat":"0/0","delegalthozzaadva":false,"lovedeke":{"x":0.0,"y":0.0,"aktiv":false,"eleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png","Sebesseg":"0,0"},"kepszam":"1","Tavolsagi":null,"Buff":null,"Eleresiut":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","elfoglalt":false,"sorszam":0,"pozicio":0,"meghalt":false,"x":0.0,"y":0.0,"oldx":0.0,"oldy":0.0,"tamad":false,"visszamegy":false,"Kozelsebzes":5,"Helye":0,"regieleres":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Fishes\\1.png","csikmutat":true,"dead":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","tavolsagitipus":null,"bufftipus":null,"Kozelharci":{"dt":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.0100000","Tag":null},"vegzo":{"Dispatcher":{"Thread":{"ManagedThreadId":1,"IsAlive":true,"IsBackground":false,"IsThreadPoolThread":false,"Priority":2,"ThreadState":0,"CurrentCulture":"en-US","CurrentUICulture":"en-US","ExecutionContext":{},"Name":null,"ApartmentState":0},"HasShutdownStarted":false,"HasShutdownFinished":false,"Hooks":{}},"IsEnabled":false,"Interval":"00:00:00.1000000","Tag":null},"delegalthozzaadva":false,"fishbonepath":"C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\fishbone.png","mittamad":null,"Hala":null,"mutat":false,"mutatasleszedve":false,"minlevel":0,"message":null,"KorszamotNovelo":false,"Befejezett":false,"Energiakoltseg":0,"Nev":null},"Kepessegeffekt":"no"}],"Level":0,"Potions":[],"SeaCoin":0,"Energy":3,"IsActive":false}
+{
+  
+  "FishesInFight": [
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 35,
+      "Level": 3,
+      "EXP": 230,
+      "Maxhp": 100,
+      "Levelformat": "0/0",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 380.0,
+        "y": 408.5,
+        "aktiv": false,
+        "eleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "1",
+      "Tavolsagi": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 3,
+        "Nev": "Smelly Bubble"
+      },
+      "Buff": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": "GAINED 1 ENERGY",
+        "KorszamotNovelo": false,
+        "Befejezett": true,
+        "Energiakoltseg": 0,
+        "Nev": "GAIN ENERGY"
+      },
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "elfoglalt": false,
+      "sorszam": 1,
+      "pozicio": 19,
+      "meghalt": false,
+      "x": 380.0,
+      "y": 408.5,
+      "oldx": 380.0,
+      "oldy": 408.5,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 35,
+      "Helye": 1,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 35,
+      "Level": 3,
+      "EXP": 256,
+      "Maxhp": 100,
+      "Levelformat": "0/0",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 28.0,
+        "y": 27.125,
+        "aktiv": false,
+        "eleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "1",
+      "Tavolsagi": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 3,
+        "Nev": "Smelly Bubble"
+      },
+      "Buff": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": "GAINED 1 ENERGY",
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": "GAIN ENERGY"
+      },
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "elfoglalt": false,
+      "sorszam": 2,
+      "pozicio": 12,
+      "meghalt": false,
+      "x": 28.0,
+      "y": 27.125,
+      "oldx": 28.0,
+      "oldy": 27.125,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 35,
+      "Helye": 2,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 23,
+      "Level": 1,
+      "EXP": 26,
+      "Maxhp": 100,
+      "Levelformat": "0/0",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 338.0,
+        "y": 682.3076923076923,
+        "aktiv": false,
+        "eleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "1",
+      "Tavolsagi": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 3,
+        "Nev": "Smelly Bubble"
+      },
+      "Buff": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": "GAINED 1 ENERGY",
+        "KorszamotNovelo": false,
+        "Befejezett": true,
+        "Energiakoltseg": 1,
+        "Nev": "SMALL RECOVER"
+      },
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "elfoglalt": true,
+      "sorszam": 3,
+      "pozicio": 14,
+      "meghalt": false,
+      "x": 348.0,
+      "y": 682.3076923076923,
+      "oldx": 28.0,
+      "oldy": 682.3076923076923,
+      "tamad": true,
+      "visszamegy": false,
+      "Kozelsebzes": 24,
+      "Helye": 3,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "csikmutat": false,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    }
+  ],
+  "AllFishes": [
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 10,
+      "Level": 1,
+      "EXP": 82,
+      "Maxhp": 100,
+      "Levelformat": "82/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 28.0,
+        "y": 27.125,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "1",
+      "Tavolsagi": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 3,
+        "Nev": "Smelly Bubble"
+      },
+      "Buff": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": "GAINED 1 ENERGY",
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": "GAIN ENERGY"
+      },
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "elfoglalt": false,
+      "sorszam": 2,
+      "pozicio": 18,
+      "meghalt": false,
+      "x": 28.0,
+      "y": 27.125,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 10,
+      "Helye": 2,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 44,
+      "Ero": 10,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "38",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\38.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 8,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\38.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 58,
+      "Ero": 7,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "33",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\33.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 5,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\33.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 8,
+      "Level": 1,
+      "EXP": 30,
+      "Maxhp": 100,
+      "Levelformat": "30/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 1180.0,
+        "y": 408.5,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "16",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\16.png",
+      "elfoglalt": true,
+      "sorszam": 1,
+      "pozicio": 26,
+      "meghalt": false,
+      "x": 1170.0,
+      "y": 408.5,
+      "oldx": 380.0,
+      "oldy": 408.5,
+      "tamad": true,
+      "visszamegy": true,
+      "Kozelsebzes": 5,
+      "Helye": 1,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\16.png",
+      "csikmutat": false,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 48,
+      "Ero": 6,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "50",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\50.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 9,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\50.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 93,
+      "Ero": 8,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "26",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\26.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 11,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\26.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 79,
+      "Ero": 10,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "12",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\12.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 6,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\12.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 7,
+      "Level": 1,
+      "EXP": 40,
+      "Maxhp": 100,
+      "Levelformat": "40/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 1408.0,
+        "y": 682.3076923076923,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "8",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\8.png",
+      "elfoglalt": true,
+      "sorszam": 3,
+      "pozicio": 19,
+      "meghalt": false,
+      "x": 1398.0,
+      "y": 682.3076923076923,
+      "oldx": 28.0,
+      "oldy": 682.3076923076923,
+      "tamad": true,
+      "visszamegy": true,
+      "Kozelsebzes": 9,
+      "Helye": 3,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\8.png",
+      "csikmutat": false,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 56,
+      "Ero": 5,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "5",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\5.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 11,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\5.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 71,
+      "Ero": 10,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "41",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\41.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 11,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\41.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 95,
+      "Ero": 12,
+      "Level": 1,
+      "EXP": 0,
+      "Maxhp": 100,
+      "Levelformat": "0/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 0.0,
+        "y": 0.0,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "1",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "elfoglalt": false,
+      "sorszam": 0,
+      "pozicio": 0,
+      "meghalt": false,
+      "x": 0.0,
+      "y": 0.0,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 5,
+      "Helye": 0,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 8,
+      "Level": 1,
+      "EXP": 30,
+      "Maxhp": 100,
+      "Levelformat": "30/100",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 28.0,
+        "y": 682.3076923076923,
+        "aktiv": false,
+        "eleres": "C:\\Users\\pc\\Desktop\\Fishy Radi mentés\\13 - Blockchain mentes - Copy\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "42",
+      "Tavolsagi": null,
+      "Buff": null,
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\42.png",
+      "elfoglalt": false,
+      "sorszam": 3,
+      "pozicio": 1,
+      "meghalt": false,
+      "x": 28.0,
+      "y": 682.3076923076923,
+      "oldx": 28.0,
+      "oldy": 682.3076923076923,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 10,
+      "Helye": 3,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\42.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    },
+    {
+      "locker": {},
+      "dt": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.0010000",
+        "Tag": null
+      },
+      "vegzo": {
+        "Dispatcher": {
+          "Thread": {
+            "ManagedThreadId": 1,
+            "IsAlive": true,
+            "IsBackground": false,
+            "IsThreadPoolThread": false,
+            "Priority": 2,
+            "ThreadState": 0,
+            "CurrentCulture": "en-US",
+            "CurrentUICulture": "en-US",
+            "ExecutionContext": {},
+            "Name": null,
+            "ApartmentState": 0
+          },
+          "HasShutdownStarted": false,
+          "HasShutdownFinished": false,
+          "Hooks": {}
+        },
+        "IsEnabled": false,
+        "Interval": "00:00:00.1000000",
+        "Tag": null
+      },
+      "Elet": 100,
+      "Ero": 20,
+      "Level": 2,
+      "EXP": 174,
+      "Maxhp": 100,
+      "Levelformat": "174/200",
+      "delegalthozzaadva": false,
+      "lovedeke": {
+        "x": 28.0,
+        "y": 682.3076923076923,
+        "aktiv": false,
+        "eleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\bubble.png",
+        "Sebesseg": "0,0"
+      },
+      "kepszam": "1",
+      "Tavolsagi": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 3,
+        "Nev": "Smelly Bubble"
+      },
+      "Buff": {
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": "GAINED 1 ENERGY",
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": "GAIN ENERGY"
+      },
+      "Eleresiut": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "elfoglalt": false,
+      "sorszam": 3,
+      "pozicio": 16,
+      "meghalt": false,
+      "x": 28.0,
+      "y": 682.3076923076923,
+      "oldx": 0.0,
+      "oldy": 0.0,
+      "tamad": false,
+      "visszamegy": false,
+      "Kozelsebzes": 20,
+      "Helye": 3,
+      "regieleres": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Fishes\\1.png",
+      "csikmutat": true,
+      "dead": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+      "tavolsagitipus": null,
+      "bufftipus": null,
+      "Kozelharci": {
+        "dt": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.0100000",
+          "Tag": null
+        },
+        "vegzo": {
+          "Dispatcher": {
+            "Thread": {
+              "ManagedThreadId": 1,
+              "IsAlive": true,
+              "IsBackground": false,
+              "IsThreadPoolThread": false,
+              "Priority": 2,
+              "ThreadState": 0,
+              "CurrentCulture": "en-US",
+              "CurrentUICulture": "en-US",
+              "ExecutionContext": {},
+              "Name": null,
+              "ApartmentState": 0
+            },
+            "HasShutdownStarted": false,
+            "HasShutdownFinished": false,
+            "Hooks": {}
+          },
+          "IsEnabled": false,
+          "Interval": "00:00:00.1000000",
+          "Tag": null
+        },
+        "delegalthozzaadva": false,
+        "fishbonepath": "C:\\Users\\Dell\\source\\repos\\Gerguraki555\\ANPUBT_GUI_2021222/Images\\fishbone.png",
+        "mittamad": null,
+        "Hala": null,
+        "mutat": false,
+        "mutatasleszedve": false,
+        "minlevel": 0,
+        "message": null,
+        "KorszamotNovelo": false,
+        "Befejezett": false,
+        "Energiakoltseg": 0,
+        "Nev": null
+      },
+      "Kepessegeffekt": "no"
+    }
+  ],
+  "Level": 0,
+  "Potions": [],
+  "SeaCoin": 0,
+  "Energy": 4,
+  "IsActive": false
+}

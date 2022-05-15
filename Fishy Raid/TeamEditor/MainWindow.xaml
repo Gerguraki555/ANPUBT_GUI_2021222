@@ -27,6 +27,7 @@
                             <Label Content="{Binding Level}" ContentStringFormat="Level: {0}" Foreground="Gold" OpacityMask="Black"/>
                             <Label Content="{Binding Levelformat}" ContentStringFormat="EXP: {0}" Foreground="Gold"/>
                             <Label Content="{Binding Elet}" ContentStringFormat="Health: {0}" Foreground="Gold"/>
+                            <Label Content="{Binding Buff.Nev}" ContentStringFormat="Buff: {0}" Foreground="Gold"/>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
@@ -48,6 +49,7 @@
                             <Label Content="{Binding Level}" ContentStringFormat="Level {0}" Foreground="Black" />
                             <Label Content="{Binding Levelformat}" ContentStringFormat="EXP {0}" Foreground="Black"/>
                             <Label Content="{Binding Elet}" ContentStringFormat="Health: {0}" Foreground="Black"/>
+                            <Label Content="{Binding Buff.Nev}" ContentStringFormat="Buff: {0}" Foreground="Black"/>
 
                         </StackPanel>
 
