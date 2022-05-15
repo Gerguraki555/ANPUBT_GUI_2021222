@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Blockchain Controller\getEthereumBalance\Blockchain Controller.csproj" />
+  </ItemGroup>
+
 </Project>

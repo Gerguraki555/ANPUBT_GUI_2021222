@@ -69,6 +69,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 jatekos.Energy += 1;
                 Thread.Sleep(2000);
                 effectout.Stop();
+                SzovegLeszed();
 
             }, TaskCreationOptions.LongRunning);
             csere.Start();
@@ -77,17 +78,21 @@ namespace FishyRaidFightSystem.Model.Spells
         public override void SzovegLeszed()
         {
 
-            this.mutatasleszedve = true;
-            DispatcherTimer timer = new DispatcherTimer();
+            /* this.mutatasleszedve = true;
 
-            timer.Tick += delegate
-            {
-                this.mutat = false;
-                this.mutatasleszedve = false;
-                timer.Stop();
-            };
-            timer.Interval = TimeSpan.FromSeconds(2);
-            timer.Start();
+             DispatcherTimer timer = new DispatcherTimer();
+
+             timer.Tick += delegate
+             {
+                 this.mutat = false;
+                 this.mutatasleszedve = false;
+                 timer.Stop();
+             };
+             timer.Interval = TimeSpan.FromSeconds(2);
+             timer.Start();*/
+            this.mutatasleszedve = true;
+            this.mutat = false;
+            this.mutatasleszedve = false;
 
         }
 

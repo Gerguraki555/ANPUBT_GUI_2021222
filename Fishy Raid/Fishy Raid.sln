@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fishy Raid", "Fishy Raid\Fi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamEditor", "TeamEditor\TeamEditor.csproj", "{DAECF620-B67B-4C45-8E72-B9985843762B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfterFightMenu", "AfterFightMenu\AfterFightMenu.csproj", "{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AfterFightMenu", "AfterFightMenu\AfterFightMenu.csproj", "{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blockchain Controller", "Blockchain Controller\getEthereumBalance\Blockchain Controller.csproj", "{EBC9BAAC-FA05-4EC1-9B41-E904FCE17B0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF4B1A8-1EA2-47BB-9209-2DC3D9A2179A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC9BAAC-FA05-4EC1-9B41-E904FCE17B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC9BAAC-FA05-4EC1-9B41-E904FCE17B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC9BAAC-FA05-4EC1-9B41-E904FCE17B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC9BAAC-FA05-4EC1-9B41-E904FCE17B0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -45,7 +45,7 @@ namespace FishyRaidFightSystem.Model.Spells
             Hala.elfoglalt = true;
             string regi = Hala.lovedeke.eleres;
 
-            Hala.lovedeke.eleres = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "randombubble.png"); 
+            Hala.lovedeke.eleres = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Images", "randombubble.png");
             int index = 0;
             bool megvan = false;
             while (!megvan)
@@ -148,7 +148,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 if (mit.Elet <= 0)
                 {
                     mit.meghalt = true;
-                  
+                    mit.tamad = false;
                     mit.Eleresiut = Fishbone.AddFishbonepath();
                 }
                 Hala.lovedeke.aktiv = false;

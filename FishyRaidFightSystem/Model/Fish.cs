@@ -96,6 +96,7 @@ namespace FishyRaidFightSystem.Model
             this.lovedeke = new Lovedek(this.x, this.y, bubblepath);
 
 
+
             dt.Interval = TimeSpan.FromMilliseconds(1);
             vegzo.Interval = TimeSpan.FromMilliseconds(100);
 

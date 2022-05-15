@@ -67,27 +67,27 @@ namespace FishyRaidFightSystem.Model.Spells
             {
                 for (int i = 0; i < halak.Count; i++)
                 {
-                    
-                        if (halak[i].Eleresiut != szoveg2)
-                        {
-                            index = i;
-                        }
-                    
+
+                    if (halak[i].Eleresiut != szoveg2)
+                    {
+                        index = i;
+                    }
+
                 }
             }
 
-         //   string szoveg1 = mit.Eleresiut;
+            //   string szoveg1 = mit.Eleresiut;
 
-           
 
-            if (index!=-1)
+
+            if (index != -1)
             {
-                if(halak[index].Eleresiut != szoveg2)
+                if (halak[index].Eleresiut != szoveg2)
                 {
                     string valodieleres = halak[index].Eleresiut;
                     int tamadoindex = 0;
 
-                    for(int i = 0; i < halak.Count; i++)
+                    for (int i = 0; i < halak.Count; i++)
                     {
                         if (Hala.Helye == halak[i].Helye)
                         {
@@ -100,29 +100,29 @@ namespace FishyRaidFightSystem.Model.Spells
                         else if (halak[i].Eleresiut == valodieleres)
                         {
                             tamadoindex = i;
-                       
+
                         }
                     }
 
-                    Csinal(halak[tamadoindex],halak);
+                    Csinal(halak[tamadoindex], halak);
                 }
             }
             else
             {
-                 index = 0;
+                index = 0;
                 Hala.elfoglalt = true;
                 for (int i = 0; i < halak.Count; i++)
                 {
-                    if (halak[i].Eleresiut!= Fishbone.AddFishbonepath())
+                    if (halak[i].Eleresiut != Fishbone.AddFishbonepath())
                     {
                         index = i;
                     }
                 }
-                
-                Csinal(halak[index],halak);
+
+                Csinal(halak[index], halak);
             }
 
-            }
+        }
 
         public void Csinal(Fish mit, ObservableCollection<Fish> halak)
         {
@@ -133,7 +133,7 @@ namespace FishyRaidFightSystem.Model.Spells
             Hala.oldy = Hala.y;
             Hala.tamad = true;
             Hala.csikmutat = false;
-          
+
             bool sebzett = false;
             Hala.elfoglalt = true;
             Fish tamadni = mit;
@@ -141,24 +141,24 @@ namespace FishyRaidFightSystem.Model.Spells
             int mity = (int)tamadni.y;
             ;
             this.mittamad = mit;
-              if (!delegalthozzaadva)
-              {
-          //  dt = new DispatcherTimer();
-           // dt.Interval = TimeSpan.FromMilliseconds(10);
+            if (!delegalthozzaadva)
+            {
+                //  dt = new DispatcherTimer();
+                // dt.Interval = TimeSpan.FromMilliseconds(10);
 
-            dt.Tick += delegate
+                dt.Tick += delegate
                 {
                     int szamlalo = 0;
 
                     while (szamlalo < 10)
                     {
-                        if (Hala.meghalt)
-                        {
-                            Hala.tamad = false; //Befagyasztja a játékot
-                            Hala.elfoglalt = false;
-                            Hala.visszamegy = false;
-                            sebzett = true;
-                        }
+                        /*  if (Hala.meghalt)
+                          {
+                              Hala.tamad = false; //Befagyasztja a játékot
+                              Hala.elfoglalt = false;
+                              Hala.visszamegy = false;
+                              sebzett = true;
+                          }*/
 
                         if (Hala != null)
                         {
@@ -203,14 +203,14 @@ namespace FishyRaidFightSystem.Model.Spells
                                         punch.CurrentTime = new TimeSpan(0L);
                                         punchout.Play();
                                     }
-                                    
+
 
                                     if (tamadni.Elet <= 0)
                                     {
                                         tamadni.Elet = 0;
                                         tamadni.meghalt = true;
-                                     
-                                       // mit.dead = fishbonepath;
+                                        tamadni.tamad = false;
+                                        // mit.dead = fishbonepath;
                                         tamadni.Eleresiut = Fishbone.AddFishbonepath();
                                     }
                                     sebzett = true;
@@ -272,5 +272,5 @@ namespace FishyRaidFightSystem.Model.Spells
 
         }
     }
-    }
+}
 
