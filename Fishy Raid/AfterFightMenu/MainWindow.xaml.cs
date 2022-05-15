@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blockchain_Controller.EthereumUtility;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -47,7 +48,17 @@ namespace AfterFightMenu
 
             myGrid.Background = backgroundBrush;
             menu.Background = buttonBrush;
-            Xp.Content = EXP ;
+            Xp.Content = EXP;
+
+            Random R = new Random();
+            double gained = R.NextDouble(); //Megadja, hogy mennyi token a jutalom
+            token.Content = Math.Round(gained, 4);
+         /*   Task reward = new Task(() =>
+            {
+                Sender sender = new Sender();
+                sender.Kezelo(gained);
+            });
+            reward.Start();*/ //Blockchain engine turned off
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

@@ -21,7 +21,9 @@ namespace FishyRaidFightSystem.Model
         {
             this.AllFishes = new ObservableCollection<Fish>();
             this.FishesInFight = new ObservableCollection<Fish>();
-            this.Energy = 3;           
+            this.Energy = 3;
+
+
         }
 
         public void EnemyLoad(string melyikpalya)

@@ -27,7 +27,7 @@ namespace FishyRaidFightSystem.Model.Spells
         public DoubleBubble(Fish hal)
         {
             this.Hala = hal;
-            string bubble= System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "bubble.wav");
+            string bubble = System.IO.Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName + "/Music", "bubble.wav");
             this.punch = new AudioFileReader(bubble);
             punchout = new WaveOut();
             punchout.Init(punch);
@@ -181,7 +181,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 if (mit.Elet <= 0)
                 {
                     mit.meghalt = true;
-                    
+                    mit.tamad = false;
                     mit.Eleresiut = Fishbone.AddFishbonepath();
                 }
                 Hala.lovedeke.aktiv = false;

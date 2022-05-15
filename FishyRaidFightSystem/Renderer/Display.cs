@@ -63,7 +63,7 @@ namespace FishyRaidFightSystem.Renderer
         64,
         Brushes.Yellow);
                 FormattedText halstatusz = new FormattedText(
-        "ENERGY: " + model.Jatekos.Energy + "   SPELLS: " + model.KovetkezoHal+" kor:"+model.Korszam,
+        "ENERGY: " + model.Jatekos.Energy + "   SPELLS: " + model.KovetkezoHal + " kor:" + model.Korszam,
         CultureInfo.GetCultureInfo("en-us"),
         FlowDirection.LeftToRight,
         new Typeface("Verdana"),
@@ -102,7 +102,7 @@ namespace FishyRaidFightSystem.Renderer
 
                         if (item.lovedeke.aktiv == true)
                         {
-                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri( item.lovedeke.eleres, UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
+                            drawingContext.DrawRectangle(new ImageBrush(new BitmapImage(new Uri(item.lovedeke.eleres, UriKind.RelativeOrAbsolute))), null, new Rect(item.lovedeke.x, item.lovedeke.y + item.pozicio - 5, 100, 100));
                         }
                         else
                         {
@@ -235,8 +235,8 @@ namespace FishyRaidFightSystem.Renderer
                         }
 
                         //Itt tartunk
-                        
-                        
+
+
 
                         if (item.lovedeke.aktiv == false)
                         {
@@ -263,9 +263,9 @@ namespace FishyRaidFightSystem.Renderer
                         if (item.csikmutat && item.Elet > 0)
                         {
                             int szazalek = (int)Math.Round((double)(100 * item.Elet) / item.Maxhp);
- 
 
-                             drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.159 - 100, Area.Height / 8 - 100 + item.pozicio, szazalek * 1.5, 10));
+
+                            drawingContext.DrawRectangle(Brushes.Red, null, new Rect(Area.Width / 1.159 - 100, Area.Height / 8 - 100 + item.pozicio, szazalek * 1.5, 10));
                         }
 
                         BitmapImage enemy2 = new BitmapImage(new Uri(Path.Combine("Images", item.Eleresiut), UriKind.RelativeOrAbsolute));

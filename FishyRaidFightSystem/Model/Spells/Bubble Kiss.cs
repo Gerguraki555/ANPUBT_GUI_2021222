@@ -17,7 +17,7 @@ namespace FishyRaidFightSystem.Model.Spells
         {
             throw new NotImplementedException();
         }
-       
+
         AudioFileReader punch;
         WaveOut punchout;
         AudioFileReader hit;
@@ -156,7 +156,7 @@ namespace FishyRaidFightSystem.Model.Spells
                 if (mit.Elet <= 0)
                 {
                     mit.meghalt = true;
-                    
+                    mit.tamad = false;
                     mit.Eleresiut = Fishbone.AddFishbonepath();
                 }
                 Hala.lovedeke.aktiv = false;
